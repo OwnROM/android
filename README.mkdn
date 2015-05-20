@@ -1,0 +1,18 @@
+OwnROM
+===========
+
+
+Getting Started
+---------------
+
+To get started with OwnROM, you'll need to get
+familiar with [Git and Repo](http://source.android.com/source/using-repo.html).
+
+To initialize your local repository using the OwnROM trees, use a command like this:
+
+    repo init -u git://github.com/OwnROM/android -b cm-12.1
+
+Then to sync up:
+
+    repo sync
+
