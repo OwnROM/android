@@ -1,12 +1,48 @@
 ====================
-     05-27-2015
+     05-29-2015
 ====================
 
 
-   * external/bluetooth/bluedroid/
-0842099 Revert "bluedroid: Support dynamic A2DP stream parameters"
+   * android/
+205c882 Merge branch 'cm-12.1' of https://github.com/OwnROM/android into cm-12.1
+826ebb5 Add changelog here Need to update every time
 
    * frameworks/base/
+c28950b Merge branch 'cm-12.1' of https://github.com/OwnROM/android_frameworks_base into cm-12.1
+cc2a76c Revert "Fix double lines"
+044c01f Revert "QS: add Sync tile (1/2)"
+6d8b243 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_frameworks_base into cm-12.1
+b029d10 Toast Animations (2/2)
+
+   * packages/apps/Settings/
+897bb47 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_packages_apps_Settings into cm-12.1
+83ad4d6 Forgot this little bastard
+82398cc A little more shinier
+ca97ba1 typo
+d07fb53 Dont like Italic Bold
+58a628e add changelog to OwnSettings
+e805731 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_packages_apps_Settings into cm-12.1
+ed6ce2c Create Own Animation Settings with Toast Animations (1/2)
+
+   * vendor/ownrom/
+2df7901 Delete stupid ota zip lel
+92d876f Merge branch 'cm-12.1' of https://github.com/OwnROM/android_vendor_ownrom into cm-12.1
+2ecccda Tweaks to changelog script No need of make dirty, now it first checks for old changelog, deletes old changelog, then copies over new one Also track commits for last 14 days, as we'll be doing weeklies, and in case a maintainer is busy and skips one Signed-off-by: Akhil Narang <akhilnarang.1999@gmail.com>
+63785ff Tweaks to changelog script No need of make dirty, now it first checks for old changelog, deletes old changelog, then copies over new one Also track commits for last 7 days, as we'll be doing weeklies Signed-off-by: Akhil Narang <akhilnarang.1999@gmail.com>
+
+====================
+     05-28-2015
+====================
+
+
+   * android/
+366877d Update default.xml
+f24b53b Track our own theme packages
+
+   * frameworks/base/
+d7ce10c Fix double lines
+3285d51 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_frameworks_base into cm-12.1
+d823f17 QS: add Sync tile (1/2)
 bbaae48 Merge branch 'cm-12.1' of github.com:OwnROM/android_frameworks_base into cm-12.1
 300cd46 Revert "SystemServer: Skip TorchService construction if no flash feature detected"
 eb29b15 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_frameworks_base into cm-12.1
@@ -20,6 +56,7 @@ c642d68 Squash Network Traffic
 09aa5c3 PackageManagerService: Create means of installing prebundled applications
 
    * packages/apps/Settings/
+62726a5 Fix derp :v
 dad74ad Oops Apparently not the problem o.O Revert "Fix lel"
 886d013 Fix lel Done @OwnDroid BTW is the line above it an error too?
 50513c2 Merge branch 'cm-12.1' of github.com:OwnROM/android_packages_apps_Settings into cm-12.1
@@ -46,55 +83,39 @@ b83a558 Check old install state before reapplying icon pack
 ff1a60b New stuff for build script And also for some reason add the prebuilts lel I must've fetched them for some reason
 
 ====================
-     05-26-2015
+     05-27-2015
 ====================
 
 
    * bionic/
 02f1c1f Merge remote-tracking branch 'cm/cm-12.1' into cm-12.1
 
+   * external/bluetooth/bluedroid/
+0842099 Revert "bluedroid: Support dynamic A2DP stream parameters"
+
    * frameworks/base/
 8eaa028 [1/2] Themes: Multiwallpaper support
 74aae7b Revert to previous battery padding
 bb6f3bf Merge branch 'cm-12.1' of https://github.com/OwnROM/android_frameworks_base into cm-12.1
 c529829 Merge remote-tracking branch 'cm/cm-12.1' into cm-12.1
-7bcf5f2 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_frameworks_base into cm-12.1
 
    * frameworks/opt/telephony/
 811c351 Revert "SMSUsageMonitor: read limit values from Settings.Secure"
 
-   * packages/apps/BluetoothExt/
-8f9b3cf Automatic translation import
-
    * packages/apps/CMFileManager/
 b1bac2d Fix there are no folders in NavigationView Pinned file manager
-4841e94 Automatic translation import
 
    * packages/apps/Calendar/
 241a809 Calendar: fix recurrence picker switch
 
    * packages/apps/Email/
 3a75a69 email: fix Exchange sync frequency account setup
-7074819 Automatic translation import
 
    * packages/apps/Settings/
 61b3040 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_packages_apps_Settings into cm-12.1
 c86b421 Merge remote-tracking branch 'cm/cm-12.1' into cm-12.1
 c7637c4 Revert "LCD Density Changer"
 f460b1f Settings: Add some more entries into 'SMS message limit' menu
-7e9b261 Improve string
-7cfb559 Automatic translation import
-45952fa Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Settings into lp5.1
-08ae1bb Mmm, tasty new logos
-
-   * packages/apps/ThemeChooser/
-3b49175 Automatic translation import
-
-   * packages/apps/Trebuchet/
-911938a Automatic translation import
-
-   * packages/apps/UnifiedEmail/
-1e353df Automatic translation import
 
    * packages/providers/ThemesProvider/
 bb432a1 [2/2] Themes: Multiwallpaper support
@@ -108,38 +129,20 @@ bb432a1 [2/2] Themes: Multiwallpaper support
 0642a14 CM: Update droiddoc template for cmsdk
 a2d1116 APNs: 716: added Claro, Entel; 732: Fixed COMCEL
 ee704fc APNs: Add MVNO HoT Austria Internet and MMS APN configuration
-eedb938 Some derps
-400a920 Update some stuff
 
 ====================
-     05-25-2015
+     05-26-2015
 ====================
 
-
-   * android/
-765b362 Merge branch 'cm-12.1' of https://github.com/OwnROM/android into cm-12.1
-9ba30f4 Add script to root dir
 
    * build/
 c73bc66 Lead build system to the right address for Prebuilt Chromium Script
-86162fa build: Remove QuickSearchBox from core apps
-a0eb0fc build: remove all stops if using different make/openjdk-java version
-fe439e6 Add Make Dirty Option
-82a8449 Add a Whole bunch of Clean Options
-ec5ac0a Remove Annoying Goldfish Stuff
-61e1e69 system.prop generated last
-0c2c8f2 Changelog
-74f89ed Opticharger/Squisher
-fe210af Introduce Modular TARGET_USE_PIPE
-f709497 build: Allow prebuilt apks
-cde965c Prebuilt chromium: update again script for lollipop
-8c4e042 Prebuilt chromium: Run a check for target device directory
-af07ac3 build: Add chromium prebuilt support to envsetup.sh && The core Makefile
 
    * external/whispersystems/WhisperPush/
 8011005 Automatic translation import
 
    * frameworks/base/
+7bcf5f2 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_frameworks_base into cm-12.1
 397e77f Automatic translation import
 
    * packages/apps/AudioFX/
@@ -147,6 +150,9 @@ af07ac3 build: Add chromium prebuilt support to envsetup.sh && The core Makefile
 
    * packages/apps/Bluetooth/
 aa069ea Automatic translation import
+
+   * packages/apps/BluetoothExt/
+8f9b3cf Automatic translation import
 
    * packages/apps/Browser/
 43361dc Automatic translation import
@@ -156,6 +162,9 @@ a4574cd Automatic translation import
 
    * packages/apps/CMBugReport/
 c41b56b Automatic translation import
+
+   * packages/apps/CMFileManager/
+4841e94 Automatic translation import
 
    * packages/apps/CMUpdater/
 258bb1c Automatic translation import
@@ -187,6 +196,9 @@ f34ba1c Automatic translation import
    * packages/apps/Eleven/
 4da5f3f Automatic translation import
 
+   * packages/apps/Email/
+7074819 Automatic translation import
+
    * packages/apps/Gallery2/
 7622a90 Automatic translation import
 
@@ -203,11 +215,14 @@ ce5681f Automatic translation import
 a7081fa Automatic translation import
 
    * packages/apps/Settings/
+7e9b261 Improve string
+7cfb559 Automatic translation import
+45952fa Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Settings into lp5.1
+08ae1bb Mmm, tasty new logos
 a04463d Some Own-ification
 703a0c9 Derp
 4030437 Settings: update dashboard icons
 2e36399 Fix this
-408b373 QS: add Sync tile (2/2)
 
    * packages/apps/SetupWizard/
 a9d0039 Automatic translation import
@@ -222,13 +237,17 @@ ea15282 Automatic translation import
 15210f0 Automatic translation import
 
    * packages/apps/ThemeChooser/
+3b49175 Automatic translation import
 689bdb1 ThemeChooser: add uninstall shortcut to ChooserDetailFragment
 
    * packages/apps/Trebuchet/
-d15317d Trebuchet : Activate the default homepage selection button on first run
+911938a Automatic translation import
 
    * packages/apps/TvSettings/
 75f1a0c Automatic translation import
+
+   * packages/apps/UnifiedEmail/
+1e353df Automatic translation import
 
    * packages/providers/DownloadProvider/
 149f521 Automatic translation import
@@ -249,35 +268,55 @@ d15317d Trebuchet : Activate the default homepage selection button on first run
 38afe8d Automatic translation import
 
    * vendor/ownrom/
+eedb938 Some derps
+400a920 Update some stuff
 ba4d7a3 Prebuilt Chromium support added
-8e3bc6f fix
-7449e41 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_vendor_ownrom into cm-12.1
-351f7b8 Squisher,opticharger,changelog script,build script,get-prebuilts
 
 ====================
-     05-24-2015
+     05-25-2015
 ====================
 
 
    * android/
+765b362 Merge branch 'cm-12.1' of https://github.com/OwnROM/android into cm-12.1
+9ba30f4 Add script to root dir
 feb0dc9 Update default.xml
+
+   * build/
+86162fa build: Remove QuickSearchBox from core apps
+a0eb0fc build: remove all stops if using different make/openjdk-java version
+fe439e6 Add Make Dirty Option
+82a8449 Add a Whole bunch of Clean Options
+ec5ac0a Remove Annoying Goldfish Stuff
+61e1e69 system.prop generated last
+0c2c8f2 Changelog
+74f89ed Opticharger/Squisher
+fe210af Introduce Modular TARGET_USE_PIPE
+f709497 build: Allow prebuilt apks
+cde965c Prebuilt chromium: update again script for lollipop
+8c4e042 Prebuilt chromium: Run a check for target device directory
+af07ac3 build: Add chromium prebuilt support to envsetup.sh && The core Makefile
 
    * frameworks/base/
 e8b4335 QS: add Sync tile (1/2)
 9fa5573 Remove CM-Platlogo: Forgot this on
-d42d395 Revert "Add CM PlatLogo (1/2)"
 
    * packages/apps/Settings/
+408b373 QS: add Sync tile (2/2)
 5751073 set developer options enabled
-fa226d9 LCD Density Changer Credit to DU and LS
-2ba2e45 Revert "CM PlatLogo: CyanogenMod version preference (2/2)"
+
+   * packages/apps/Trebuchet/
+d15317d Trebuchet : Activate the default homepage selection button on first run
 
    * vendor/ownrom/
+8e3bc6f fix
+7449e41 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_vendor_ownrom into cm-12.1
+351f7b8 Squisher,opticharger,changelog script,build script,get-prebuilts
 36f6b62 vendor/omni: Fix-ups for prebuilt Chromium
 5ea8f96 Prebuilt chromium: update script for lollipop
 
 ====================
-     05-23-2015
+     05-24-2015
 ====================
 
 
@@ -286,12 +325,491 @@ fa226d9 LCD Density Changer Credit to DU and LS
 bc7e82d AP WMM: Fix integer underflow in WMM Action frame parser
 
    * frameworks/base/
-5abb0f2 SystemServer: Skip TorchService construction if no flash feature detected
-9ac5aa2 Add alternate WebView provider package
+d42d395 Revert "Add CM PlatLogo (1/2)"
 
    * packages/apps/Eleven/
 bacadd7 Merge "Add Landscape support to Eleven" into cm-12.1
 
+   * packages/apps/Settings/
+fa226d9 LCD Density Changer Credit to DU and LS
+2ba2e45 Revert "CM PlatLogo: CyanogenMod version preference (2/2)"
+
    * vendor/ownrom/
 c32e622 Esteban wants to build for both lol
+
+====================
+     05-23-2015
+====================
+
+
+   * build/
+2e5dd20 Unmount system after SuperSU flash
+c7a3d9e Add SuperSU to OwnROM [2/2] Thanks to chinfire's "How to SU" guide, I've managed to get SuperSU zip flashing on every rom flash and it can easily be updated in vendor_spirit
+1bd44cb Merge branch 'cm-12.1' of https://github.com/OwnROM/android_build into HEAD
+f0e529d Little More Own-fying
+
+   * frameworks/base/
+5abb0f2 SystemServer: Skip TorchService construction if no flash feature detected
+9ac5aa2 Add alternate WebView provider package
+757c739 base: Fix array bounds exception in getSecondaryStorageState
+1dfc43a unbreak density scaling
+d1689f3 Fix another off-by-one error in computeEllipsis
+eccafdf apps2sd: Only allow "move to ___" if the media is mounted [2/2]
+6ca2651 SystemUI: Move custom tile listener service registration to phonestatusbar.
+
+   * frameworks/native/
+c5502f1 libgui: bail assertion if sensorservice cannot be found
+
+   * packages/apps/CMFileManager/
+9a75e1b [CMFileManager]Fix CMFileManager sometimes crash.
+
+   * packages/apps/Settings/
+116f7c8 Add OwnSettings & Re-order Settings for now
+8fd0c5d Keep the content when change the orientation
+89fa74e Cleaner Logo
+0d73503 Derps These Days... ("-_-)
+205776d Launch SuperSU from Settings
+04403b2 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_packages_apps_Settings into cm-12.1
+0aa2e37 Lets Own-ify this to
+759fb2b lets own-ify this one to
+99d9e94 Exclude themes from being moved to external storage
+9fa03b3 apps2sd: Only allow "move to ___" if the media is mounted [1/2]
+6c771d2 apps2sd: Enable apps2sd for apps with unspecified install location
+
+   * packages/services/Telephony/
+ec8c8a8 Fix CDMA vs. WCDMA typo in cs translations
+be6d6ee Telephony: Further improve network selection
+
+   * vendor/ownrom/
+20e3ade It was in DOS format, so it wouldnt add devices to lunch menu lol
+5eb590c Add this to
+78e9ae5 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_vendor_ownrom into cm-12.1
+717905c Add SuperSU To OwnROM
+
+====================
+     05-22-2015
+====================
+
+
+   * android/
+6f53d1f delete this un-needed shit
+e18d373 5.1.1_r2 to 5.1.1_r3
+
+   * build/
+59dc029 One more fix :v
+f75200b Fix
+3252ea3 Own-ifying
+229dfbe Our Build System
+
+   * device/google/sprout4/
+1bb771b Update config.xml
+da55da2 Update vendorsetup.sh
+2ad161d Update and rename cm.dependencies to ownrom.dependencies
+7bbba3c Update and rename cm.mk to ownrom.mk
+
+   * frameworks/base/
+f117cff Own-ifying
+03c2f2c VolumePanel: Properly update expanded volume panel sliders
+2196dbf [1/2] Recognized multiple wallpapers in theme
+d9cf18e DreamManager: be aware of device lid
+363abfb VolumePanel: Don't timeout quickly if expanded
+91c7ce9 Align recents clear button to screen edge instead of tasks if close
+
+   * frameworks/opt/telephony/
+3f96311 telephony: extend the user notification toggle for restricted mobile access
+5c05255 Make mImsPhone static. DO NOT MERGE ANYWHERE
+
+   * packages/apps/CMFileManager/
+0d31e17 [CMFileManager]Fix the FileManager Crash.
+41232db CMFileManager: Improved strings
+0c06f5c [CMFileManager] The remember selection don't work when open a file
+
+   * packages/apps/Contacts/
+a91eaf7 fix crash in QuickContact on sending contact via sms
+
+   * packages/apps/Eleven/
+4427680 Add Landscape support to Eleven
+
+   * packages/apps/Email/
+3bd9a83 email: imap push
+
+   * packages/apps/Mms/
+f3a2464 Mms : Change 'Add to People' to 'Add to Contacts'
+
+   * packages/apps/Settings/
+60f3817 Own Cloud
+a07e8ce Add new OwnLogo to Settings
+abf4296 CMLincense=OWNLincense
+a24e948 Own-ifying
+c429e68 CryptKeeper improvements
+
+   * system/core/
+c7b3725 Merge tag 'android-5.1.1_r3' into HEAD
+
+   * system/vold/
+d578419 Adjust to r3 fs_mgr changes
+
+   * vendor/ownrom/
+f680738 add missing file
+5753170 Fix error
+03ccd05 Update vendorsetup.sh
+9212996 Update own-device-targets
+2d4539a Update 00banner
+e389c42 add ownrom privacy policy
+
+====================
+     05-21-2015
+====================
+
+
+   * android/
+6a7f4d7 Our Manifest
+
+   * art/
+be62737 Revert "AArch64: Fix incorrect use of preceding LIR."
+
+   * frameworks/base/
+47cbe3a fix CTS DisplayTest.testGetMetrics()
+3dcd365 SystemUI: improve dpad arrow key state logic
+d9f1b3d Revert "Remove unnecessary sleep in ActivityThread."
+eb9ff0e Fix bugs regarding delay the dispatching of non-wakeup alarms
+2d55b7c Fix for infinite loop in RemoteViewsAdapter
+2589adf Fix bug of unnecessary wakeups after completed syncs.
+1edb451 Remove the window whose client process has died or become zombie
+6d08c9a Don't relayout based on a window that isn't visible
+7c16969 Not include fullscreen opaque window on screenshot
+1d6f9ba Only one task within the stack should moveToBack
+3a9f515 Fix racing condition of mTouchExcludeRegion
+1ff1e02 Measure absolute value of pointer motion distance
+36697c3 Make ACCESS_THEME_MANAGER permission system|signature
+e99897e Return original value if icon info is null
+6e73ab5 Make default overlay for "spell checker"
+
+   * kernel/mediatek/sprout/
+e259832 mt_hotplug: disable hotplug switching on suspend and resume
+
+   * packages/apps/Mms/
+6d7c762 Mms : Don't close single helper db instances
+
+   * packages/apps/Settings/
+83b4a99 Settings: add marquee to Device administrators screen
+ef0a11d CryptKeeper: layout whole screen in bounds
+
+   * packages/apps/UnifiedEmail/
+1c2391e email: do not close the input attachment buffer in Conversion#parseBodyFields
+
+   * packages/providers/ThemesProvider/
+d19fe5d [2/2] Recognized multiple wallpapers in theme
+
+   * vendor/cmsdk/
+0f8bcd7 Merge "CMSDK: Make sure to hide internal package from docs." into cm-12.1
+fb07983 CMSDK: Point to vendor/cm cmsdk templates for web.
+9389190 CMSDK: Make sure to hide internal package from docs.
+8c36c41 CMSDK: Update code comments for permission changes.
+
+   * vendor/ownrom/
+1087b42 Our Vendor
+
+====================
+     05-20-2015
+====================
+
+
+   * art/
+1e14008 AArch64: Fix incorrect use of preceding LIR.
+47e066e AArch64: Addressing Cortex-A53 erratum 835769.
+
+   * frameworks/base/
+1e7279b BaseStatusBar: Inform StatusBarService if a notification is flagged spam
+6fc65da AudioService: persist volume of ring stream when ringer mode changed
+48686c8 [1/3] Implement better legacy support for themes
+afe6a2a PackageManager: don't attempt to get theme on core boot
+
+   * frameworks/opt/telephony/
+2d1f7da Don't needlessly disable data.
+fe85370 Don't clear invalid defaults before SIM info of all SIMs is populated.
+
+   * packages/apps/CMBugReport/
+8bc24d3 CMBugReport: more null checks
+
+   * packages/apps/CMFileManager/
+835447a Update Editor Activity to handle Content URI
+08a24ff Prevent possible OutOfBoundsException
+
+   * packages/apps/Settings/
+eae637c Settings: Livedisplay: Respect default values passed from CMHW
+
+   * packages/apps/ThemeChooser/
+01431bd [3/3] Implement better legacy support for themes
+
+   * packages/apps/Trebuchet/
+d24a8a9 Increase SDK Version to support Android for Work
+
+   * packages/inputmethods/LatinIME/
+fd5ea5a make default overlay for "show correction suggestion"
+
+   * packages/providers/ThemesProvider/
+4d4c54e Fix exception on themes without lockscreen images
+a8594f9 FIX: Preview table upgrade path
+d2d2ffd [2/3] Implement better legacy support for themes
+
+   * vendor/cmsdk/
+2217bb4 CMSDK: Remove dead code.
+
+====================
+     05-19-2015
+====================
+
+
+   * frameworks/base/
+bf04307 Adjust display inversion matrix to account for luminance
+30f1d75 Use the correct parent size to initialize animations
+67a37d1 Don't apply animation clip to dialog activities
+f78aec6 Fix lost singleton provider after force-stopping user or package.
+daa97a5 Also restart provider if there is external handle.
+3188368 Check caller status precisely when registering receiver.
+7f5f651 fix return value scale of notifyANR()
+eddab20 Prevent windows from freezing screen while timeout
+f30a941 Sometimes the application context is null
+
+   * frameworks/opt/net/wifi/
+10c17ae Silence verbose Wifi logging
+
+   * packages/apps/Calendar/
+80a93a5 Check date string size before trimming it
+
+   * packages/apps/Contacts/
+a8f6bff Contacts : Remove silent option from ringtone
+
+   * packages/apps/LockClock/
+5f8fa15 Fix weird bug in LockClock
+
+   * packages/apps/Settings/
+ab062c1 Settings: improve Search
+
+   * packages/apps/SetupWizard/
+b2ceb1f OOBE: fix NPE in choose data sim page
+
+====================
+     05-18-2015
+====================
+
+
+   * frameworks/base/
+3231781 Fix context leak
+8d14b15 Frameworks/base: Fix old code in MediaPlayer
+
+   * frameworks/opt/telephony/
+2d7101c telephony: Release pending network requests when releasing a request
+
+====================
+     05-17-2015
+====================
+
+
+   * external/whispersystems/WhisperPush/
+00d880b Automatic translation import
+
+   * frameworks/base/
+739b2c5 Fix LiveDisplay QS icon size.
+0e9f24f Re-add missing ellipsis string
+88a3381 Don't dismiss keyguard if recreating status bar
+70b7c16 [1/3] Improve PreviewsColumns Implementation
+b9663bd Automatic translation import
+7a691d8 Profiles: make Default profile change ring mode back on
+6dc7523 [ActivityManager] Finish the failed-to-pause activity
+2f0fa0a [ActivityManager] Fix activity always visible.
+4a92c1d [ActivityManager] Move UI operation to UI handler
+890497a bindService can't start up service process
+8add355 KeyGuard: Fix the wrong Plmn/SPN display.
+
+   * frameworks/opt/telephony/
+e4a56f5 RIL : allow RILReceiver to be overridden
+
+   * hardware/qcom/audio-caf/msm8994/
+9505827 hal: Cleanup msm8992 build flags
+
+   * packages/apps/AudioFX/
+672d5a7 Automatic translation import
+
+   * packages/apps/Bluetooth/
+d56399b Automatic translation import
+
+   * packages/apps/BluetoothExt/
+aac31fd Automatic translation import
+
+   * packages/apps/Browser/
+6d90275 Automatic translation import
+
+   * packages/apps/CMAccount/
+63c90e6 Automatic translation import
+
+   * packages/apps/CMBugReport/
+95e313e Automatic translation import
+
+   * packages/apps/CMFileManager/
+3a81139 Automatic translation import
+
+   * packages/apps/CMUpdater/
+57f770f Automatic translation import
+
+   * packages/apps/CMWallpapers/
+993ba51 Automatic translation import
+
+   * packages/apps/Calculator/
+e84f50a Automatic translation import
+
+   * packages/apps/Calendar/
+b25c6c5 Fix for days that are expected to be 3chars end up being longer.
+5b8aac9 Automatic translation import
+
+   * packages/apps/Camera2/
+b13ecf2 Automatic translation import
+
+   * packages/apps/CellBroadcastReceiver/
+03b30b5 Automatic translation import
+
+   * packages/apps/Contacts/
+4c91781 Automatic translation import
+
+   * packages/apps/ContactsCommon/
+3285787 Automatic translation import
+
+   * packages/apps/DeskClock/
+5e50aef Automatic translation import
+
+   * packages/apps/Dialer/
+f863f8a Dialer: remove contact importing from Dialer
+d3d5cc7 Automatic translation import
+
+   * packages/apps/Eleven/
+d2fa91a Automatic translation import
+
+   * packages/apps/Email/
+5779a29 Automatic translation import
+
+   * packages/apps/Exchange/
+5144625 exchange: imap push
+b3f3790 Automatic translation import
+
+   * packages/apps/Gallery2/
+9231926 Automatic translation import
+
+   * packages/apps/InCallUI/
+64bc81c Automatic translation import
+
+   * packages/apps/LockClock/
+ecfe031 Automatic translation import
+
+   * packages/apps/Mms/
+f6b0db8 Automatic translation import
+
+   * packages/apps/Nfc/
+9739a31 Automatic translation import
+
+   * packages/apps/PhoneCommon/
+b9c601b Automatic translation import
+
+   * packages/apps/Settings/
+ccad29b Do not allow privacy guard for core system apps.
+6f6e6b5 Automatic translation import
+
+   * packages/apps/SetupWizard/
+3d884ce Automatic translation import
+
+   * packages/apps/SoundRecorder/
+4981681 Automatic translation import
+
+   * packages/apps/Stk/
+3d46a7f Automatic translation import
+
+   * packages/apps/Terminal/
+15983c8 Automatic translation import
+
+   * packages/apps/ThemeChooser/
+3988a79 [2/2] Use files instead of blobs
+ff1bab8 [3/3] Improve PreviewsColumns Implementation
+d1d2a8e Automatic translation import
+
+   * packages/apps/Trebuchet/
+274e546 Automatic translation import
+
+   * packages/apps/TvSettings/
+107e728 Automatic translation import
+
+   * packages/apps/UnifiedEmail/
+917885f Automatic translation import
+
+   * packages/inputmethods/LatinIME/
+f317890 Automatic translation import
+
+   * packages/providers/DownloadProvider/
+ea11e80 Automatic translation import
+
+   * packages/providers/ThemesProvider/
+8fd765a [1/2] Use files instead of blobs
+c169904 [2/3] Improve PreviewsColumns Implementation
+3b2e3e3 Automatic translation import
+
+   * packages/services/Mms/
+56d3c6a Automatic translation import
+
+   * packages/services/Telecomm/
+3319fcd Automatic translation import
+
+   * packages/services/Telephony/
+2b48acf Automatic translation import
+
+   * packages/wallpapers/Galaxy4/
+ddd1171 Automatic translation import
+
+   * packages/wallpapers/PhaseBeam/
+2629b96 Automatic translation import
+
+   * packages/wallpapers/PhotoPhase/
+058947f Automatic translation import
+
+   * vendor/cmsdk/
+1fa41bb Automatic translation import
+
+====================
+     05-16-2015
+====================
+
+
+   * frameworks/base/
+670d3df SystemBars: Allow the StatusBarComponent be externally defined
+65abb32 Revert "ConnectivityService: add persist.radio.noril"
+531fdda Remove some useless debug spam.
+f367a7a Clean up keyguard carrier text handling.
+be753d6 fixup volume stream linking
+
+   * hardware/qcom/audio-caf/msm8916/
+a708ad9 post_proc: add support for virtualizer capability query
+
+   * hardware/qcom/audio-caf/msm8994/
+63f2249 hal: Allow building hardware audio encoders
+
+   * hardware/ril-caf/
+6ffe26f ril-caf: Allow using RIL version 10
+
+   * packages/apps/CMFileManager/
+2ed65f0 Fix back arrow discoloration in action bar
+c5c6852 CM Easy Mode File Manager Navigation fixes
+da3e50d Prevent possible OOBE when ran under monkey test
+
+   * packages/apps/Mms/
+c25966c Mms: fix recipients getting lost when toggling "Mobile numbers only"
+
+   * packages/apps/Settings/
+5248395 Settings: setup Default Profile after OOBE has run
+093434d Fix mobile network switch for CDMA phones
+b2bfdbc Settings: fix BT switch enabling discoverable mode
+e7c80de Used fixed size for app icon width in default sms dialog
+
+   * packages/apps/Trebuchet/
+98cd4a5 Trebuchet: close folder without full animation for overview mode
+
+   * packages/providers/TelephonyProvider/
+81e3036 Add another db upgrade
 
