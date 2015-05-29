@@ -26,7 +26,6 @@ e2c7d32 Fix major derp :v
 0ccde2d Cool modifications :p 
 df757a6 Add script to sync OwnROM repositories 
 2df7901 Delete stupid ota zip lel
-92d876f Merge branch 'cm-12.1' of https://github.com/OwnROM/android_vendor_ownrom into cm-12.1
 2ecccda Tweaks to changelog script No need of make dirty, now it first checks for old changelog.
 ====================
      05-28-2015
