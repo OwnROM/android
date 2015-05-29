@@ -5,77 +5,61 @@
 
    * android/
 7100a8f Copy script to root of dir
-d7f52f3 Updated Changelog :v @vilinfield
 
    * frameworks/base/
-c28950b Merge branch 'cm-12.1' of https://github.com/OwnROM/android_frameworks_base into cm-12.1
 cc2a76c Revert "Fix double lines"
 044c01f Revert "QS: add Sync tile (1/2)"
 
    * packages/apps/Settings/
-897bb47 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_packages_apps_Settings into cm-12.1
 83ad4d6 Forgot this little bastard
 82398cc A little more shinier
 ca97ba1 typo
 
    * vendor/ownrom/
-07ed196 That clear removed elapsed time, and all use for script lel
-0d93f5b Fix typo And spacing And filter No more now lel
+07ed196 That clear removed elapsed time, and all use for script 
+0d93f5b Fix typo And spacing And filter No more now 
 2f7c550 last :v
 b2d7a7f Really, this is the last one
 b98c914 Last fix Change colors :P
 e2c7d32 Fix major derp :v
 655cfbb Fix
-0ccde2d Cool modifications :p @OwnDroid
-df757a6 Add script to sync OwnROM repositories :D @OwnDroid check it out :p Also modified colors Removed get-prebuilts, as it dosen't get copied over -_- (1/2), need to update manifest to copy this stuff over :p
+0ccde2d Cool modifications :p 
+df757a6 Add script to sync OwnROM repositories 
 2df7901 Delete stupid ota zip lel
 92d876f Merge branch 'cm-12.1' of https://github.com/OwnROM/android_vendor_ownrom into cm-12.1
-2ecccda Tweaks to changelog script No need of make dirty, now it first checks for old changelog, deletes old changelog, then copies over new one Also track commits for last 14 days, as we'll be doing weeklies, and in case a maintainer is busy and skips one Signed-off-by: Akhil Narang <akhilnarang.1999@gmail.com>
-63785ff Tweaks to changelog script No need of make dirty, now it first checks for old changelog, deletes old changelog, then copies over new one Also track commits for last 7 days, as we'll be doing weeklies Signed-off-by: Akhil Narang <akhilnarang.1999@gmail.com>
-
+2ecccda Tweaks to changelog script No need of make dirty, now it first checks for old changelog.
 ====================
      05-28-2015
 ====================
 
 
    * android/
-205c882 Merge branch 'cm-12.1' of https://github.com/OwnROM/android into cm-12.1
 826ebb5 Add changelog here Need to update every time
 366877d Update default.xml
 f24b53b Track our own theme packages
 
    * frameworks/base/
-6d8b243 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_frameworks_base into cm-12.1
 b029d10 Toast Animations (2/2)
 d7ce10c Fix double lines
-3285d51 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_frameworks_base into cm-12.1
 d823f17 QS: add Sync tile (1/2)
-bbaae48 Merge branch 'cm-12.1' of github.com:OwnROM/android_frameworks_base into cm-12.1
 300cd46 Revert "SystemServer: Skip TorchService construction if no flash feature detected"
-eb29b15 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_frameworks_base into cm-12.1
 908bd56 Fixes
-75c7805 Merge remote-tracking branch 'cm/cm-12.1' into cm-12.1
 efe8a4f QS: add Screenshot tile (1/2)
 
    * packages/apps/Settings/
 d07fb53 Dont like Italic Bold
 58a628e add changelog to OwnSettings
-e805731 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_packages_apps_Settings into cm-12.1
 ed6ce2c Create Own Animation Settings with Toast Animations (1/2)
 62726a5 Fix derp :v
 dad74ad Oops Apparently not the problem o.O Revert "Fix lel"
 886d013 Fix lel Done @OwnDroid BTW is the line above it an error too?
-50513c2 Merge branch 'cm-12.1' of github.com:OwnROM/android_packages_apps_Settings into cm-12.1
 e8f02c4 Revert "QS: add Sync tile (2/2)"
 fb56785 Add margaritov colorpicker from SlimRoms
 7f8fc16 Revert "Colorpicker"
-63c6d05 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_packages_apps_Settings into cm-12.1
 e0e22be Fixes
-60a6a98 Merge branch 'cm-12.1' of github.com:OwnROM/android_packages_apps_Settings into cm-12.1 :v Signed-off-by: Akhil Narang <akhilnarang.1999@gmail.com>
-5ce4be5 Merge remote-tracking branch 'cm/cm-12.1' into cm-12.1 And remove DPI strings lel @OwnDroid Signed-off-by: Akhil Narang <akhilnarang.1999@gmail.com>
 
    * vendor/ownrom/
-ff1a60b New stuff for build script And also for some reason add the prebuilts lel I must've fetched them for some reason
+ff1a60b New stuff for build script
 
 ====================
      05-27-2015
@@ -96,7 +80,6 @@ c642d68 Squash Network Traffic
 
    * packages/apps/Settings/
 bc8f2d9 Kill off a few MSIM tab hosts.
-84ae1a8 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_packages_apps_Settings into cm-12.1
 45fd773 QS: add Screenshot & Sync tile (2/2)
 58a77eb Colorpicker
 948147e Squash: Network Traffic Monitor
@@ -112,14 +95,8 @@ bb432a1 [2/2] Themes: Multiwallpaper support
      05-26-2015
 ====================
 
-
-   * bionic/
-02f1c1f Merge remote-tracking branch 'cm/cm-12.1' into cm-12.1
-
    * frameworks/base/
-bb6f3bf Merge branch 'cm-12.1' of https://github.com/OwnROM/android_frameworks_base into cm-12.1
 c529829 Merge remote-tracking branch 'cm/cm-12.1' into cm-12.1
-7bcf5f2 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_frameworks_base into cm-12.1
 
    * frameworks/opt/telephony/
 811c351 Revert "SMSUsageMonitor: read limit values from Settings.Secure"
@@ -139,13 +116,10 @@ b1bac2d Fix there are no folders in NavigationView Pinned file manager
 7074819 Automatic translation import
 
    * packages/apps/Settings/
-61b3040 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_packages_apps_Settings into cm-12.1
-c86b421 Merge remote-tracking branch 'cm/cm-12.1' into cm-12.1
 c7637c4 Revert "LCD Density Changer"
 f460b1f Settings: Add some more entries into 'SMS message limit' menu
 7e9b261 Improve string
 7cfb559 Automatic translation import
-45952fa Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Settings into lp5.1
 08ae1bb Mmm, tasty new logos
 
    * packages/apps/ThemeChooser/
@@ -162,7 +136,6 @@ f460b1f Settings: Add some more entries into 'SMS message limit' menu
 0b75e32 Improve strings
 
    * vendor/ownrom/
-05da015 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_vendor_ownrom into cm-12.1
 4088f90 Update
 0642a14 CM: Update droiddoc template for cmsdk
 a2d1116 APNs: 716: added Claro, Entel; 732: Fixed COMCEL
@@ -176,7 +149,6 @@ eedb938 Some derps
 
 
    * android/
-765b362 Merge branch 'cm-12.1' of https://github.com/OwnROM/android into cm-12.1
 9ba30f4 Add script to root dir
 feb0dc9 Update default.xml
 
@@ -308,7 +280,6 @@ d15317d Trebuchet : Activate the default homepage selection button on first run
    * vendor/ownrom/
 ba4d7a3 Prebuilt Chromium support added
 8e3bc6f fix
-7449e41 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_vendor_ownrom into cm-12.1
 351f7b8 Squisher,opticharger,changelog script,build script,get-prebuilts
 36f6b62 vendor/omni: Fix-ups for prebuilt Chromium
 5ea8f96 Prebuilt chromium: update script for lollipop
@@ -361,8 +332,7 @@ c32e622 Esteban wants to build for both lol
 
    * build/
 2e5dd20 Unmount system after SuperSU flash
-c7a3d9e Add SuperSU to OwnROM [2/2] Thanks to chinfire's "How to SU" guide, I've managed to get SuperSU zip flashing on every rom flash and it can easily be updated in vendor_spirit
-1bd44cb Merge branch 'cm-12.1' of https://github.com/OwnROM/android_build into HEAD
+c7a3d9e Add SuperSU to OwnROM [2/2]
 f0e529d Little More Own-fying
 59dc029 One more fix :v
 f75200b Fix
@@ -387,7 +357,6 @@ c5502f1 libgui: bail assertion if sensorservice cannot be found
 89fa74e Cleaner Logo
 0d73503 Derps These Days... ("-_-)
 205776d Launch SuperSU from Settings
-04403b2 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_packages_apps_Settings into cm-12.1
 0aa2e37 Lets Own-ify this to
 759fb2b lets own-ify this one to
 99d9e94 Exclude themes from being moved to external storage
@@ -401,7 +370,6 @@ be6d6ee Telephony: Further improve network selection
    * vendor/ownrom/
 20e3ade It was in DOS format, so it wouldnt add devices to lunch menu lol
 5eb590c Add this to
-78e9ae5 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_vendor_ownrom into cm-12.1
 717905c Add SuperSU To OwnROM
 f680738 add missing file
 5753170 Fix error
