@@ -586,6 +586,7 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" />
   <project path="vendor/ownrom" name="OwnROM/android_vendor_ownrom" >
     <copyfile src="tools/build-ownrom.sh" dest="ownrom.sh" />
+    <copyfile src="tools/sync-own.sh" dest="sync.sh" />
   </project>
   <project path="vendor/cmsdk" name="CyanogenMod/cm_platform_sdk" />
 </manifest>
