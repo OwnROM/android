@@ -18,7 +18,7 @@ clear
 echo Where do you want to initialize OwnROM source? Enter the desired directory name similar to this:
 echo " /home/$USER/OwnROM or /media/$USER/yourdrive/OwnROM"
 read ownpath
-echo Initializing RR Source at $ownpath in 1...
+echo Initializing OwnROM Source at $ownpath in 1...
 sleep 1
 mkdir -p $ownpath
 cd $ownpath
