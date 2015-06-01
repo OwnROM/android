@@ -5,7 +5,8 @@ sudo apt-get update && sudo apt-get install git-core gnupg flex bison gperf libs
 y
 clear
 echo Dependencies have been installed
-echo Downloading repo
+echo Downloading repo in 5 seconds
+sleep 5
 mkdir ~/bin
 export PATH=~/bin:$PATH >> ~/.bashrc
 curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
