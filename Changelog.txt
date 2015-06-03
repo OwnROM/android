@@ -1,29 +1,71 @@
 ====================
+     06-03-2015
+====================
+
+
+   * development/
+dcf1f15 development: TRDS 5.0 (3/4)
+
+   * frameworks/base/
+8132a7e Update trds colors
+0d51482 fb: TRDS 5.0 (1/4)
+cb68c22 policy: don't allow app switch/recents key to be pressed on lockscreen
+227c2ed SystemUI: don't display protected lockscreen shortcuts
+b3253fa Base : Add more lockscreen shortcut custom icons Part2 Signed-off-by: westcrip <korukaltan@gmail.com>
+55a45db Base:Add new 73 hd lockscreen shortcus icons
+b90d213 Resize shortcut icons
+a2f8ae75 Fix
+4b625d2 Base: add more drawables to Slim LockScreen Shortcuts (2/2)
+ebb780d Add Slims DSLV & Missing Shortcut Icons
+963df3a Initial slim lockscreen shortcuts [2/2]
+5d071a5 Frameworks: Add several Slim helper classes and constants back
+
+   * frameworks/native/
+26097c0 native: TRDS 5.0 (2/4)
+
+   * packages/apps/Settings/
+8e9ec59 Add missing strings...
+a903e9a Settings: TRDS 5.0 (4/4)
+855b47b Settings : Add more lockscreen shortcut custom icons Part2
+649f6dc Fix shortcut icons tint colors and list view NPE
+be100a5 Settings :Add new 73 hd lockscreen shortcus icons - Rounded colorful 73 populer media and social application icons - Removed tint color from icon listview so makes icons visible
+b336a3e Settings: add more drawables to Slim LockScreen Shortcuts (1/2) Chrome Github Paypal Youtube Whatsapp Messenger Office Suite Tapatalk
+9eb8055 Lockscreen Shortcuts Fixes
+d473aa6 Settings : Initial slim lockscreen shortcuts [1/2]
+
+====================
      06-02-2015
 ====================
 
 
    * android/
 036249f Remove external/srec
+b10d24b fix
+38cef2b Time for users to abort if they just want dependencies lol
+a2b25d8 @OwnDroid
 
    * build/
 0cb5893 envsetup: cleanup the full list
 58ccf1f lunch: sort the choices
 7a557e1 build: avoid recovery patch if device setup can't do it correctly
 ffa2316 envsetup: add mk_timer
+d8f3f77 Like this better this way...
+
+   * device/moto/shamu/
+68e8003 Update Shamu Repo
 
    * device/qcom/sepolicy/
 2d2760e sepolicy: Update BCL sysfs nodes in file context
 
    * frameworks/base/
-963df3a Initial slim lockscreen shortcuts [2/2]
-5d071a5 Frameworks: Add several Slim helper classes and constants back
 c99e2a4 Some Updates
 5313fcb FW_Base - Live Volume Steps [1/2] -Volume steps changes are instant, no need to reboot!
 839562d Another Update
 b68785d Update Repo
 aab323e VolumePanel: better handling of updating sliders in expanded view
 faa430b VolumePanel: show hint for unlinked notification slider too
+5e7a8b2 Updating Sources
+ecda406 Introduce Theme Versioning [1/2]
 
    * frameworks/native/
 9f76295 Add dalvik heap override for xxxhdpi phone
@@ -33,10 +75,13 @@ faa430b VolumePanel: show hint for unlinked notification slider too
 97739e1 Gallery2: Fix crash when Bluetooth service is disabled
 
    * packages/apps/Settings/
-d473aa6 Settings : Initial slim lockscreen shortcuts [1/2]
 2ee2188 Settings - Live Volume Steps [2/2]
 8cbf398 Update Repo
 60a3f39 Settings: Fix setting app install location as "Removable SD card" without SD card inserted
+b96e5f5 Update Repo
+
+   * vendor/cmsdk/
+25410f2 Introduce Theme Versioning [2/2]
 
    * vendor/motorola/
 2b64f16 Merge pull request #159 from luca020400/cm-12.1
@@ -44,81 +89,25 @@ d473aa6 Settings : Initial slim lockscreen shortcuts [1/2]
 
    * vendor/ownrom/
 dad108e Temp fix for Bouygues telecom issues
+b5b6e0b FOTA: Create /cache/recovery in init.rc for FOTA
 
 ====================
      06-01-2015
 ====================
 
 
-   * android/
-b10d24b fix
-38cef2b Time for users to abort if they just want dependencies lol
-a2b25d8 @OwnDroid
-
-   * build/
-d8f3f77 Like this better this way...
-
    * device/moto/shamu/
-68e8003 Update Shamu Repo
+6bb4667 IMSEnabler: Application to toggle the Enhanced 4G LTE Mode setting
 
    * external/bluetooth/bluedroid/
 92362be bluetooth: a2dp: Buffer sufficient data to keep devices happy
 
    * frameworks/base/
-5e7a8b2 Updating Sources
-ecda406 Introduce Theme Versioning [1/2]
 1c16b02 frameworks/base: enable localization of Chinese operator's PLMN
 89e7035 Sync status bar signal cluster code with AOSP.
 a44d9bc fingerprint: register correct function for nativeEnrollCancel
 0e16053 fingerprint: detach java vm in HAL callback
-
-   * packages/apps/InCallUI/
-9cd8afb Fix: The EndCallButton overlaps the digital key 0 after switch system language during an active call
-
-   * packages/apps/Mms/
-5db195d Add UAProf URL to carrier-specific configs
-f8cb438 Create the contact photo manager as service.
-
-   * packages/apps/Settings/
-b96e5f5 Update Repo
-e8f736c Integrate mobile network settings into SIM settings for MSIM.
-9563800 Remove 'Show empty SIMs' option.
-b7fcb26 Settings: fix an issue where text is not showing up on first instance.
-6f96f2e Cleanup SMS limits
-
-   * packages/apps/Trebuchet/
-d482eb7 Fix power save mode broken ui/animations
-
-   * packages/services/Telecomm/
-fcaa59c Merge "Show multi-line notification if there's more than 1 missed call." into cm-12.1
-
-   * packages/services/Telephony/
-109a0bf Telephony: Bye bye Holo USSD dialog
-c84a7ba Restyle USSD AlertDialog.
-7c15f71 Update activity title if called in MSIM case.
-
-   * vendor/cmsdk/
-25410f2 Introduce Theme Versioning [2/2]
-
-   * vendor/ownrom/
-b5b6e0b FOTA: Create /cache/recovery in init.rc for FOTA
-
-====================
-     05-31-2015
-====================
-
-
-   * device/moto/shamu/
-6bb4667 IMSEnabler: Application to toggle the Enhanced 4G LTE Mode setting
-f6b6495 Don't dexpreopt prebuilts as some of them don't play nice
-
-   * frameworks/base/
 76fb380 Automatic translation import
-3e9de4e Materialize task kill button And don't delete HDPI one HDPI devices still exist -_- Change-Id: I44242954fe98cec6f777ff1b00e88bd105b2d1e9 Signed-off-by: Akhil Narang <akhilnarang.1999@gmail.com>
-3cefeaf Profiles: Setup uuid's for the defaults
-
-   * frameworks/opt/telephony/
-61cf25a Revert "Set default SMS outgoing check interval to 15 minutes"
 
    * kernel/moto/shamu/
 03a4b54 f2fs: fix a deadlock for summary page lock vs. sentry_lock
@@ -271,8 +260,6 @@ b810683 f2fs: introduce infra macro and data structure of rb-tree extent cache
 56b7fc7 f2fs: introduce f2fs_update_dentry to clean up duplicated codes
 00ffc89 f2fs: remove unused inline_dentry_addr
 fe43d8f Revert "f2fs: support 3.10"
-4100b22 nf: Remove compilation error caused by e8430cbed3ef15fdb1ac26cfd020e010aa5f1c35
-0715386 nf: IDLETIMER: time-stamp and suspend/resume handling.
 
    * packages/apps/CMFileManager/
 ae97d0f Automatic translation import
@@ -285,7 +272,6 @@ ae97d0f Automatic translation import
 
    * packages/apps/Camera2/
 38a8b2d Automatic translation import
-d981627 Add Storage preference (1/2)
 
    * packages/apps/Contacts/
 ddbe222 Automatic translation import
@@ -295,7 +281,6 @@ ddbe222 Automatic translation import
 
    * packages/apps/Dialer/
 452508c Automatic translation import
-34d3535 Update blacklist strings
 
    * packages/apps/Eleven/
 e923782 Automatic translation import
@@ -303,28 +288,33 @@ e923782 Automatic translation import
    * packages/apps/Email/
 7632c13 Automatic translation import
 
-   * packages/apps/Gallery2/
-a33834e Add Storage preference (2/2)
-
    * packages/apps/InCallUI/
+9cd8afb Fix: The EndCallButton overlaps the digital key 0 after switch system language during an active call
 affe211 Automatic translation import
 
    * packages/apps/LockClock/
 eb16c77 Automatic translation import
 
    * packages/apps/Mms/
+5db195d Add UAProf URL to carrier-specific configs
+f8cb438 Create the contact photo manager as service.
 f6f583d Automatic translation import
 
    * packages/apps/Settings/
+e8f736c Integrate mobile network settings into SIM settings for MSIM.
+9563800 Remove 'Show empty SIMs' option.
+b7fcb26 Settings: fix an issue where text is not showing up on first instance.
+6f96f2e Cleanup SMS limits
 0629b4b Automatic translation import
-06b1265 Settings:Not responding In-app search function
-b99e3fe profiles: respect lockscreen policies
 
    * packages/apps/SetupWizard/
 b94d443 Automatic translation import
 
    * packages/apps/ThemeChooser/
 fc620fe Automatic translation import
+
+   * packages/apps/Trebuchet/
+d482eb7 Fix power save mode broken ui/animations
 
    * packages/apps/TvSettings/
 810333f Automatic translation import
@@ -336,13 +326,57 @@ fc620fe Automatic translation import
 2aa2853 Automatic translation import
 
    * packages/services/Telecomm/
+fcaa59c Merge "Show multi-line notification if there's more than 1 missed call." into cm-12.1
 df433bc Automatic translation import
 
    * packages/services/Telephony/
+109a0bf Telephony: Bye bye Holo USSD dialog
+c84a7ba Restyle USSD AlertDialog.
+7c15f71 Update activity title if called in MSIM case.
 b587068 Automatic translation import
 
    * vendor/cmsdk/
 cbc19f5 Automatic translation import
+
+====================
+     05-31-2015
+====================
+
+
+   * device/moto/shamu/
+f6b6495 Don't dexpreopt prebuilts as some of them don't play nice
+9a425ec Merge remote-tracking branch 'cm/cm-12.1' into cm-12.1
+
+   * frameworks/base/
+3e9de4e Materialize task kill button And don't delete HDPI one HDPI devices still exist -_- Change-Id: I44242954fe98cec6f777ff1b00e88bd105b2d1e9 Signed-off-by: Akhil Narang <akhilnarang.1999@gmail.com>
+3cefeaf Profiles: Setup uuid's for the defaults
+88d8147 Merge remote-tracking branch 'cm/cm-12.1' into HEAD
+
+   * frameworks/opt/telephony/
+61cf25a Revert "Set default SMS outgoing check interval to 15 minutes"
+
+   * kernel/moto/shamu/
+4100b22 nf: Remove compilation error caused by e8430cbed3ef15fdb1ac26cfd020e010aa5f1c35
+0715386 nf: IDLETIMER: time-stamp and suspend/resume handling.
+
+   * packages/apps/Camera2/
+d981627 Add Storage preference (1/2)
+
+   * packages/apps/Dialer/
+34d3535 Update blacklist strings
+
+   * packages/apps/Gallery2/
+a33834e Add Storage preference (2/2)
+
+   * packages/apps/Settings/
+06b1265 Settings:Not responding In-app search function
+b99e3fe profiles: respect lockscreen policies
+a5c051e Merge remote-tracking branch 'cm/cm-12.1' into cm-12.1
+
+   * vendor/ownrom/
+900cbdd CM: Make sure we're parsing api versions for cmsdk docs.
+17f1600 Fix invalid roaming_protocol for telenor.smart APN
+6d1df57 Drop hipri,supl from Smartfren4G
 
 ====================
      05-30-2015
@@ -352,9 +386,10 @@ cbc19f5 Automatic translation import
    * android/
 d11128e Update Changelog.txt
 a4b639b clean op changelog
+78b1c06 Update changelog
+7100a8f Copy script to root of dir
 
    * device/moto/shamu/
-9a425ec Merge remote-tracking branch 'cm/cm-12.1' into cm-12.1
 0e53c2a Add cnd service and associated sepolicy
 b59e36b Revert "Disable presence-based provisioning."
 
@@ -362,8 +397,8 @@ b59e36b Revert "Disable presence-based provisioning."
 ffed52f FFmpegExtractor: mark HEVC as supported
 
    * frameworks/base/
-88d8147 Merge remote-tracking branch 'cm/cm-12.1' into HEAD
 233c032 Settings: Fix install apps will fail after setting Preferred install location as Removable SD card and removing SD card
+a882d0f SystemUI: prompt for SIM PIN if lockscreen is disabled
 
    * frameworks/opt/telephony/
 18ba6a1 RIL: Fix datacall parcel reading
@@ -371,20 +406,34 @@ ffed52f FFmpegExtractor: mark HEVC as supported
    * kernel/moto/shamu/
 06f1017 netfilter: xt_IDLETIMER: Revert to retain the kernel API format.
 
+   * packages/apps/AudioFX/
+5029f8f Expose text color and background colors for Theming
+c99dcd8 Expose actionbar background for Theming
+
    * packages/apps/Eleven/
 1aad7c8 Eleven: Add playlist cover art to search results
 88469b7 Eleven: remove an unnecessary check when playing music to improve perf
 5ffc7db Eleven: Add a play Album option on songs
 
    * packages/apps/Settings/
-a5c051e Merge remote-tracking branch 'cm/cm-12.1' into cm-12.1
 c384f71 Add button in "hidden" settings to flip "VoLTE Provisioned" flag
 e08de72 Profiles: fix SeekBarVolumizer behavior
+d24c204 Settings: use WindowManager to set custom DPI
+
+   * packages/apps/Trebuchet/
+20bf4bd Trebuchet: fix excessive drawing with folders
 
    * vendor/ownrom/
-900cbdd CM: Make sure we're parsing api versions for cmsdk docs.
-17f1600 Fix invalid roaming_protocol for telenor.smart APN
-6d1df57 Drop hipri,supl from Smartfren4G
+4909f69 Some tweaks, to hopefully fix the warning
+07ed196 That clear removed elapsed time, and all use for script lel
+0d93f5b Fix typo And spacing And filter No more now lel
+2f7c550 last :v
+b2d7a7f Really, this is the last one
+b98c914 Last fix Change colors :P
+e2c7d32 Fix major derp :v
+655cfbb Fix
+0ccde2d Cool modifications :p @OwnDroid
+df757a6 Add script to sync OwnROM repositories :D @OwnDroid check it out :p Also modified colors Removed get-prebuilts, as it dosen't get copied over -_- (1/2), need to update manifest to copy this stuff over :p
 
 ====================
      05-29-2015
@@ -392,34 +441,41 @@ e08de72 Profiles: fix SeekBarVolumizer behavior
 
 
    * android/
-78b1c06 Update changelog
-7100a8f Copy script to root of dir
 d7f52f3 Updated Changelog :v @vilinfield
+205c882 Merge branch 'cm-12.1' of https://github.com/OwnROM/android into cm-12.1
+826ebb5 Add changelog here Need to update every time
 
    * device/moto/shamu/
 05b5393 proprietary-files: Allow vvm to work
 4a0f662 sepolicy: Fixes for atfwd, cne, and netmrgd denials
 
    * frameworks/base/
-a882d0f SystemUI: prompt for SIM PIN if lockscreen is disabled
 f0ad896 Fix typo in density assignment.
 316a437 Revert "Allow custom density setting"
 164fba7 Determine default 12/24 hour time format setting from locale.
 c28950b Merge branch 'cm-12.1' of https://github.com/OwnROM/android_frameworks_base into cm-12.1
-
-   * packages/apps/AudioFX/
-5029f8f Expose text color and background colors for Theming
-c99dcd8 Expose actionbar background for Theming
+5bf7e67 Modify GC Delay to include subsequent launches. (fix)
+cc2a76c Revert "Fix double lines"
+044c01f Revert "QS: add Sync tile (1/2)"
+1175798 Revert "Better density scaling compatibility"
+6d8b243 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_frameworks_base into cm-12.1
+b029d10 Toast Animations (2/2)
 
    * packages/apps/Eleven/
 995226c Merge "Eleven: Remove inset from top tracks circle" into cm-12.1
 4c9a305 Eleven: Remove inset from top tracks circle
 
    * packages/apps/Settings/
-d24c204 Settings: use WindowManager to set custom DPI
+897bb47 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_packages_apps_Settings into cm-12.1
+83ad4d6 Forgot this little bastard
+82398cc A little more shinier
+ca97ba1 typo
+d07fb53 Dont like Italic Bold
+58a628e add changelog to OwnSettings
+e805731 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_packages_apps_Settings into cm-12.1
+ed6ce2c Create Own Animation Settings with Toast Animations (1/2)
 
    * packages/apps/Trebuchet/
-20bf4bd Trebuchet: fix excessive drawing with folders
 ac3febf Move tablet preference ahead of the default
 35fbd48 trebuchet: Don't use new hotness on tablets
 f1c2734 trebuchet: Enable the new hotness by default.
@@ -439,16 +495,6 @@ e9f0ec6 Show multi-line notification if there's more than 1 missed call.
 ecd7f56 shamu: Allow vvm to work
 
    * vendor/ownrom/
-4909f69 Some tweaks, to hopefully fix the warning
-07ed196 That clear removed elapsed time, and all use for script lel
-0d93f5b Fix typo And spacing And filter No more now lel
-2f7c550 last :v
-b2d7a7f Really, this is the last one
-b98c914 Last fix Change colors :P
-e2c7d32 Fix major derp :v
-655cfbb Fix
-0ccde2d Cool modifications :p @OwnDroid
-df757a6 Add script to sync OwnROM repositories :D @OwnDroid check it out :p Also modified colors Removed get-prebuilts, as it dosen't get copied over -_- (1/2), need to update manifest to copy this stuff over :p
 2df7901 Delete stupid ota zip lel
 92d876f Merge branch 'cm-12.1' of https://github.com/OwnROM/android_vendor_ownrom into cm-12.1
 2ecccda Tweaks to changelog script No need of make dirty, now it first checks for old changelog, deletes old changelog, then copies over new one Also track commits for last 14 days, as we'll be doing weeklies, and in case a maintainer is busy and skips one Signed-off-by: Akhil Narang <akhilnarang.1999@gmail.com>
@@ -460,8 +506,8 @@ df757a6 Add script to sync OwnROM repositories :D @OwnDroid check it out :p Also
 
 
    * android/
-205c882 Merge branch 'cm-12.1' of https://github.com/OwnROM/android into cm-12.1
-826ebb5 Add changelog here Need to update every time
+366877d Update default.xml
+f24b53b Track our own theme packages
 
    * device/moto/shamu/
 9ca8059 setup-makefiles: Use platform cert for CNEService
@@ -470,58 +516,10 @@ df757a6 Add script to sync OwnROM repositories :D @OwnDroid check it out :p Also
 9434672 Merge tag 'android-5.1.1_r4' into cm-12.1
 
    * frameworks/base/
-5bf7e67 Modify GC Delay to include subsequent launches. (fix)
-cc2a76c Revert "Fix double lines"
-044c01f Revert "QS: add Sync tile (1/2)"
-1175798 Revert "Better density scaling compatibility"
-6d8b243 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_frameworks_base into cm-12.1
-b029d10 Toast Animations (2/2)
 84047b0 Profiles: re-enable data toggling
 f61367b Better density scaling compatibility
 118aa61 systemui: notify everyone that lockscreen is not going to be shown
 d7ce10c Fix double lines
-
-   * packages/apps/Email/
-dd81d6d EmailTests: fix api change
-2c32ba7 email: fix tests
-
-   * packages/apps/Mms/
-eee8961 Carrier-specific MMS limits
-
-   * packages/apps/PhoneCommon/
-5032ee9 PhoneCommon : Add layouts to support hdpi devices
-
-   * packages/apps/Settings/
-897bb47 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_packages_apps_Settings into cm-12.1
-83ad4d6 Forgot this little bastard
-82398cc A little more shinier
-ca97ba1 typo
-d07fb53 Dont like Italic Bold
-58a628e add changelog to OwnSettings
-e805731 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_packages_apps_Settings into cm-12.1
-ed6ce2c Create Own Animation Settings with Toast Animations (1/2)
-
-   * packages/apps/Trebuchet/
-347c6ec Fix the hint text of rename folder can't change with system language
-16416d4 Trebuchet: fix NPE during touch events
-
-   * vendor/cmsdk/
-e2feecb CMSDK: Hide CMContextConstants from docs.
-
-   * vendor/motorola/
-bc67413 shamu: Use platform cert for CNEService
-cf5ddd2 shamu: Update blobs for 5.1.1 (LYZ28E)
-
-====================
-     05-27-2015
-====================
-
-
-   * android/
-366877d Update default.xml
-f24b53b Track our own theme packages
-
-   * frameworks/base/
 3285d51 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_frameworks_base into cm-12.1
 d823f17 QS: add Sync tile (1/2)
 bbaae48 Merge branch 'cm-12.1' of github.com:OwnROM/android_frameworks_base into cm-12.1
@@ -534,20 +532,20 @@ efe8a4f QS: add Screenshot tile (1/2)
 15dab3c Revert "frameworks: display: Added automatic brightness configs"
 a05d81a Allow sending vendor- or device-specific commands to the camera HAL.
 c642d68 Squash Network Traffic
-09aa5c3 PackageManagerService: Create means of installing prebundled applications
-
-   * hardware/qcom/display-caf/msm8960/
-6b2a623 gralloc: hwc: Propagate PROTECTED flag to hwc
-eee4836 libhwcomposer: Enable rotator on resolution change
-
-   * kernel/moto/shamu/
-6647622 Merge remote-tracking branch 'aosp/android-msm-shamu-3.10-lollipop-mr1' into cm-12.1
 
    * packages/apps/Camera2/
 d4e6548 Introduce a 'device plugin' concept.
 
+   * packages/apps/Email/
+dd81d6d EmailTests: fix api change
+2c32ba7 email: fix tests
+
    * packages/apps/Mms/
+eee8961 Carrier-specific MMS limits
 567413e Mms : Add users permission to prevent crash
+
+   * packages/apps/PhoneCommon/
+5032ee9 PhoneCommon : Add layouts to support hdpi devices
 
    * packages/apps/Settings/
 62726a5 Fix derp :v
@@ -564,26 +562,26 @@ e0e22be Fixes
 bc8f2d9 Kill off a few MSIM tab hosts.
 84ae1a8 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_packages_apps_Settings into cm-12.1
 45fd773 QS: add Screenshot & Sync tile (2/2)
-58a77eb Colorpicker
-948147e Squash: Network Traffic Monitor
 
-   * packages/apps/ThemeChooser/
-3fa7657 Allow changing status/navigation bars when styles selected
-
-   * packages/providers/ThemesProvider/
-b83a558 Check old install state before reapplying icon pack
+   * packages/apps/Trebuchet/
+347c6ec Fix the hint text of rename folder can't change with system language
+16416d4 Trebuchet: fix NPE during touch events
 
    * packages/services/Telephony/
 ba719a2 msim: Fix up activity for Call settings
 
-   * prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9/
-c5d5557 Rebuild with r212222 to fix devirtualization bug in GCC4.9 (darwin)
+   * vendor/cmsdk/
+e2feecb CMSDK: Hide CMContextConstants from docs.
+
+   * vendor/motorola/
+bc67413 shamu: Use platform cert for CNEService
+cf5ddd2 shamu: Update blobs for 5.1.1 (LYZ28E)
 
    * vendor/ownrom/
 ff1a60b New stuff for build script And also for some reason add the prebuilts lel I must've fetched them for some reason
 
 ====================
-     05-26-2015
+     05-27-2015
 ====================
 
 
@@ -598,8 +596,49 @@ ff1a60b New stuff for build script And also for some reason add the prebuilts le
 0842099 Revert "bluedroid: Support dynamic A2DP stream parameters"
 
    * frameworks/base/
+09aa5c3 PackageManagerService: Create means of installing prebundled applications
 8eaa028 [1/2] Themes: Multiwallpaper support
 74aae7b Revert to previous battery padding
+
+   * hardware/qcom/display-caf/msm8960/
+6b2a623 gralloc: hwc: Propagate PROTECTED flag to hwc
+eee4836 libhwcomposer: Enable rotator on resolution change
+
+   * kernel/moto/shamu/
+6647622 Merge remote-tracking branch 'aosp/android-msm-shamu-3.10-lollipop-mr1' into cm-12.1
+
+   * packages/apps/Settings/
+58a77eb Colorpicker
+948147e Squash: Network Traffic Monitor
+61b3040 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_packages_apps_Settings into cm-12.1
+c86b421 Merge remote-tracking branch 'cm/cm-12.1' into cm-12.1
+
+   * packages/apps/ThemeChooser/
+3fa7657 Allow changing status/navigation bars when styles selected
+
+   * packages/providers/ThemesProvider/
+b83a558 Check old install state before reapplying icon pack
+bb432a1 [2/2] Themes: Multiwallpaper support
+
+   * prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9/
+c5d5557 Rebuild with r212222 to fix devirtualization bug in GCC4.9 (darwin)
+
+   * vendor/ownrom/
+05da015 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_vendor_ownrom into cm-12.1
+4088f90 Update
+0642a14 CM: Update droiddoc template for cmsdk
+a2d1116 APNs: 716: added Claro, Entel; 732: Fixed COMCEL
+ee704fc APNs: Add MVNO HoT Austria Internet and MMS APN configuration
+
+====================
+     05-26-2015
+====================
+
+
+   * build/
+c73bc66 Lead build system to the right address for Prebuilt Chromium Script
+
+   * frameworks/base/
 bb6f3bf Merge branch 'cm-12.1' of https://github.com/OwnROM/android_frameworks_base into cm-12.1
 c529829 Merge remote-tracking branch 'cm/cm-12.1' into cm-12.1
 7bcf5f2 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_frameworks_base into cm-12.1
@@ -622,8 +661,6 @@ b1bac2d Fix there are no folders in NavigationView Pinned file manager
 7074819 Automatic translation import
 
    * packages/apps/Settings/
-61b3040 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_packages_apps_Settings into cm-12.1
-c86b421 Merge remote-tracking branch 'cm/cm-12.1' into cm-12.1
 c7637c4 Revert "LCD Density Changer"
 f460b1f Settings: Add some more entries into 'SMS message limit' menu
 7e9b261 Improve string
@@ -633,6 +670,7 @@ f460b1f Settings: Add some more entries into 'SMS message limit' menu
 
    * packages/apps/ThemeChooser/
 3b49175 Automatic translation import
+689bdb1 ThemeChooser: add uninstall shortcut to ChooserDetailFragment
 
    * packages/apps/Trebuchet/
 911938a Automatic translation import
@@ -641,19 +679,12 @@ f460b1f Settings: Add some more entries into 'SMS message limit' menu
 7707e35 email: linkify phone numbers
 1e353df Automatic translation import
 
-   * packages/providers/ThemesProvider/
-bb432a1 [2/2] Themes: Multiwallpaper support
-
    * vendor/cmsdk/
 0b75e32 Improve strings
 
    * vendor/ownrom/
-05da015 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_vendor_ownrom into cm-12.1
-4088f90 Update
-0642a14 CM: Update droiddoc template for cmsdk
-a2d1116 APNs: 716: added Claro, Entel; 732: Fixed COMCEL
-ee704fc APNs: Add MVNO HoT Austria Internet and MMS APN configuration
 eedb938 Some derps
+400a920 Update some stuff
 
 ====================
      05-25-2015
@@ -663,9 +694,9 @@ eedb938 Some derps
    * android/
 765b362 Merge branch 'cm-12.1' of https://github.com/OwnROM/android into cm-12.1
 9ba30f4 Add script to root dir
+feb0dc9 Update default.xml
 
    * build/
-c73bc66 Lead build system to the right address for Prebuilt Chromium Script
 86162fa build: Remove QuickSearchBox from core apps
 a0eb0fc build: remove all stops if using different make/openjdk-java version
 fe439e6 Add Make Dirty Option
@@ -675,6 +706,10 @@ ec5ac0a Remove Annoying Goldfish Stuff
 0c2c8f2 Changelog
 74f89ed Opticharger/Squisher
 fe210af Introduce Modular TARGET_USE_PIPE
+f709497 build: Allow prebuilt apks
+cde965c Prebuilt chromium: update again script for lollipop
+8c4e042 Prebuilt chromium: Run a check for target device directory
+af07ac3 build: Add chromium prebuilt support to envsetup.sh && The core Makefile
 
    * external/whispersystems/WhisperPush/
 8011005 Automatic translation import
@@ -761,9 +796,6 @@ ea15282 Automatic translation import
    * packages/apps/Terminal/
 15210f0 Automatic translation import
 
-   * packages/apps/ThemeChooser/
-689bdb1 ThemeChooser: add uninstall shortcut to ChooserDetailFragment
-
    * packages/apps/Trebuchet/
 d15317d Trebuchet : Activate the default homepage selection button on first run
 
@@ -789,25 +821,17 @@ d15317d Trebuchet : Activate the default homepage selection button on first run
 38afe8d Automatic translation import
 
    * vendor/ownrom/
-400a920 Update some stuff
 ba4d7a3 Prebuilt Chromium support added
 8e3bc6f fix
 7449e41 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_vendor_ownrom into cm-12.1
 351f7b8 Squisher,opticharger,changelog script,build script,get-prebuilts
+36f6b62 vendor/omni: Fix-ups for prebuilt Chromium
+5ea8f96 Prebuilt chromium: update script for lollipop
 
 ====================
      05-24-2015
 ====================
 
-
-   * android/
-feb0dc9 Update default.xml
-
-   * build/
-f709497 build: Allow prebuilt apks
-cde965c Prebuilt chromium: update again script for lollipop
-8c4e042 Prebuilt chromium: Run a check for target device directory
-af07ac3 build: Add chromium prebuilt support to envsetup.sh && The core Makefile
 
    * frameworks/base/
 e8b4335 QS: add Sync tile (1/2)
@@ -818,10 +842,6 @@ d42d395 Revert "Add CM PlatLogo (1/2)"
 5751073 set developer options enabled
 fa226d9 LCD Density Changer Credit to DU and LS
 2ba2e45 Revert "CM PlatLogo: CyanogenMod version preference (2/2)"
-
-   * vendor/ownrom/
-36f6b62 vendor/omni: Fix-ups for prebuilt Chromium
-5ea8f96 Prebuilt chromium: update script for lollipop
 
 ====================
      05-23-2015
@@ -835,29 +855,43 @@ bc7e82d AP WMM: Fix integer underflow in WMM Action frame parser
    * frameworks/base/
 5abb0f2 SystemServer: Skip TorchService construction if no flash feature detected
 9ac5aa2 Add alternate WebView provider package
+757c739 base: Fix array bounds exception in getSecondaryStorageState
 
    * packages/apps/Eleven/
 bacadd7 Merge "Add Landscape support to Eleven" into cm-12.1
 
+   * packages/apps/Settings/
+116f7c8 Add OwnSettings & Re-order Settings for now
+
+   * vendor/motorola/
+06106d5 Merge pull request #163 from luk1337/patch-3
+8dc69dd titan: Update proprietary files
+
    * vendor/ownrom/
 c32e622 Esteban wants to build for both lol
+20e3ade It was in DOS format, so it wouldnt add devices to lunch menu lol
 
 ====================
      05-22-2015
 ====================
 
 
+   * android/
+6f53d1f delete this un-needed shit
+e18d373 5.1.1_r2 to 5.1.1_r3
+
    * build/
 2e5dd20 Unmount system after SuperSU flash
 c7a3d9e Add SuperSU to OwnROM [2/2] Thanks to chinfire's "How to SU" guide, I've managed to get SuperSU zip flashing on every rom flash and it can easily be updated in vendor_spirit
 1bd44cb Merge branch 'cm-12.1' of https://github.com/OwnROM/android_build into HEAD
 f0e529d Little More Own-fying
+59dc029 One more fix :v
+f75200b Fix
 
    * device/moto/shamu/
 a4c3c3d Disable Forced-Encryption
 
    * frameworks/base/
-757c739 base: Fix array bounds exception in getSecondaryStorageState
 1dfc43a unbreak density scaling
 d1689f3 Fix another off-by-one error in computeEllipsis
 eccafdf apps2sd: Only allow "move to ___" if the media is mounted [2/2]
@@ -866,11 +900,13 @@ eccafdf apps2sd: Only allow "move to ___" if the media is mounted [2/2]
    * frameworks/native/
 c5502f1 libgui: bail assertion if sensorservice cannot be found
 
+   * frameworks/opt/telephony/
+3f96311 telephony: extend the user notification toggle for restricted mobile access
+
    * packages/apps/CMFileManager/
 9a75e1b [CMFileManager]Fix CMFileManager sometimes crash.
 
    * packages/apps/Settings/
-116f7c8 Add OwnSettings & Re-order Settings for now
 8fd0c5d Keep the content when change the orientation
 89fa74e Cleaner Logo
 0d73503 Derps These Days... ("-_-)
@@ -886,15 +922,12 @@ c5502f1 libgui: bail assertion if sensorservice cannot be found
 ec8c8a8 Fix CDMA vs. WCDMA typo in cs translations
 be6d6ee Telephony: Further improve network selection
 
-   * vendor/motorola/
-06106d5 Merge pull request #163 from luk1337/patch-3
-8dc69dd titan: Update proprietary files
-
    * vendor/ownrom/
-20e3ade It was in DOS format, so it wouldnt add devices to lunch menu lol
 5eb590c Add this to
 78e9ae5 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_vendor_ownrom into cm-12.1
 717905c Add SuperSU To OwnROM
+f680738 add missing file
+5753170 Fix error
 
 ====================
      05-21-2015
@@ -902,12 +935,9 @@ be6d6ee Telephony: Further improve network selection
 
 
    * android/
-6f53d1f delete this un-needed shit
-e18d373 5.1.1_r2 to 5.1.1_r3
+6a7f4d7 Our Manifest
 
    * build/
-59dc029 One more fix :v
-f75200b Fix
 3252ea3 Own-ifying
 229dfbe Our Build System
 
@@ -927,7 +957,6 @@ d9cf18e DreamManager: be aware of device lid
 3dcd365 SystemUI: improve dpad arrow key state logic
 
    * frameworks/opt/telephony/
-3f96311 telephony: extend the user notification toggle for restricted mobile access
 5c05255 Make mImsPhone static. DO NOT MERGE ANYWHERE
 
    * packages/apps/CMFileManager/
@@ -946,6 +975,7 @@ a91eaf7 fix crash in QuickContact on sending contact via sms
 
    * packages/apps/Mms/
 f3a2464 Mms : Change 'Add to People' to 'Add to Contacts'
+6d7c762 Mms : Don't close single helper db instances
 
    * packages/apps/Settings/
 60f3817 Own Cloud
@@ -953,6 +983,7 @@ a07e8ce Add new OwnLogo to Settings
 abf4296 CMLincense=OWNLincense
 a24e948 Own-ifying
 c429e68 CryptKeeper improvements
+83b4a99 Settings: add marquee to Device administrators screen
 
    * system/core/
 c7b3725 Merge tag 'android-5.1.1_r3' into HEAD
@@ -961,65 +992,9 @@ c7b3725 Merge tag 'android-5.1.1_r3' into HEAD
 d578419 Adjust to r3 fs_mgr changes
 
    * vendor/ownrom/
-f680738 add missing file
-5753170 Fix error
 03ccd05 Update vendorsetup.sh
 9212996 Update own-device-targets
 2d4539a Update 00banner
 e389c42 add ownrom privacy policy
-
-====================
-     05-20-2015
-====================
-
-
-   * android/
-6a7f4d7 Our Manifest
-
-   * art/
-be62737 Revert "AArch64: Fix incorrect use of preceding LIR."
-
-   * frameworks/base/
-d9f1b3d Revert "Remove unnecessary sleep in ActivityThread."
-eb9ff0e Fix bugs regarding delay the dispatching of non-wakeup alarms
-2d55b7c Fix for infinite loop in RemoteViewsAdapter
-2589adf Fix bug of unnecessary wakeups after completed syncs.
-1edb451 Remove the window whose client process has died or become zombie
-6d08c9a Don't relayout based on a window that isn't visible
-7c16969 Not include fullscreen opaque window on screenshot
-1d6f9ba Only one task within the stack should moveToBack
-3a9f515 Fix racing condition of mTouchExcludeRegion
-1ff1e02 Measure absolute value of pointer motion distance
-36697c3 Make ACCESS_THEME_MANAGER permission system|signature
-e99897e Return original value if icon info is null
-6e73ab5 Make default overlay for "spell checker"
-1e7279b BaseStatusBar: Inform StatusBarService if a notification is flagged spam
-
-   * packages/apps/CMFileManager/
-835447a Update Editor Activity to handle Content URI
-
-   * packages/apps/Mms/
-6d7c762 Mms : Don't close single helper db instances
-
-   * packages/apps/Settings/
-83b4a99 Settings: add marquee to Device administrators screen
-ef0a11d CryptKeeper: layout whole screen in bounds
-
-   * packages/apps/UnifiedEmail/
-1c2391e email: do not close the input attachment buffer in Conversion#parseBodyFields
-
-   * packages/providers/ThemesProvider/
-d19fe5d [2/2] Recognized multiple wallpapers in theme
-
-   * vendor/cmsdk/
-0f8bcd7 Merge "CMSDK: Make sure to hide internal package from docs." into cm-12.1
-fb07983 CMSDK: Point to vendor/cm cmsdk templates for web.
-9389190 CMSDK: Make sure to hide internal package from docs.
-8c36c41 CMSDK: Update code comments for permission changes.
-
-   * vendor/motorola/
-c4e5f8b Merge pull request #162 from Alberto97/patch-1
-
-   * vendor/ownrom/
 1087b42 Our Vendor
 
