@@ -1,28 +1,72 @@
 ====================
-     06-07-2015
+     06-08-2015
 ====================
 
 
+   * android/
+f16364e Update default.xml
+ff2d9e0 Update Changelog.txt
+76fc65c Update Changelog.txt
+
    * frameworks/base/
+2397b12 QS: add Sync tile (1/2)
 721003c Squash: Task Manager [1/2]
 bf113ea Local Sync
 c70cfd7 PIE Fixes
-b06549f thin font for keyguard clock
-4d6bb01 add more style to keyguard
-58063ba Revert "Revert "SystemServer: Skip TorchService construction
+
+   * kernel/oneplus/msm8974/
+d37ac46 defconfig: branding
+8a70694 [PATCH] Implement kexec-hardboot
+
+   * packages/apps/OwnWallpapers/
+221fc3f Some renaming....
 
    * packages/apps/Settings/
 573c09e Task Manager [2/2]
 1c258a6 Update Dutch (NL) Strings
 2a65bd3 PIE Fixes
 
+   * vendor/ownrom/
+d48a9ed Add wallpapers to the build.......
+487cb34 Some fixes.......
+
+====================
+     06-07-2015
+====================
+
+
+   * device/qcom/sepolicy/
+e8034d4 sepolicy:Allow mm-qcamerad to access sensormanager service access.
+
+   * frameworks/base/
+b06549f thin font for keyguard clock
+4d6bb01 add more style to keyguard
+58063ba Revert "Revert "SystemServer: Skip TorchService construction if no flash feature detected"" Stupid thing fixed SystemUI FCs for sprout, but broke camera AND torch for bacon This reverts commit 300cd46014189ca5013d24b6f903b7e2f1d37c8e.
+89a35b4 [Base] Sync PIE codes with SlimRoms team Thanks to @ezio84 -> SlimRoms commit: SlimRoms/frameworks_base@bbf6f17
+
+   * packages/apps/Settings/
+ae9041a [Settings] Sync PIE codes with SlimRoms team Thanks to @ezio84 -> SlimRoms commit: SlimRoms/packages_apps_Settings@1aa3d33
+156508a Update NL (Dutch) strings for SlimPIE
+
+   * vendor/oppo/
+9fa7246 Merge pull request #17 from maniac103/sensor-update
+
+   * vendor/ownrom/
+cd1a67b Wtf :O
+63ee66a Show device too, otherwise all zips have same name lol @ a logic place
+3e9f17f Show device too, otherwise all zips have same name lol
+6932256 Update common.mk
+
 ====================
      06-06-2015
 ====================
 
 
+   * android/
+449f193 Update Changelog.txt
+d30c448 Update Changelog
+
    * frameworks/base/
-89a35b4 [Base] Sync PIE codes with SlimRoms
 669effa and yes, another fix... ("-_-)
 5e61062 SlimSeekBarPrefernce
 3c0fc7c PieItem.java Error Fix (For SlimPIE)
@@ -31,9 +75,12 @@ a9ef9a6 Squash Slim Pie [2/2]
 b91f0b1 Update my local enviorment
 cac564a Fix long click on notification tile
 
+   * packages/apps/OwnWallpapers/
+6f2a6b2 Translated app name.................
+a3f5c3a Ownify slightly more
+
    * packages/apps/Settings/
-ae9041a [Settings] Sync PIE codes with SlimRoms
-156508a Update NL (Dutch) strings for SlimPIE
+22a99d5 Add Missing String
 b059cfd Squash Slim Pie [1/2]
 
 ====================
@@ -41,13 +88,40 @@ b059cfd Squash Slim Pie [1/2]
 ====================
 
 
+   * android/
+2afd505 Update default.xml
+
+   * frameworks/base/
+1a71417 Make the icon visible
+
+   * packages/apps/OwnWallpapers/
+5a9fc30 Update strings.xml
+
+   * packages/apps/Settings/
+fcbf591 Fix this
+
+   * vendor/ownrom/
+66d4a2f Update common.mk
+
 ====================
      06-04-2015
 ====================
 
 
+   * android/
+0f04df7 Merge branch 'cm-12.1' of https://github.com/OwnROM/android into cm-12.1
+0257bd0 Track our wallpaper repo Remove TextSecure
+0e17004 Update Changelog.txt
+40dfe3d Track our own Development
+08d5465 Track our own Native
+
+   * development/
+dcf1f15 development: TRDS 5.0 (3/4)
+
+   * device/oppo/common/
+41be370 KeyHandler: never dexopt it
+
    * frameworks/base/
-1a71417 Make the icon visible
 0b35c08 fixes
 9a8676d Fix
 6ee5dbd NavBar tile [1/2]
@@ -56,9 +130,26 @@ b059cfd Squash Slim Pie [1/2]
 fdcb57b Power menu QS tile [2/2]
 afd3915 NotificationTile: Simple mode ring/vibrate/priority/silent
 9bed829 Add double tap option to lockscreen shortcuts
+8132a7e Update trds colors
+0d51482 fb: TRDS 5.0 (1/4)
+cb68c22 policy: don't allow app switch/recents key to be pressed on lockscreen
+227c2ed SystemUI: don't display protected lockscreen shortcuts
+b3253fa Base : Add more lockscreen shortcut custom icons Part2 Signed-off-by: westcrip <korukaltan@gmail.com>
+55a45db Base:Add new 73 hd lockscreen shortcus icons
+b90d213 Resize shortcut icons
+a2f8ae75 Fix
+4b625d2 Base: add more drawables to Slim LockScreen Shortcuts (2/2)
+
+   * frameworks/native/
+26097c0 native: TRDS 5.0 (2/4)
+
+   * packages/apps/Dialer/
+b675a6a Remove some dead code.
+
+   * packages/apps/OwnWallpapers/
+90851d8 Partial Ownify Need to update app name in all languages
 
    * packages/apps/Settings/
-fcbf591 Fix this
 51a9e54 We are OwnROM
 4c7d5e7 NavBar tile [2/2]
 154c66e Navbar Tweaks [1/2]
@@ -68,40 +159,74 @@ dbc640a Power menu QS tile [1/2]
 57d0245 add clock widget settings
 3299edf Update OwnSettings overall
 8e9ec59 Add missing strings...
+a903e9a Settings: TRDS 5.0 (4/4)
+855b47b Settings : Add more lockscreen shortcut custom icons Part2
+649f6dc Fix shortcut icons tint colors and list view NPE
+be100a5 Settings :Add new 73 hd lockscreen shortcus icons - Rounded colorful 73 populer media and social application icons - Removed tint color from icon listview so makes icons visible
+b336a3e Settings: add more drawables to Slim LockScreen Shortcuts (1/2) Chrome Github Paypal Youtube Whatsapp Messenger Office Suite Tapatalk
+
+   * vendor/ownrom/
+fb0c1eb Causes errors, don't build it now
+fc0692e y u do this @OwnDroid
+b865e1f New wallpapers app
+9a612df Sync the new repos too
 
 ====================
      06-03-2015
 ====================
 
 
-   * development/
-dcf1f15 development: TRDS 5.0 (3/4)
+   * android/
+c090c43 Update Changelog.txt
+036249f Remove external/srec
+
+   * build/
+0cb5893 envsetup: cleanup the full list
+58ccf1f lunch: sort the choices
+7a557e1 build: avoid recovery patch if device setup can't do it correctly
+ffa2316 envsetup: add mk_timer
 
    * frameworks/base/
-8132a7e Update trds colors
-0d51482 fb: TRDS 5.0 (1/4)
-cb68c22 policy: don't allow app switch/recents key to be pressed on lockscreen
-227c2ed SystemUI: don't display protected lockscreen shortcuts
-b3253fa Base : Add more lockscreen shortcut custom icons Part2
-55a45db Base:Add new 73 hd lockscreen shortcus icons
-b90d213 Resize shortcut icons
-a2f8ae75 Fix
-4b625d2 Base: add more drawables to Slim LockScreen Shortcuts (2/2)
 ebb780d Add Slims DSLV & Missing Shortcut Icons
 963df3a Initial slim lockscreen shortcuts [2/2]
 5d071a5 Frameworks: Add several Slim helper classes and constants back
+c99e2a4 Some Updates
+5313fcb FW_Base - Live Volume Steps [1/2] -Volume steps changes are instant, no need to reboot!
+839562d Another Update
+b68785d Update Repo
 
    * frameworks/native/
-26097c0 native: TRDS 5.0 (2/4)
+9f76295 Add dalvik heap override for xxxhdpi phone
+404f4eb Add HWUI overrides for xxxhdpi phone
+
+   * kernel/oneplus/msm8974/
+c510481 synaptics: Fix find7 compilation
+
+   * packages/apps/Dialer/
+22335cd [2/2] Dialer: SmartMute
+c9b91d0 Dialer: Ensure device ids not null
+
+   * packages/apps/InCallUI/
+faf5a34 [1/2] InCallUI: SmartMute
 
    * packages/apps/Settings/
-a903e9a Settings: TRDS 5.0 (4/4)
-855b47b Settings : Add more lockscreen shortcut custom icons Part2
-649f6dc Fix shortcut icons tint colors and list view NPE
-be100a5 Settings :Add new 73 hd lockscreen shortcus icons
-b336a3e Settings: add more drawables to Slim LockScreen Shortcuts (1/2) Chrome Github Paypal Youtube Whatsapp Messenger Office Suite Tapatalk
 9eb8055 Lockscreen Shortcuts Fixes
 d473aa6 Settings : Initial slim lockscreen shortcuts [1/2]
+2ee2188 Settings - Live Volume Steps [2/2]
+8cbf398 Update Repo
+
+   * packages/apps/Trebuchet/
+5643b7f Trebuchet: send metrics values as strings
+
+   * packages/services/Telephony/
+05600e6 TeleService: pass sub ID to APN setting
+
+   * vendor/oppo/
+975ee02 msm8974-common: Update rmt_storage
+
+   * vendor/ownrom/
+cff2e2a Update build-ownrom.sh
+dad108e Temp fix for Bouygues telecom issues
 
 ====================
      06-02-2015
@@ -109,56 +234,60 @@ d473aa6 Settings : Initial slim lockscreen shortcuts [1/2]
 
 
    * android/
-036249f Remove external/srec
 b10d24b fix
 38cef2b Time for users to abort if they just want dependencies lol
 a2b25d8 @OwnDroid
 
    * build/
-0cb5893 envsetup: cleanup the full list
-58ccf1f lunch: sort the choices
-7a557e1 build: avoid recovery patch if device setup can't do it correctly
-ffa2316 envsetup: add mk_timer
 d8f3f77 Like this better this way...
 
-   * device/moto/shamu/
-68e8003 Update Shamu Repo
+   * device/oppo/msm8974-common/
+741385d msm8974: Update WiFi configuration
 
    * device/qcom/sepolicy/
 2d2760e sepolicy: Update BCL sysfs nodes in file context
 
    * frameworks/base/
-c99e2a4 Some Updates
-5313fcb FW_Base - Live Volume Steps [1/2] -Volume steps changes are instant, no need to reboot!
-839562d Another Update
-b68785d Update Repo
 aab323e VolumePanel: better handling of updating sliders in expanded view
 faa430b VolumePanel: show hint for unlinked notification slider too
 5e7a8b2 Updating Sources
 ecda406 Introduce Theme Versioning [1/2]
-
-   * frameworks/native/
-9f76295 Add dalvik heap override for xxxhdpi phone
-404f4eb Add HWUI overrides for xxxhdpi phone
+1c16b02 frameworks/base: enable localization of Chinese operator's PLMN
+89e7035 Sync status bar signal cluster code with AOSP.
+a44d9bc fingerprint: register correct function for nativeEnrollCancel
+0e16053 fingerprint: detach java vm in HAL callback
 
    * packages/apps/Gallery2/
 97739e1 Gallery2: Fix crash when Bluetooth service is disabled
 
+   * packages/apps/InCallUI/
+9cd8afb Fix: The EndCallButton overlaps the digital key 0 after switch system language during an active call
+
+   * packages/apps/Mms/
+5db195d Add UAProf URL to carrier-specific configs
+f8cb438 Create the contact photo manager as service.
+
    * packages/apps/Settings/
-2ee2188 Settings - Live Volume Steps [2/2]
-8cbf398 Update Repo
 60a3f39 Settings: Fix setting app install location as "Removable SD card" without SD card inserted
 b96e5f5 Update Repo
+e8f736c Integrate mobile network settings into SIM settings for MSIM.
+9563800 Remove 'Show empty SIMs' option.
+
+   * packages/apps/Trebuchet/
+d482eb7 Fix power save mode broken ui/animations
+
+   * packages/services/Telecomm/
+fcaa59c Merge "Show multi-line notification if there's more than 1 missed call." into cm-12.1
+
+   * packages/services/Telephony/
+109a0bf Telephony: Bye bye Holo USSD dialog
+c84a7ba Restyle USSD AlertDialog.
+7c15f71 Update activity title if called in MSIM case.
 
    * vendor/cmsdk/
 25410f2 Introduce Theme Versioning [2/2]
 
-   * vendor/motorola/
-2b64f16 Merge pull request #159 from luca020400/cm-12.1
-38561f4 thea: Add T4K71 front imager proprietary files
-
    * vendor/ownrom/
-dad108e Temp fix for Bouygues telecom issues
 b5b6e0b FOTA: Create /cache/recovery in init.rc for FOTA
 
 ====================
@@ -166,170 +295,21 @@ b5b6e0b FOTA: Create /cache/recovery in init.rc for FOTA
 ====================
 
 
-   * device/moto/shamu/
-6bb4667 IMSEnabler: Application to toggle the Enhanced 4G LTE Mode setting
+   * device/oppo/common/
+72e188d Automatic translation import
+
+   * device/oppo/msm8974-common/
+fd8e8bb msm8974-common: Fix USB ethernet support
 
    * external/bluetooth/bluedroid/
 92362be bluetooth: a2dp: Buffer sufficient data to keep devices happy
 
    * frameworks/base/
-1c16b02 frameworks/base: enable localization of Chinese operator's PLMN
-89e7035 Sync status bar signal cluster code with AOSP.
-a44d9bc fingerprint: register correct function for nativeEnrollCancel
-0e16053 fingerprint: detach java vm in HAL callback
 76fb380 Automatic translation import
+3e9de4e Materialize task kill button And don't delete HDPI one HDPI devices still exist -_- Change-Id: I44242954fe98cec6f777ff1b00e88bd105b2d1e9 Signed-off-by: Akhil Narang <akhilnarang.1999@gmail.com>
 
-   * kernel/moto/shamu/
-03a4b54 f2fs: fix a deadlock for summary page lock vs. sentry_lock
-c3f581f f2fs crypto: clean up error handling in f2fs_fname_setup_filename
-bca4ae5 f2fs: support 3.10
-342051f f2fs crypto: avoid f2fs_inherit_context for symlink
-e7724d5 f2fs crypto: introduce a mempool for bounce pages
-c6192e4 f2fs crypto: do not set encryption policy for non-directory by ioctl
-0c79097 f2fs crypto: allow setting encryption policy once
-ff77059 f2fs crypto: check context consistent for rename2
-d3b0c7b f2fs: avoid duplicated code by reusing f2fs_read_end_io
-0895e48 f2fs crypto: use per-inode tfm structure
-6b5f90e f2fs: recovering broken superblock during mount
-e65b94e f2fs crypto: check encryption for tmpfile
-97b7bb1 f2fs: support RENAME_WHITEOUT
-bfc5d24 f2fs: introduce update_meta_page
-c0e0385 f2fs crypto: zero next free dnode block
-ad0534b f2fs crypto: split f2fs_crypto_init/exit with two parts
-d9f9faa f2fs crypto: fix incorrect release for crypto ctx
-efc19d7 f2fs crypto: fix to release buffer for fname crypto
-effecd9 f2fs crypto: shrink size of the f2fs_crypto_ctx structure
-08cc4a1 f2fs crypto: get rid of ci_mode from struct f2fs_crypt_info
-6fbf810 f2fs crypto: use slab caches
-c8732fe f2fs: truncate data blocks for orphan inode
-06ae5a0 f2fs: cleanup a confusing indent
-66b3fd9 f2fs: fix building on 32-bit architectures
-31612cd f2fs: avoid buggy functions
-e42da02 f2fs: add compat_ioctl to provide backward compatability
-a84e545 f2fs: do not issue next dnode discard redundantly
-51425d4 f2fs: disable the discard option when device does not support
-25e1664 f2fs: add default mount options to remount
-68b3552 f2fs crypto: remove checking key context during lookup
-dc1000b f2fs crypto: fix missing key when reading a page
-35a53d2 f2fs crypto: add symlink encryption
-60d3b65 f2fs crypto: add filename encryption for roll-forward recovery
-9dfc873 f2fs crypto: add filename encryption for f2fs_lookup
-d2472a7 f2fs crypto: add filename encryption for f2fs_readdir
-a217014 f2fs crypto: add filename encryption for f2fs_add_link
-ca92f96 f2fs crypto: add encryption support in read/write paths
-ebfb7de f2fs crypto: activate encryption support for fs APIs
-4210ae3 f2fs crypto: filename encryption facilities
-069b576 f2fs crypto: add encryption key management facilities
-b82508e f2fs crypto: add f2fs encryption facilities
-58c6829 f2fs crypto: add encryption policy and password salt support
-f55de16 f2fs crypto: add encryption xattr support
-3dfd7ff f2fs crypto: add f2fs encryption Kconfig
-ebaeb91 f2fs crypto: declare some definitions for f2fs encryption feature
-9b06a1d f2fs: report unwritten area in f2fs_fiemap
-9c5d97c f2fs: avoid value overflow in showing current status
-9e854dc f2fs: support FALLOC_FL_ZERO_RANGE
-093e6b1 f2fs: support FALLOC_FL_COLLAPSE_RANGE
-af90290 f2fs: introduce f2fs_replace_block() for reuse
-1ce80be f2fs: do not re-lookup nat cache with same nid
-b1bc7de f2fs: remove unneeded f2fs_make_empty declaration
-3ad64a5 f2fs: issue discard with finally produced len and minlen
-898c2f1 f2fs: introduce discard_map for f2fs_trim_fs
-8c72f48 f2fs: revmove spin_lock for write_orphan_inodes
-b77f091 f2fs: split find_data_page according to specific purposes
-c3b324b f2fs: fix counting the number of inline_data inodes
-dfe5acf f2fs: add need_dentry_mark
-e84ff97 f2fs: fix race on allocating and deallocating a dentry block
-6e57473 f2fs: introduce dot and dotdot name check
-744f92d f2fs: move get_page for gc victims
-dc3eab8 f2fs: add sbi and page pointer in f2fs_io_info
-a18b582 f2fs: add f2fs_may_inline_{data, dentry}
-23256c2 f2fs: clean up f2fs_lookup
-46e5255 f2fs: expose f2fs_mpage_readpages
-2e76d1a f2fs: introduce f2fs_commit_super
-be16295 f2fs: add f2fs_map_blocks
-5a346ab f2fs: add feature facility in superblock
-63e700b f2fs: move existing definitions into f2fs.h
-32f44a4 f2fs: add missing version info in superblock
-19d929c f2fs: make has_fsynced_inode static
-cee0146 f2fs: add offset check routine before punch_hole() in f2fs_fallocate()
-06ca39e f2fs: use is_valid_blkaddr to verify blkaddr for readability
-c94a093 f2fs: make posix_acl_create() safer and cleaner
-4537ff1 f2fs: export more enums for tracepoint
-6223fe7 f2fs: fix wrong error hanlder in f2fs_follow_link
-6c83774 Revert "f2fs: enhance multi-threads performance"
-fa13a95 Revert "f2fs: support 3.10"
-9bf3427 f2fs: support 3.10
-92131b8 f2fs: pass checkpoint reason on roll-forward recovery
-326c285 f2fs: avoid abnormal behavior on broken symlink
-9261539 f2fs: flush symlink path to avoid broken symlink after POR
-a8a03d1 f2fs: change 0 to false for bool type
-a8bfa21 f2fs: do not recover wrong data index
-d00ee27 f2fs: do not increase link count during recovery
-63dbc77 f2fs: assign parent's i_mode for empty dir
-4bed36e f2fs: add F2FS_INLINE_DOTS to recover missing dot dentries
-48000b2 f2fs: fix mismatching lock and unlock pages for roll-forward recovery
-a84372e f2fs: fix sparse warnings
-8f3bbe0 f2fs: limit b_size of mapped bh in f2fs_map_bh
-e728593 f2fs: persist system.advise into on-disk inode
-a8a031e f2fs: avoid NULL pointer dereference in f2fs_xattr_advise_get
-4bde4c8 f2fs: preallocate fallocated blocks for direct IO
-4c5563a f2fs: enable inline data by default
-9f5a527 f2fs: preserve extent info for extent cache
-5cef9ad f2fs: initialize extent tree with on-disk extent info of inode
-62d5338 f2fs: introduce __{find,grab}_extent_tree
-b4521e7 f2fs: split set_data_blkaddr from f2fs_update_extent_cache
-4470da5 f2fs: enable fast symlink by utilizing inline data
-027ae78 f2fs: add some tracepoints to debug volatile and atomic writes
-1b356bd f2fs: avoid punch_hole overhead when releasing volatile data
-a1f3939 f2fs: avoid wrong f2fs_bug_on when truncating inline_data
-fa606d9 f2fs: enhance multi-threads performance
-350e5d0 f2fs: set buffer_new when new blocks are allocated
-8f1e598 f2fs: set SBI_NEED_FSCK when encountering exception in recovery
-86eacec f2fs: fix to cover sentry_lock for block allocation
-2abf224 f2fs: fix to check current blkaddr in __allocate_data_blocks
-d344bb9 f2fs: fix to truncate inline data past EOF
-850869d f2fs: fix reference leaks in f2fs_acl_create
-acc676f f2fs: fix to calculate max length of contiguous free slots correctly
-698b020 f2fs: fix unlocked nat set cache operation
-10bb9e9 f2fs: cleanup statement about max orphan inodes calc
-9d431ea f2fs: remove unnecessary condition judgment
-a25be6f f2fs: set the correct place of initializing *res_page
-8fdcfb4 f2fs: reduce searching region of segmap when set free section
-f21498d f2fs: fix extent cache memory leak
-02d6ef6 f2fs: relocate Kconfig from misc filesystems
-0f76ad7 f2fs: report -ENOENT for unreached data indices
-d8b5b19 f2fs: clear append/update flags once fsync is done
-0b9d626 f2fs: avoid to trigger writepage during POR
-4c3cb0f f2fs: add stat info for moved blocks by background gc
-64190db f2fs: fix to issue small discard in real-time mode discard
-130a35d f2fs: add cond_resched() to sync_dirty_dir_inodes()
-e9eb891 f2fs: fix max orphan inodes calculation
-0ca94b2 f2fs: don't need to collect dirty sit entries and flush journal when there's no dirty sit entries
-28eeea1 f2fs: fix block_ops trace point
-f35221a f2fs: check its block allocation to avoid producing wrong dirty pages
-54d8853 f2fs: clear page's up-to-date if block was deallocated
-4875e68 f2fs: fix the number of orphan inode blocks
-11aecd3 f2fs: introduce macro __cp_payload
-2f94581 f2fs: avoid wrong error during recovery
-fa6467c f2fs: remove obsolete code
-abd584f f2fs: use extent cache for dir
-e81c599 f2fs: switch to check FI_NO_EXTENT in f2fs_{lookup,update}_extent_cache
-f64b056 f2fs: support fast lookup in extent cache
-94e9b9c f2fs: add trace for rb-tree extent cache ops
-43777a2 f2fs: show extent tree, node stat info in debugfs
-5876d58 f2fs: enable rb-tree extent cache
-8b27b58 f2fs: add a mount option for rb-tree extent cache
-562cf2d f2fs: add core functions for rb-tree extent cache
-b810683 f2fs: introduce infra macro and data structure of rb-tree extent cache
-0297133 f2fs: introduce universal lookup/update interface for extent cache
-93549a9 f2fs: introduce f2fs_map_bh to clean codes of check_extent_cache
-06b1f69 f2fs: simplfy a field name in struct f2fs_extent,extent_info
-5e267e0 f2fs: move ext_lock out of struct extent_info
-2d95398 f2fs: fix incorrectly stat number of inline data inode
-767765e f2fs: use ->writepage in sync_meta_pages
-56b7fc7 f2fs: introduce f2fs_update_dentry to clean up duplicated codes
-00ffc89 f2fs: remove unused inline_dentry_addr
-fe43d8f Revert "f2fs: support 3.10"
+   * frameworks/opt/telephony/
+61cf25a Revert "Set default SMS outgoing check interval to 15 minutes"
 
    * packages/apps/CMFileManager/
 ae97d0f Automatic translation import
@@ -339,6 +319,7 @@ ae97d0f Automatic translation import
 
    * packages/apps/Camera2/
 38a8b2d Automatic translation import
+d981627 Add Storage preference (1/2)
 
    * packages/apps/Contacts/
 ddbe222 Automatic translation import
@@ -348,6 +329,7 @@ ddbe222 Automatic translation import
 
    * packages/apps/Dialer/
 452508c Automatic translation import
+34d3535 Update blacklist strings
 
    * packages/apps/Eleven/
 e923782 Automatic translation import
@@ -355,21 +337,19 @@ e923782 Automatic translation import
    * packages/apps/Email/
 7632c13 Automatic translation import
 
+   * packages/apps/Gallery2/
+a33834e Add Storage preference (2/2)
+
    * packages/apps/InCallUI/
-9cd8afb Fix: The EndCallButton overlaps the digital key 0 after switch system language during an active call
 affe211 Automatic translation import
 
    * packages/apps/LockClock/
 eb16c77 Automatic translation import
 
    * packages/apps/Mms/
-5db195d Add UAProf URL to carrier-specific configs
-f8cb438 Create the contact photo manager as service.
 f6f583d Automatic translation import
 
    * packages/apps/Settings/
-e8f736c Integrate mobile network settings into SIM settings for MSIM.
-9563800 Remove 'Show empty SIMs' option.
 b7fcb26 Settings: fix an issue where text is not showing up on first instance.
 6f96f2e Cleanup SMS limits
 0629b4b Automatic translation import
@@ -379,9 +359,6 @@ b94d443 Automatic translation import
 
    * packages/apps/ThemeChooser/
 fc620fe Automatic translation import
-
-   * packages/apps/Trebuchet/
-d482eb7 Fix power save mode broken ui/animations
 
    * packages/apps/TvSettings/
 810333f Automatic translation import
@@ -393,13 +370,9 @@ d482eb7 Fix power save mode broken ui/animations
 2aa2853 Automatic translation import
 
    * packages/services/Telecomm/
-fcaa59c Merge "Show multi-line notification if there's more than 1 missed call." into cm-12.1
 df433bc Automatic translation import
 
    * packages/services/Telephony/
-109a0bf Telephony: Bye bye Holo USSD dialog
-c84a7ba Restyle USSD AlertDialog.
-7c15f71 Update activity title if called in MSIM case.
 b587068 Automatic translation import
 
    * vendor/cmsdk/
@@ -410,35 +383,27 @@ cbc19f5 Automatic translation import
 ====================
 
 
-   * device/moto/shamu/
-f6b6495 Don't dexpreopt prebuilts as some of them don't play nice
-9a425ec Merge remote-tracking branch 'cm/cm-12.1' into cm-12.1
+   * android/
+d11128e Update Changelog.txt
+a4b639b clean op changelog
+
+   * external/stagefright-plugins/
+ffed52f FFmpegExtractor: mark HEVC as supported
 
    * frameworks/base/
-3e9de4e Materialize task kill button And don't delete HDPI one HDPI devices still exist -_- Change-Id: I44242954fe98cec6f777ff1b00e88bd105b2d1e9 Signed-off-by: Akhil Narang <akhilnarang.1999@gmail.com>
 3cefeaf Profiles: Setup uuid's for the defaults
 88d8147 Merge remote-tracking branch 'cm/cm-12.1' into HEAD
 
-   * frameworks/opt/telephony/
-61cf25a Revert "Set default SMS outgoing check interval to 15 minutes"
-
-   * kernel/moto/shamu/
-4100b22 nf: Remove compilation error caused by e8430cbed3ef15fdb1ac26cfd020e010aa5f1c35
-0715386 nf: IDLETIMER: time-stamp and suspend/resume handling.
-
-   * packages/apps/Camera2/
-d981627 Add Storage preference (1/2)
-
-   * packages/apps/Dialer/
-34d3535 Update blacklist strings
-
-   * packages/apps/Gallery2/
-a33834e Add Storage preference (2/2)
+   * packages/apps/Eleven/
+1aad7c8 Eleven: Add playlist cover art to search results
+88469b7 Eleven: remove an unnecessary check when playing music to improve perf
+5ffc7db Eleven: Add a play Album option on songs
 
    * packages/apps/Settings/
 06b1265 Settings:Not responding In-app search function
 b99e3fe profiles: respect lockscreen policies
 a5c051e Merge remote-tracking branch 'cm/cm-12.1' into cm-12.1
+c384f71 Add button in "hidden" settings to flip "VoLTE Provisioned" flag
 
    * vendor/ownrom/
 900cbdd CM: Make sure we're parsing api versions for cmsdk docs.
@@ -451,17 +416,8 @@ a5c051e Merge remote-tracking branch 'cm/cm-12.1' into cm-12.1
 
 
    * android/
-d11128e Update Changelog.txt
-a4b639b clean op changelog
 78b1c06 Update changelog
 7100a8f Copy script to root of dir
-
-   * device/moto/shamu/
-0e53c2a Add cnd service and associated sepolicy
-b59e36b Revert "Disable presence-based provisioning."
-
-   * external/stagefright-plugins/
-ffed52f FFmpegExtractor: mark HEVC as supported
 
    * frameworks/base/
 233c032 Settings: Fix install apps will fail after setting Preferred install location as Removable SD card and removing SD card
@@ -472,25 +428,37 @@ f0ad896 Fix typo in density assignment.
    * frameworks/opt/telephony/
 18ba6a1 RIL: Fix datacall parcel reading
 
-   * kernel/moto/shamu/
-06f1017 netfilter: xt_IDLETIMER: Revert to retain the kernel API format.
+   * kernel/oneplus/msm8974/
+75064c3 synaptics: Use per-panel firmware loading
 
    * packages/apps/AudioFX/
 5029f8f Expose text color and background colors for Theming
 c99dcd8 Expose actionbar background for Theming
 
    * packages/apps/Eleven/
-1aad7c8 Eleven: Add playlist cover art to search results
-88469b7 Eleven: remove an unnecessary check when playing music to improve perf
-5ffc7db Eleven: Add a play Album option on songs
+995226c Merge "Eleven: Remove inset from top tracks circle" into cm-12.1
+4c9a305 Eleven: Remove inset from top tracks circle
 
    * packages/apps/Settings/
-c384f71 Add button in "hidden" settings to flip "VoLTE Provisioned" flag
 e08de72 Profiles: fix SeekBarVolumizer behavior
 d24c204 Settings: use WindowManager to set custom DPI
 
    * packages/apps/Trebuchet/
 20bf4bd Trebuchet: fix excessive drawing with folders
+ac3febf Move tablet preference ahead of the default
+35fbd48 trebuchet: Don't use new hotness on tablets
+f1c2734 trebuchet: Enable the new hotness by default.
+fff40f6 Trebuchet Statistics:  - Add plumbing for sending events.  - Add aggregation service that runs on some interval  - Hook send events into respective UX interactions
+
+   * packages/providers/ThemesProvider/
+93634c9 Delete preview table rows on theme update
+0d4fca3 Handle null parameters when creating query strings
+
+   * packages/services/Telecomm/
+e9f0ec6 Show multi-line notification if there's more than 1 missed call.
+
+   * vendor/cmsdk/
+064eda2 Merge "CMSDK: Hide CMContextConstants from docs." into cm-12.1
 
    * vendor/ownrom/
 4909f69 Some tweaks, to hopefully fix the warning
@@ -514,9 +482,8 @@ d7f52f3 Updated Changelog :v @vilinfield
 205c882 Merge branch 'cm-12.1' of https://github.com/OwnROM/android into cm-12.1
 826ebb5 Add changelog here Need to update every time
 
-   * device/moto/shamu/
-05b5393 proprietary-files: Allow vvm to work
-4a0f662 sepolicy: Fixes for atfwd, cne, and netmrgd denials
+   * device/oppo/msm8974-common/
+ebd50a3 Revert "msm8974: Update GPS configurations"
 
    * frameworks/base/
 164fba7 Determine default 12/24 hour time format setting from locale.
@@ -527,10 +494,11 @@ cc2a76c Revert "Fix double lines"
 1175798 Revert "Better density scaling compatibility"
 6d8b243 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_frameworks_base into cm-12.1
 b029d10 Toast Animations (2/2)
+84047b0 Profiles: re-enable data toggling
+f61367b Better density scaling compatibility
 
-   * packages/apps/Eleven/
-995226c Merge "Eleven: Remove inset from top tracks circle" into cm-12.1
-4c9a305 Eleven: Remove inset from top tracks circle
+   * packages/apps/Email/
+dd81d6d EmailTests: fix api change
 
    * packages/apps/Mms/
 eee8961 Carrier-specific MMS limits
@@ -546,23 +514,11 @@ e805731 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_packages_app
 ed6ce2c Create Own Animation Settings with Toast Animations (1/2)
 
    * packages/apps/Trebuchet/
-ac3febf Move tablet preference ahead of the default
-35fbd48 trebuchet: Don't use new hotness on tablets
-f1c2734 trebuchet: Enable the new hotness by default.
-fff40f6 Trebuchet Statistics:  - Add plumbing for sending events.  - Add aggregation service that runs on some interval  - Hook send events into respective UX interactions
-
-   * packages/providers/ThemesProvider/
-93634c9 Delete preview table rows on theme update
-0d4fca3 Handle null parameters when creating query strings
-
-   * packages/services/Telecomm/
-e9f0ec6 Show multi-line notification if there's more than 1 missed call.
+347c6ec Fix the hint text of rename folder can't change with system language
+16416d4 Trebuchet: fix NPE during touch events
 
    * vendor/cmsdk/
-064eda2 Merge "CMSDK: Hide CMContextConstants from docs." into cm-12.1
-
-   * vendor/motorola/
-ecd7f56 shamu: Allow vvm to work
+e2feecb CMSDK: Hide CMContextConstants from docs.
 
    * vendor/ownrom/
 2df7901 Delete stupid ota zip lel
@@ -579,15 +535,19 @@ ecd7f56 shamu: Allow vvm to work
 366877d Update default.xml
 f24b53b Track our own theme packages
 
-   * device/moto/shamu/
-9ca8059 setup-makefiles: Use platform cert for CNEService
-38b2bb5 proprietary-files and props: Update for 5.1.1
-0cf6fc9 cm.mk: Update fingerprint to 5.1.1
-9434672 Merge tag 'android-5.1.1_r4' into cm-12.1
+   * device/oppo/common/
+acb76bf Broadcast oclick key events to other apps.
+
+   * device/oppo/msm8974-common/
+e1d23a8 Revert "msm8974: Update WiFi configuration"
+
+   * device/qcom/common/
+dfea86b init: Add persmissions to access res_info node for HDMI timing info
+2a1e25e init: Set permissions for physical address
+b3bbabf init_msm: S3D mode permissions
+e48885f init: Add permissions for CEC nodes
 
    * frameworks/base/
-84047b0 Profiles: re-enable data toggling
-f61367b Better density scaling compatibility
 118aa61 systemui: notify everyone that lockscreen is not going to be shown
 d7ce10c Fix double lines
 3285d51 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_frameworks_base into cm-12.1
@@ -602,12 +562,16 @@ efe8a4f QS: add Screenshot tile (1/2)
 15dab3c Revert "frameworks: display: Added automatic brightness configs"
 a05d81a Allow sending vendor- or device-specific commands to the camera HAL.
 c642d68 Squash Network Traffic
+09aa5c3 PackageManagerService: Create means of installing prebundled applications
+
+   * hardware/qcom/display-caf/msm8960/
+6b2a623 gralloc: hwc: Propagate PROTECTED flag to hwc
+eee4836 libhwcomposer: Enable rotator on resolution change
 
    * packages/apps/Camera2/
 d4e6548 Introduce a 'device plugin' concept.
 
    * packages/apps/Email/
-dd81d6d EmailTests: fix api change
 2c32ba7 email: fix tests
 
    * packages/apps/Mms/
@@ -634,19 +598,14 @@ bc8f2d9 Kill off a few MSIM tab hosts.
 58a77eb Colorpicker
 948147e Squash: Network Traffic Monitor
 
-   * packages/apps/Trebuchet/
-347c6ec Fix the hint text of rename folder can't change with system language
-16416d4 Trebuchet: fix NPE during touch events
+   * packages/providers/ThemesProvider/
+b83a558 Check old install state before reapplying icon pack
 
    * packages/services/Telephony/
 ba719a2 msim: Fix up activity for Call settings
 
-   * vendor/cmsdk/
-e2feecb CMSDK: Hide CMContextConstants from docs.
-
-   * vendor/motorola/
-bc67413 shamu: Use platform cert for CNEService
-cf5ddd2 shamu: Update blobs for 5.1.1 (LYZ28E)
+   * prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9/
+c5d5557 Rebuild with r212222 to fix devirtualization bug in GCC4.9 (darwin)
 
    * vendor/ownrom/
 ff1a60b New stuff for build script And also for some reason add the prebuilts lel I must've fetched them for some reason
@@ -659,41 +618,38 @@ ff1a60b New stuff for build script And also for some reason add the prebuilts le
    * bionic/
 02f1c1f Merge remote-tracking branch 'cm/cm-12.1' into cm-12.1
 
-   * device/moto/shamu/
-638d691 Merge branch 'cm-12.1' of https://github.com/OwnROM-Devices/android_device_moto_shamu into cm-12.1
-064798b Disable Forced Encryption
-
    * external/bluetooth/bluedroid/
 0842099 Revert "bluedroid: Support dynamic A2DP stream parameters"
 
    * frameworks/base/
-09aa5c3 PackageManagerService: Create means of installing prebundled applications
 8eaa028 [1/2] Themes: Multiwallpaper support
 74aae7b Revert to previous battery padding
 bb6f3bf Merge branch 'cm-12.1' of https://github.com/OwnROM/android_frameworks_base into cm-12.1
 c529829 Merge remote-tracking branch 'cm/cm-12.1' into cm-12.1
 
-   * hardware/qcom/display-caf/msm8960/
-6b2a623 gralloc: hwc: Propagate PROTECTED flag to hwc
-eee4836 libhwcomposer: Enable rotator on resolution change
+   * frameworks/opt/telephony/
+811c351 Revert "SMSUsageMonitor: read limit values from Settings.Secure"
 
-   * kernel/moto/shamu/
-6647622 Merge remote-tracking branch 'aosp/android-msm-shamu-3.10-lollipop-mr1' into cm-12.1
+   * packages/apps/CMFileManager/
+b1bac2d Fix there are no folders in NavigationView Pinned file manager
+
+   * packages/apps/Calendar/
+241a809 Calendar: fix recurrence picker switch
+
+   * packages/apps/Email/
+3a75a69 email: fix Exchange sync frequency account setup
 
    * packages/apps/Settings/
 61b3040 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_packages_apps_Settings into cm-12.1
 c86b421 Merge remote-tracking branch 'cm/cm-12.1' into cm-12.1
 c7637c4 Revert "LCD Density Changer"
+f460b1f Settings: Add some more entries into 'SMS message limit' menu
 
    * packages/apps/ThemeChooser/
 3fa7657 Allow changing status/navigation bars when styles selected
 
    * packages/providers/ThemesProvider/
-b83a558 Check old install state before reapplying icon pack
 bb432a1 [2/2] Themes: Multiwallpaper support
-
-   * prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9/
-c5d5557 Rebuild with r212222 to fix devirtualization bug in GCC4.9 (darwin)
 
    * vendor/ownrom/
 05da015 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_vendor_ownrom into cm-12.1
@@ -710,32 +666,34 @@ ee704fc APNs: Add MVNO HoT Austria Internet and MMS APN configuration
    * build/
 c73bc66 Lead build system to the right address for Prebuilt Chromium Script
 
+   * device/oppo/common/
+ff00a24 Automatic translation import
+321482c oppo-common: Unbreak touchscreen gestures
+
+   * device/oppo/msm8974-common/
+7a16f32 msm8974: Use hybrid decoder for HEVC up to 1080P
+
    * frameworks/base/
 7bcf5f2 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_frameworks_base into cm-12.1
-
-   * frameworks/opt/telephony/
-811c351 Revert "SMSUsageMonitor: read limit values from Settings.Secure"
 
    * packages/apps/BluetoothExt/
 8f9b3cf Automatic translation import
 
    * packages/apps/CMFileManager/
-b1bac2d Fix there are no folders in NavigationView Pinned file manager
 4841e94 Automatic translation import
 
-   * packages/apps/Calendar/
-241a809 Calendar: fix recurrence picker switch
-
    * packages/apps/Email/
-3a75a69 email: fix Exchange sync frequency account setup
 7074819 Automatic translation import
 
    * packages/apps/Settings/
-f460b1f Settings: Add some more entries into 'SMS message limit' menu
 7e9b261 Improve string
 7cfb559 Automatic translation import
 45952fa Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Settings into lp5.1
 08ae1bb Mmm, tasty new logos
+a04463d Some Own-ification
+703a0c9 Derp
+4030437 Settings: update dashboard icons
+2e36399 Fix this
 
    * packages/apps/ThemeChooser/
 3b49175 Automatic translation import
@@ -754,140 +712,5 @@ f460b1f Settings: Add some more entries into 'SMS message limit' menu
    * vendor/ownrom/
 eedb938 Some derps
 400a920 Update some stuff
-
-====================
-     05-25-2015
-====================
-
-
-   * android/
-765b362 Merge branch 'cm-12.1' of https://github.com/OwnROM/android into cm-12.1
-9ba30f4 Add script to root dir
-feb0dc9 Update default.xml
-
-   * build/
-86162fa build: Remove QuickSearchBox from core apps
-a0eb0fc build: remove all stops if using different make/openjdk-java version
-fe439e6 Add Make Dirty Option
-82a8449 Add a Whole bunch of Clean Options
-ec5ac0a Remove Annoying Goldfish Stuff
-61e1e69 system.prop generated last
-0c2c8f2 Changelog
-74f89ed Opticharger/Squisher
-fe210af Introduce Modular TARGET_USE_PIPE
-f709497 build: Allow prebuilt apks
-cde965c Prebuilt chromium: update again script for lollipop
-8c4e042 Prebuilt chromium: Run a check for target device directory
-af07ac3 build: Add chromium prebuilt support to envsetup.sh && The core Makefile
-
-   * frameworks/base/
-397e77f Automatic translation import
-
-   * packages/apps/AudioFX/
-0484975 Automatic translation import
-
-   * packages/apps/Bluetooth/
-aa069ea Automatic translation import
-
-   * packages/apps/Browser/
-43361dc Automatic translation import
-
-   * packages/apps/CMAccount/
-a4574cd Automatic translation import
-
-   * packages/apps/CMBugReport/
-c41b56b Automatic translation import
-
-   * packages/apps/Calculator/
-1e66bce Automatic translation import
-
-   * packages/apps/Calendar/
-65bbc72 Automatic translation import
-
-   * packages/apps/Camera2/
-5eb519b Automatic translation import
-
-   * packages/apps/CellBroadcastReceiver/
-975a26c Automatic translation import
-
-   * packages/apps/Contacts/
-f34ba1c Automatic translation import
-
-   * packages/apps/ContactsCommon/
-16790cc Automatic translation import
-
-   * packages/apps/DeskClock/
-697c825 Automatic translation import
-
-   * packages/apps/Dialer/
-5cb64f4 Automatic translation import
-
-   * packages/apps/Eleven/
-4da5f3f Automatic translation import
-
-   * packages/apps/Gallery2/
-7622a90 Automatic translation import
-
-   * packages/apps/InCallUI/
-394a948 Automatic translation import
-
-   * packages/apps/LockClock/
-e56c775 Automatic translation import
-
-   * packages/apps/Mms/
-ce5681f Automatic translation import
-
-   * packages/apps/PhoneCommon/
-a7081fa Automatic translation import
-
-   * packages/apps/Settings/
-a04463d Some Own-ification
-703a0c9 Derp
-4030437 Settings: update dashboard icons
-2e36399 Fix this
-408b373 QS: add Sync tile (2/2)
-
-   * packages/apps/SetupWizard/
-a9d0039 Automatic translation import
-
-   * packages/apps/SoundRecorder/
-06e1ebe Automatic translation import
-
-   * packages/apps/Stk/
-ea15282 Automatic translation import
-
-   * packages/apps/Terminal/
-15210f0 Automatic translation import
-
-   * packages/apps/Trebuchet/
-d15317d Trebuchet : Activate the default homepage selection button on first run
-
-   * packages/apps/TvSettings/
-75f1a0c Automatic translation import
-
-   * packages/providers/DownloadProvider/
-149f521 Automatic translation import
-
-   * packages/services/Telecomm/
-3710790 Automatic translation import
-
-   * packages/services/Telephony/
-2ec51a9 Automatic translation import
-
-   * packages/wallpapers/Galaxy4/
-5a37f25 Automatic translation import
-
-   * packages/wallpapers/PhotoPhase/
-77a504a Automatic translation import
-
-   * vendor/cmsdk/
-38afe8d Automatic translation import
-
-   * vendor/ownrom/
 ba4d7a3 Prebuilt Chromium support added
-8e3bc6f fix
-7449e41 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_vendor_ownrom into cm-12.1
-351f7b8 Squisher,opticharger,changelog script,build script,get-prebuilts
-36f6b62 vendor/omni: Fix-ups for prebuilt Chromium
-5ea8f96 Prebuilt chromium: update script for lollipop
 
