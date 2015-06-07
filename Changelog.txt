@@ -4,10 +4,17 @@
 
 
    * frameworks/base/
-89a35b4 [Base] Sync PIE codes with SlimRoms
+721003c Squash: Task Manager [1/2]
+bf113ea Local Sync
+c70cfd7 PIE Fixes
+b06549f thin font for keyguard clock
+4d6bb01 add more style to keyguard
+58063ba Revert "Revert "SystemServer: Skip TorchService construction
 
    * packages/apps/Settings/
-ae9041a [Settings] Sync PIE codes with SlimRoms 
+573c09e Task Manager [2/2]
+1c258a6 Update Dutch (NL) Strings
+2a65bd3 PIE Fixes
 
 ====================
      06-06-2015
@@ -15,11 +22,17 @@ ae9041a [Settings] Sync PIE codes with SlimRoms
 
 
    * frameworks/base/
+89a35b4 [Base] Sync PIE codes with SlimRoms
+669effa and yes, another fix... ("-_-)
 5e61062 SlimSeekBarPrefernce
+3c0fc7c PieItem.java Error Fix (For SlimPIE)
+899ff8b IStatusbarService.aidl Error Fix (For SlimPIE)
 a9ef9a6 Squash Slim Pie [2/2]
+b91f0b1 Update my local enviorment
 cac564a Fix long click on notification tile
 
    * packages/apps/Settings/
+ae9041a [Settings] Sync PIE codes with SlimRoms
 156508a Update NL (Dutch) strings for SlimPIE
 b059cfd Squash Slim Pie [1/2]
 
@@ -33,9 +46,6 @@ b059cfd Squash Slim Pie [1/2]
 ====================
 
 
-   * development/
-dcf1f15 development: TRDS 5.0 (3/4)
-
    * frameworks/base/
 1a71417 Make the icon visible
 0b35c08 fixes
@@ -46,18 +56,6 @@ dcf1f15 development: TRDS 5.0 (3/4)
 fdcb57b Power menu QS tile [2/2]
 afd3915 NotificationTile: Simple mode ring/vibrate/priority/silent
 9bed829 Add double tap option to lockscreen shortcuts
-8132a7e Update trds colors
-0d51482 fb: TRDS 5.0 (1/4)
-cb68c22 policy: don't allow app switch/recents key to be pressed on lockscreen
-227c2ed SystemUI: don't display protected lockscreen shortcuts
-b3253fa Base : Add more lockscreen shortcut custom icons Part2 Signed-off-by: westcrip <korukaltan@gmail.com>
-55a45db Base:Add new 73 hd lockscreen shortcus icons
-b90d213 Resize shortcut icons
-a2f8ae75 Fix
-4b625d2 Base: add more drawables to Slim LockScreen Shortcuts (2/2)
-
-   * frameworks/native/
-26097c0 native: TRDS 5.0 (2/4)
 
    * packages/apps/Settings/
 fcbf591 Fix this
@@ -70,43 +68,40 @@ dbc640a Power menu QS tile [1/2]
 57d0245 add clock widget settings
 3299edf Update OwnSettings overall
 8e9ec59 Add missing strings...
-a903e9a Settings: TRDS 5.0 (4/4)
-855b47b Settings : Add more lockscreen shortcut custom icons Part2
-649f6dc Fix shortcut icons tint colors and list view NPE
-be100a5 Settings :Add new 73 hd lockscreen shortcus icons - Rounded colorful 73 populer media and social application icons - Removed tint color from icon listview so makes icons visible
-b336a3e Settings: add more drawables to Slim LockScreen Shortcuts (1/2) Chrome Github Paypal Youtube Whatsapp Messenger Office Suite Tapatalk
 
 ====================
      06-03-2015
 ====================
 
 
-   * android/
-036249f Remove external/srec
-
-   * build/
-0cb5893 envsetup: cleanup the full list
-58ccf1f lunch: sort the choices
-7a557e1 build: avoid recovery patch if device setup can't do it correctly
-ffa2316 envsetup: add mk_timer
+   * development/
+dcf1f15 development: TRDS 5.0 (3/4)
 
    * frameworks/base/
+8132a7e Update trds colors
+0d51482 fb: TRDS 5.0 (1/4)
+cb68c22 policy: don't allow app switch/recents key to be pressed on lockscreen
+227c2ed SystemUI: don't display protected lockscreen shortcuts
+b3253fa Base : Add more lockscreen shortcut custom icons Part2
+55a45db Base:Add new 73 hd lockscreen shortcus icons
+b90d213 Resize shortcut icons
+a2f8ae75 Fix
+4b625d2 Base: add more drawables to Slim LockScreen Shortcuts (2/2)
 ebb780d Add Slims DSLV & Missing Shortcut Icons
 963df3a Initial slim lockscreen shortcuts [2/2]
 5d071a5 Frameworks: Add several Slim helper classes and constants back
-c99e2a4 Some Updates
-5313fcb FW_Base - Live Volume Steps [1/2] -Volume steps changes are instant, no need to reboot!
-839562d Another Update
-b68785d Update Repo
+
+   * frameworks/native/
+26097c0 native: TRDS 5.0 (2/4)
 
    * packages/apps/Settings/
+a903e9a Settings: TRDS 5.0 (4/4)
+855b47b Settings : Add more lockscreen shortcut custom icons Part2
+649f6dc Fix shortcut icons tint colors and list view NPE
+be100a5 Settings :Add new 73 hd lockscreen shortcus icons
+b336a3e Settings: add more drawables to Slim LockScreen Shortcuts (1/2) Chrome Github Paypal Youtube Whatsapp Messenger Office Suite Tapatalk
 9eb8055 Lockscreen Shortcuts Fixes
 d473aa6 Settings : Initial slim lockscreen shortcuts [1/2]
-2ee2188 Settings - Live Volume Steps [2/2]
-8cbf398 Update Repo
-
-   * vendor/ownrom/
-dad108e Temp fix for Bouygues telecom issues
 
 ====================
      06-02-2015
@@ -114,11 +109,16 @@ dad108e Temp fix for Bouygues telecom issues
 
 
    * android/
+036249f Remove external/srec
 b10d24b fix
 38cef2b Time for users to abort if they just want dependencies lol
 a2b25d8 @OwnDroid
 
    * build/
+0cb5893 envsetup: cleanup the full list
+58ccf1f lunch: sort the choices
+7a557e1 build: avoid recovery patch if device setup can't do it correctly
+ffa2316 envsetup: add mk_timer
 d8f3f77 Like this better this way...
 
    * device/moto/shamu/
@@ -128,6 +128,10 @@ d8f3f77 Like this better this way...
 2d2760e sepolicy: Update BCL sysfs nodes in file context
 
    * frameworks/base/
+c99e2a4 Some Updates
+5313fcb FW_Base - Live Volume Steps [1/2] -Volume steps changes are instant, no need to reboot!
+839562d Another Update
+b68785d Update Repo
 aab323e VolumePanel: better handling of updating sliders in expanded view
 faa430b VolumePanel: show hint for unlinked notification slider too
 5e7a8b2 Updating Sources
@@ -140,10 +144,9 @@ ecda406 Introduce Theme Versioning [1/2]
    * packages/apps/Gallery2/
 97739e1 Gallery2: Fix crash when Bluetooth service is disabled
 
-   * packages/apps/Mms/
-5db195d Add UAProf URL to carrier-specific configs
-
    * packages/apps/Settings/
+2ee2188 Settings - Live Volume Steps [2/2]
+8cbf398 Update Repo
 60a3f39 Settings: Fix setting app install location as "Removable SD card" without SD card inserted
 b96e5f5 Update Repo
 
@@ -155,6 +158,7 @@ b96e5f5 Update Repo
 38561f4 thea: Add T4K71 front imager proprietary files
 
    * vendor/ownrom/
+dad108e Temp fix for Bouygues telecom issues
 b5b6e0b FOTA: Create /cache/recovery in init.rc for FOTA
 
 ====================
@@ -359,6 +363,7 @@ affe211 Automatic translation import
 eb16c77 Automatic translation import
 
    * packages/apps/Mms/
+5db195d Add UAProf URL to carrier-specific configs
 f8cb438 Create the contact photo manager as service.
 f6f583d Automatic translation import
 
@@ -434,7 +439,6 @@ a33834e Add Storage preference (2/2)
 06b1265 Settings:Not responding In-app search function
 b99e3fe profiles: respect lockscreen policies
 a5c051e Merge remote-tracking branch 'cm/cm-12.1' into cm-12.1
-c384f71 Add button in "hidden" settings to flip "VoLTE Provisioned" flag
 
    * vendor/ownrom/
 900cbdd CM: Make sure we're parsing api versions for cmsdk docs.
@@ -481,6 +485,7 @@ c99dcd8 Expose actionbar background for Theming
 5ffc7db Eleven: Add a play Album option on songs
 
    * packages/apps/Settings/
+c384f71 Add button in "hidden" settings to flip "VoLTE Provisioned" flag
 e08de72 Profiles: fix SeekBarVolumizer behavior
 d24c204 Settings: use WindowManager to set custom DPI
 
@@ -512,7 +517,6 @@ d7f52f3 Updated Changelog :v @vilinfield
    * device/moto/shamu/
 05b5393 proprietary-files: Allow vvm to work
 4a0f662 sepolicy: Fixes for atfwd, cne, and netmrgd denials
-9ca8059 setup-makefiles: Use platform cert for CNEService
 
    * frameworks/base/
 164fba7 Determine default 12/24 hour time format setting from locale.
@@ -559,7 +563,6 @@ e9f0ec6 Show multi-line notification if there's more than 1 missed call.
 
    * vendor/motorola/
 ecd7f56 shamu: Allow vvm to work
-bc67413 shamu: Use platform cert for CNEService
 
    * vendor/ownrom/
 2df7901 Delete stupid ota zip lel
@@ -577,6 +580,7 @@ bc67413 shamu: Use platform cert for CNEService
 f24b53b Track our own theme packages
 
    * device/moto/shamu/
+9ca8059 setup-makefiles: Use platform cert for CNEService
 38b2bb5 proprietary-files and props: Update for 5.1.1
 0cf6fc9 cm.mk: Update fingerprint to 5.1.1
 9434672 Merge tag 'android-5.1.1_r4' into cm-12.1
@@ -641,6 +645,7 @@ ba719a2 msim: Fix up activity for Call settings
 e2feecb CMSDK: Hide CMContextConstants from docs.
 
    * vendor/motorola/
+bc67413 shamu: Use platform cert for CNEService
 cf5ddd2 shamu: Update blobs for 5.1.1 (LYZ28E)
 
    * vendor/ownrom/
@@ -731,7 +736,6 @@ f460b1f Settings: Add some more entries into 'SMS message limit' menu
 7cfb559 Automatic translation import
 45952fa Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Settings into lp5.1
 08ae1bb Mmm, tasty new logos
-a04463d Some Own-ification
 
    * packages/apps/ThemeChooser/
 3b49175 Automatic translation import
@@ -837,6 +841,7 @@ ce5681f Automatic translation import
 a7081fa Automatic translation import
 
    * packages/apps/Settings/
+a04463d Some Own-ification
 703a0c9 Derp
 4030437 Settings: update dashboard icons
 2e36399 Fix this
