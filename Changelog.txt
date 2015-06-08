@@ -1,4 +1,39 @@
 ====================
+     06-09-2015
+====================
+
+   * frameworks/base/
+aa2e368 Wakelock Blocker [1/2] Thanks to @maxwen for original commit https://github.com/ResurrectionRemix/android_frameworks_base/commit/d4e8a6078b094fb6d8013033ce08cc7de7943356
+5918a9d Fixes and missing files for AppCircleBar
+fea9783 App Circle Sidebar [1/2] By AICP Made Ease By @westcripp
+a2c5866 FW Base : add listview animations
+35103d1 Update Dutch (NL) Strings for SyncTle
+
+   * packages/apps/Settings/
+67628a0 Merge branch 'cm-12.1' of github.com:OwnROM/android_packages_apps_Settings into HEAD
+588e4f0 This is  OwnROM!!!
+369dd47 Revert "Move Preformance Settings to OwnSettings"
+ca3e977 Add missing file for AppCircleBar
+8c2a838 WakeLock: Layout Improvements (See image below)
+220dddf Wakelock Blocker [2/2]
+2ed7d12 Move Preformance Settings to OwnSettings
+0fb1d0a App Circle Sidebar [2/2]
+e44a154 Move Clock Widget Settings to Extra Settings
+0286e4d Create Empty OwnExtraSettings
+689d847 Move Notificaiton Drawer Settings to Own Interface Settings
+d70ab17 Settings : add listview animations
+fe216c7 Trying to fix icons not showing on listview in LockScreen Shortcuts
+15e0a6f Improve color picker:
+50f3cb1 fix Lockscreen Icons Not showing
+
+   * vendor/ownrom/
+4304e2a oops forgot this one
+e0ea620 Merge branch 'cm-12.1' of github.com:OwnROM/android_vendor_ownrom into cm-12.1
+e9e3565 vendor: cleanup own-device-targets
+d6b50bb Update common.mk
+d48a9ed Add wallpapers to the build.......
+
+====================
      06-08-2015
 ====================
 
@@ -14,10 +49,6 @@ ff2d9e0 Update Changelog.txt
 bf113ea Local Sync
 c70cfd7 PIE Fixes
 
-   * kernel/oneplus/msm8974/
-d37ac46 defconfig: branding
-8a70694 [PATCH] Implement kexec-hardboot
-
    * packages/apps/OwnWallpapers/
 221fc3f Some renaming....
 
@@ -26,14 +57,19 @@ d37ac46 defconfig: branding
 1c258a6 Update Dutch (NL) Strings
 2a65bd3 PIE Fixes
 
+   * vendor/oppo/
+9fa7246 Merge pull request #17 from maniac103/sensor-update
+
    * vendor/ownrom/
-d48a9ed Add wallpapers to the build.......
 487cb34 Some fixes.......
 
 ====================
      06-07-2015
 ====================
 
+
+   * android/
+449f193 Update Changelog.txt
 
    * device/qcom/sepolicy/
 e8034d4 sepolicy:Allow mm-qcamerad to access sensormanager service access.
@@ -48,9 +84,6 @@ b06549f thin font for keyguard clock
 ae9041a [Settings] Sync PIE codes with SlimRoms team Thanks to @ezio84 -> SlimRoms commit: SlimRoms/packages_apps_Settings@1aa3d33
 156508a Update NL (Dutch) strings for SlimPIE
 
-   * vendor/oppo/
-9fa7246 Merge pull request #17 from maniac103/sensor-update
-
    * vendor/ownrom/
 cd1a67b Wtf :O
 63ee66a Show device too, otherwise all zips have same name lol @ a logic place
@@ -63,7 +96,6 @@ cd1a67b Wtf :O
 
 
    * android/
-449f193 Update Changelog.txt
 d30c448 Update Changelog
 
    * frameworks/base/
@@ -99,6 +131,7 @@ b059cfd Squash Slim Pie [1/2]
 
    * packages/apps/Settings/
 fcbf591 Fix this
+51a9e54 We are OwnROM
 
    * vendor/ownrom/
 66d4a2f Update common.mk
@@ -145,12 +178,16 @@ a2f8ae75 Fix
 
    * packages/apps/Dialer/
 b675a6a Remove some dead code.
+22335cd [2/2] Dialer: SmartMute
+c9b91d0 Dialer: Ensure device ids not null
+
+   * packages/apps/InCallUI/
+faf5a34 [1/2] InCallUI: SmartMute
 
    * packages/apps/OwnWallpapers/
 90851d8 Partial Ownify Need to update app name in all languages
 
    * packages/apps/Settings/
-51a9e54 We are OwnROM
 4c7d5e7 NavBar tile [2/2]
 154c66e Navbar Tweaks [1/2]
 dbc640a Power menu QS tile [1/2]
@@ -164,6 +201,9 @@ a903e9a Settings: TRDS 5.0 (4/4)
 649f6dc Fix shortcut icons tint colors and list view NPE
 be100a5 Settings :Add new 73 hd lockscreen shortcus icons - Rounded colorful 73 populer media and social application icons - Removed tint color from icon listview so makes icons visible
 b336a3e Settings: add more drawables to Slim LockScreen Shortcuts (1/2) Chrome Github Paypal Youtube Whatsapp Messenger Office Suite Tapatalk
+
+   * packages/services/Telephony/
+05600e6 TeleService: pass sub ID to APN setting
 
    * vendor/ownrom/
 fb0c1eb Causes errors, don't build it now
@@ -186,6 +226,9 @@ c090c43 Update Changelog.txt
 7a557e1 build: avoid recovery patch if device setup can't do it correctly
 ffa2316 envsetup: add mk_timer
 
+   * device/qcom/sepolicy/
+2d2760e sepolicy: Update BCL sysfs nodes in file context
+
    * frameworks/base/
 ebb780d Add Slims DSLV & Missing Shortcut Icons
 963df3a Initial slim lockscreen shortcuts [2/2]
@@ -202,24 +245,18 @@ b68785d Update Repo
    * kernel/oneplus/msm8974/
 c510481 synaptics: Fix find7 compilation
 
-   * packages/apps/Dialer/
-22335cd [2/2] Dialer: SmartMute
-c9b91d0 Dialer: Ensure device ids not null
-
-   * packages/apps/InCallUI/
-faf5a34 [1/2] InCallUI: SmartMute
+   * packages/apps/Gallery2/
+97739e1 Gallery2: Fix crash when Bluetooth service is disabled
 
    * packages/apps/Settings/
 9eb8055 Lockscreen Shortcuts Fixes
 d473aa6 Settings : Initial slim lockscreen shortcuts [1/2]
 2ee2188 Settings - Live Volume Steps [2/2]
 8cbf398 Update Repo
+60a3f39 Settings: Fix setting app install location as "Removable SD card" without SD card inserted
 
    * packages/apps/Trebuchet/
 5643b7f Trebuchet: send metrics values as strings
-
-   * packages/services/Telephony/
-05600e6 TeleService: pass sub ID to APN setting
 
    * vendor/oppo/
 975ee02 msm8974-common: Update rmt_storage
@@ -244,9 +281,6 @@ d8f3f77 Like this better this way...
    * device/oppo/msm8974-common/
 741385d msm8974: Update WiFi configuration
 
-   * device/qcom/sepolicy/
-2d2760e sepolicy: Update BCL sysfs nodes in file context
-
    * frameworks/base/
 aab323e VolumePanel: better handling of updating sliders in expanded view
 faa430b VolumePanel: show hint for unlinked notification slider too
@@ -257,9 +291,6 @@ ecda406 Introduce Theme Versioning [1/2]
 a44d9bc fingerprint: register correct function for nativeEnrollCancel
 0e16053 fingerprint: detach java vm in HAL callback
 
-   * packages/apps/Gallery2/
-97739e1 Gallery2: Fix crash when Bluetooth service is disabled
-
    * packages/apps/InCallUI/
 9cd8afb Fix: The EndCallButton overlaps the digital key 0 after switch system language during an active call
 
@@ -268,7 +299,6 @@ a44d9bc fingerprint: register correct function for nativeEnrollCancel
 f8cb438 Create the contact photo manager as service.
 
    * packages/apps/Settings/
-60a3f39 Settings: Fix setting app install location as "Removable SD card" without SD card inserted
 b96e5f5 Update Repo
 e8f736c Integrate mobile network settings into SIM settings for MSIM.
 9563800 Remove 'Show empty SIMs' option.
@@ -307,6 +337,7 @@ fd8e8bb msm8974-common: Fix USB ethernet support
    * frameworks/base/
 76fb380 Automatic translation import
 3e9de4e Materialize task kill button And don't delete HDPI one HDPI devices still exist -_- Change-Id: I44242954fe98cec6f777ff1b00e88bd105b2d1e9 Signed-off-by: Akhil Narang <akhilnarang.1999@gmail.com>
+3cefeaf Profiles: Setup uuid's for the defaults
 
    * frameworks/opt/telephony/
 61cf25a Revert "Set default SMS outgoing check interval to 15 minutes"
@@ -353,6 +384,8 @@ f6f583d Automatic translation import
 b7fcb26 Settings: fix an issue where text is not showing up on first instance.
 6f96f2e Cleanup SMS limits
 0629b4b Automatic translation import
+06b1265 Settings:Not responding In-app search function
+b99e3fe profiles: respect lockscreen policies
 
    * packages/apps/SetupWizard/
 b94d443 Automatic translation import
@@ -391,8 +424,8 @@ a4b639b clean op changelog
 ffed52f FFmpegExtractor: mark HEVC as supported
 
    * frameworks/base/
-3cefeaf Profiles: Setup uuid's for the defaults
 88d8147 Merge remote-tracking branch 'cm/cm-12.1' into HEAD
+233c032 Settings: Fix install apps will fail after setting Preferred install location as Removable SD card and removing SD card
 
    * packages/apps/Eleven/
 1aad7c8 Eleven: Add playlist cover art to search results
@@ -400,8 +433,6 @@ ffed52f FFmpegExtractor: mark HEVC as supported
 5ffc7db Eleven: Add a play Album option on songs
 
    * packages/apps/Settings/
-06b1265 Settings:Not responding In-app search function
-b99e3fe profiles: respect lockscreen policies
 a5c051e Merge remote-tracking branch 'cm/cm-12.1' into cm-12.1
 c384f71 Add button in "hidden" settings to flip "VoLTE Provisioned" flag
 
@@ -418,12 +449,13 @@ c384f71 Add button in "hidden" settings to flip "VoLTE Provisioned" flag
    * android/
 78b1c06 Update changelog
 7100a8f Copy script to root of dir
+d7f52f3 Updated Changelog :v @vilinfield
 
    * frameworks/base/
-233c032 Settings: Fix install apps will fail after setting Preferred install location as Removable SD card and removing SD card
 a882d0f SystemUI: prompt for SIM PIN if lockscreen is disabled
 f0ad896 Fix typo in density assignment.
 316a437 Revert "Allow custom density setting"
+164fba7 Determine default 12/24 hour time format setting from locale.
 
    * frameworks/opt/telephony/
 18ba6a1 RIL: Fix datacall parcel reading
@@ -471,6 +503,7 @@ e2c7d32 Fix major derp :v
 655cfbb Fix
 0ccde2d Cool modifications :p @OwnDroid
 df757a6 Add script to sync OwnROM repositories :D @OwnDroid check it out :p Also modified colors Removed get-prebuilts, as it dosen't get copied over -_- (1/2), need to update manifest to copy this stuff over :p
+2df7901 Delete stupid ota zip lel
 
 ====================
      05-29-2015
@@ -478,7 +511,6 @@ df757a6 Add script to sync OwnROM repositories :D @OwnDroid check it out :p Also
 
 
    * android/
-d7f52f3 Updated Changelog :v @vilinfield
 205c882 Merge branch 'cm-12.1' of https://github.com/OwnROM/android into cm-12.1
 826ebb5 Add changelog here Need to update every time
 
@@ -486,7 +518,6 @@ d7f52f3 Updated Changelog :v @vilinfield
 ebd50a3 Revert "msm8974: Update GPS configurations"
 
    * frameworks/base/
-164fba7 Determine default 12/24 hour time format setting from locale.
 c28950b Merge branch 'cm-12.1' of https://github.com/OwnROM/android_frameworks_base into cm-12.1
 5bf7e67 Modify GC Delay to include subsequent launches. (fix)
 cc2a76c Revert "Fix double lines"
@@ -496,12 +527,17 @@ cc2a76c Revert "Fix double lines"
 b029d10 Toast Animations (2/2)
 84047b0 Profiles: re-enable data toggling
 f61367b Better density scaling compatibility
+118aa61 systemui: notify everyone that lockscreen is not going to be shown
 
    * packages/apps/Email/
 dd81d6d EmailTests: fix api change
+2c32ba7 email: fix tests
 
    * packages/apps/Mms/
 eee8961 Carrier-specific MMS limits
+
+   * packages/apps/PhoneCommon/
+5032ee9 PhoneCommon : Add layouts to support hdpi devices
 
    * packages/apps/Settings/
 897bb47 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_packages_apps_Settings into cm-12.1
@@ -521,7 +557,6 @@ ed6ce2c Create Own Animation Settings with Toast Animations (1/2)
 e2feecb CMSDK: Hide CMContextConstants from docs.
 
    * vendor/ownrom/
-2df7901 Delete stupid ota zip lel
 92d876f Merge branch 'cm-12.1' of https://github.com/OwnROM/android_vendor_ownrom into cm-12.1
 2ecccda Tweaks to changelog script No need of make dirty, now it first checks for old changelog, deletes old changelog, then copies over new one Also track commits for last 14 days, as we'll be doing weeklies, and in case a maintainer is busy and skips one Signed-off-by: Akhil Narang <akhilnarang.1999@gmail.com>
 63785ff Tweaks to changelog script No need of make dirty, now it first checks for old changelog, deletes old changelog, then copies over new one Also track commits for last 7 days, as we'll be doing weeklies Signed-off-by: Akhil Narang <akhilnarang.1999@gmail.com>
@@ -548,7 +583,6 @@ b3bbabf init_msm: S3D mode permissions
 e48885f init: Add permissions for CEC nodes
 
    * frameworks/base/
-118aa61 systemui: notify everyone that lockscreen is not going to be shown
 d7ce10c Fix double lines
 3285d51 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_frameworks_base into cm-12.1
 d823f17 QS: add Sync tile (1/2)
@@ -571,14 +605,8 @@ eee4836 libhwcomposer: Enable rotator on resolution change
    * packages/apps/Camera2/
 d4e6548 Introduce a 'device plugin' concept.
 
-   * packages/apps/Email/
-2c32ba7 email: fix tests
-
    * packages/apps/Mms/
 567413e Mms : Add users permission to prevent crash
-
-   * packages/apps/PhoneCommon/
-5032ee9 PhoneCommon : Add layouts to support hdpi devices
 
    * packages/apps/Settings/
 62726a5 Fix derp :v
@@ -597,6 +625,9 @@ bc8f2d9 Kill off a few MSIM tab hosts.
 45fd773 QS: add Screenshot & Sync tile (2/2)
 58a77eb Colorpicker
 948147e Squash: Network Traffic Monitor
+
+   * packages/apps/ThemeChooser/
+3fa7657 Allow changing status/navigation bars when styles selected
 
    * packages/providers/ThemesProvider/
 b83a558 Check old install state before reapplying icon pack
@@ -644,12 +675,16 @@ b1bac2d Fix there are no folders in NavigationView Pinned file manager
 c86b421 Merge remote-tracking branch 'cm/cm-12.1' into cm-12.1
 c7637c4 Revert "LCD Density Changer"
 f460b1f Settings: Add some more entries into 'SMS message limit' menu
+7e9b261 Improve string
 
-   * packages/apps/ThemeChooser/
-3fa7657 Allow changing status/navigation bars when styles selected
+   * packages/apps/UnifiedEmail/
+7707e35 email: linkify phone numbers
 
    * packages/providers/ThemesProvider/
 bb432a1 [2/2] Themes: Multiwallpaper support
+
+   * vendor/cmsdk/
+0b75e32 Improve strings
 
    * vendor/ownrom/
 05da015 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_vendor_ownrom into cm-12.1
@@ -657,60 +692,4 @@ bb432a1 [2/2] Themes: Multiwallpaper support
 0642a14 CM: Update droiddoc template for cmsdk
 a2d1116 APNs: 716: added Claro, Entel; 732: Fixed COMCEL
 ee704fc APNs: Add MVNO HoT Austria Internet and MMS APN configuration
-
-====================
-     05-26-2015
-====================
-
-
-   * build/
-c73bc66 Lead build system to the right address for Prebuilt Chromium Script
-
-   * device/oppo/common/
-ff00a24 Automatic translation import
-321482c oppo-common: Unbreak touchscreen gestures
-
-   * device/oppo/msm8974-common/
-7a16f32 msm8974: Use hybrid decoder for HEVC up to 1080P
-
-   * frameworks/base/
-7bcf5f2 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_frameworks_base into cm-12.1
-
-   * packages/apps/BluetoothExt/
-8f9b3cf Automatic translation import
-
-   * packages/apps/CMFileManager/
-4841e94 Automatic translation import
-
-   * packages/apps/Email/
-7074819 Automatic translation import
-
-   * packages/apps/Settings/
-7e9b261 Improve string
-7cfb559 Automatic translation import
-45952fa Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Settings into lp5.1
-08ae1bb Mmm, tasty new logos
-a04463d Some Own-ification
-703a0c9 Derp
-4030437 Settings: update dashboard icons
-2e36399 Fix this
-
-   * packages/apps/ThemeChooser/
-3b49175 Automatic translation import
-689bdb1 ThemeChooser: add uninstall shortcut to ChooserDetailFragment
-
-   * packages/apps/Trebuchet/
-911938a Automatic translation import
-
-   * packages/apps/UnifiedEmail/
-7707e35 email: linkify phone numbers
-1e353df Automatic translation import
-
-   * vendor/cmsdk/
-0b75e32 Improve strings
-
-   * vendor/ownrom/
-eedb938 Some derps
-400a920 Update some stuff
-ba4d7a3 Prebuilt Chromium support added
 
