@@ -12,7 +12,7 @@ cc96c38 Custom System Animations [2/2]
 c25511e Forward Port: Add Camera sound toggle [1/3]
 da7998f [Base]: recents panel clear all button tweaks
 7a52556 Merging Wakelock
-1ca811a Wakelock Blocker [1/2] Thanks to @maxwen for original commit https://github.com/ResurrectionRemix/android_frameworks_base/commit/d4e8a6078b094fb6d8013033ce08cc7de7943356
+1ca811a Wakelock Blocker [1/2] 
 52665eb fb: add back all keyboard IME features back (1/2)
 c86ae59 [base] long press back to kill configurable timeout (1/2)
 
