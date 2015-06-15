@@ -1,32 +1,40 @@
 ====================
-     06-14-2015
+     06-16-2015
 ====================
 
 
-   * android/
-f28e9d7 manifest: track deskclock ourselves
-dd956bc Update default.xml
-8bcaae6 Fix derp @OwnDroid
-2b3232b manifest: track OTACenter
-3a27d6c Track Cards
+   * frameworks/base/
+8c12121 QS Customizations [2/2]
+0d12f4c Navigation bar button color [1/2]
+32c8342 Base: replace recents clear all button with a fab button
+3d05694 Revert: SystemUI add HeadsUpp botton in status bar header (1/2)
+bfab75e Squash: HeadsUp Customizations [2/2]
 
-   * device/oneplus/bacon/
-4cd228d unicornblood part 1
+   * packages/apps/OwnWallpapers/
+ee07815 Lets finish this now...
+
+   * packages/apps/Settings/
+a6dc6c5 QS Customizations [1/2]
+31c4c96 Navigation bar button color [2/2]
+7b2202c Settings: replace recents clear all button with a fab button - add bottom center option
+9e7ddb3 Revert: Settings: add HeadsUp button in status bar header (2/2)
+71f1fab Squash: HeadsUp Customizations [1/2]
+
+====================
+     06-15-2015
+====================
+
 
    * frameworks/base/
 f999380 Slim Recents [2/2]
-
-   * kernel/mediatek/sprout/
-cc63fd7 kernel: add support for gcc 5
-
-   * packages/apps/OTACenter/
-1e8c96f update URL
-6140757 Ownified Updater
 
    * packages/apps/OwnWallpapers/
 a91900f Update icon...
 
    * packages/apps/Settings/
+2ae6b44 cleaning up some lines
+ab7f6ed Update own_main_settings.xml
+669aaed Move Expanded Desktop to OwnInterface Settings
 f3031e1 Merging
 364d952 Slim Recents [1/2]
 e128a5b OTACenter Thanks @Altaf-Mahdi for original https://github.com/Euphoria-OS/android_packages_apps_Settings/commit/d1e11213698759345cd732baf35fcc8f61df9fd7
@@ -35,15 +43,8 @@ e128a5b OTACenter Thanks @Altaf-Mahdi for original https://github.com/Euphoria-O
 7c819ea Create Recents Settings
 e31b358 Fix typo
 
-   * vendor/ownrom/
-c156238 Update common.mk
-7ccb3a2 vendor: sync deskclock
-35add0d vendor: stuff for ota
-e830b51 Track Cards
-b630985 Version 0.4
-
 ====================
-     06-13-2015
+     06-14-2015
 ====================
 
 
@@ -51,67 +52,21 @@ b630985 Version 0.4
 64458ab Fix compilation
 6557636 build: OwnROM
 
-   * device/google/sprout-common/
-fc8f347 Revert "sprout-common: Build OwnKernel"
-6f185fb Merge remote-tracking branch 'origin/cm-12.1' into HEAD
-108d31f sprout-common : improve performance profiles
-7d329be sprout-common : fix video decoder denials
-0e9db87 sprout-common: Build OwnKernel
-
-   * device/google/sprout4/
-9de6b0d Revert "Add stuff for ambient display"
-678ec40 Add stuff for ambient display Signed-off-by: Akhil Narang <akhilnarang.1999@gmail.com>
-
-   * kernel/mediatek/sprout/
-1eacdc9 config : enable ondemand, set interactive as default
-e26456d mediatek: cpufreq: add more governor checks
-
    * packages/apps/DeskClock/
 7f71c8d Revert "DeskClock: Correctly reschedule alarms on system time change"
+
+====================
+     06-13-2015
+====================
+
 
 ====================
      06-12-2015
 ====================
 
 
-   * device/google/sprout-common/
-4566527 sprout-common : fix video decoder denials
-
-   * frameworks/opt/cards/
-0e1de8b fix card header title vertical centering
-3a6d62e revert button animation
-1af30d0 bump up animation duration for expand button
-acb4a25 add TransformableDrawableButton stuff from Narfss
-e81bda0 More centering fixes
-09eb3a1 Another expanded icon fix
-a8e62c5 Fix the expand icon and center some things
-a6d88e0 Use a better expand icon
-5d0c863 Use proper expand icons
-271e875 Some fixes
-2db77a5 Cardslib: Add partial onLongClickListener ability
-6552711 more RTL changes
-ca97724 Cardslib: CardsListView allow to touchevents from swipetodismiss for gesture events
-f078034 Some RTL fixes
-edafe01 use api21 in android.mk
-9d2323a use api21
-1074d96 rename paths
-5872d6a Update cards lib
-
 ====================
      06-11-2015
-====================
-
-
-   * device/google/sprout-common/
-057067b sprout-common : fix cm dependencies syntax
-2954022 Ownified
-
-   * device/google/sprout4/
-19f2d78 Update
-15c65db Merge remote-tracking branch 'cm/cm-12.1' into HEAD
-
-====================
-     06-10-2015
 ====================
 
 
@@ -126,20 +81,8 @@ dc756db we dont need this anymore
 bd25f9e build/core: Inherit vendor/* makefiles for check-api.
 33ccaab Allow dopush to load binaries onto the "wrong" device
 
-   * device/google/sprout-common/
-72c21f8 sprout-common : fix system_server denials
-
-   * device/google/sprout4/
-ba61a76 sprout4 : add context to oem partition
-ce253eb sprout4 : use nested dependencies
-822e7e2 sprout4 : reduce min brightness and fix restricted mobile access messages
-
-   * device/oppo/common/
-c196804 releasetools: Don't include unchanged firmware in incrementals
-2bc3b6f Automatic translation import
-
-   * external/whispersystems/WhisperPush/
-b210b15 Automatic translation import
+   * device/moto/shamu/
+0ed2436 Merge CM
 
    * frameworks/av/
 b3e7eb1 Merge CM
@@ -160,8 +103,6 @@ ebe3b5c Revert "SystemUI: Fix no LED indication for missed call when screen off"
 9837473 SystemUI: remove duplicate PhoneStatusBar variables
 8eba73a SystemUI: add RecentsView EventLogs
 ecb46f7 services: button brightness should check proximity
-8e037a5 Automatic translation import
-83617eb Don't set mHomeConsumed to true for KEY_ACTION_SLEEP
 
    * frameworks/opt/telephony/
 2043011 Fix the build
@@ -170,13 +111,87 @@ efddb3b msim: order getSubInfo list by slot ID
 b7c44b3 MSIM: Change default fallback subId value
 303c9cd Fix ACTION_DEFAULT_SUBSCRIPTION_CHANGED is not sent after power on
 
-   * kernel/mediatek/sprout/
-3b3cea4 mediatek: hotplug: improve current governor checks
+   * packages/apps/DeskClock/
+d31b700 DeskClock: Correctly reschedule alarms on system time change
 
-   * kernel/oneplus/msm8974/
-332f86d neigh: Better handling of transition to NUD_PROBE state
-979555e New Build Breakage in branch: kernel-m-dev-tegra-flounder-3.10 @ 1960706
-4f800a6 net/unix: sk_socket can disappear when state is unlocked
+   * packages/apps/Dialer/
+a3a0c77 Fix up call log search UX.
+b9bbfc4 Improve performance of call log.
+
+   * packages/apps/Mms/
+dbea1dc Don't filter share intent
+
+   * packages/apps/OwnWallpapers/
+6058e99 Merge CM
+
+   * packages/apps/Settings/
+1dc8e21 Revert Slims IME AUTO Rotate option For Now
+e5c088e Finally fix the listview shortcuts images
+dcde70a Fixes
+fca83fe Add TRDS Tile
+c4c1018 Merge CM
+f471850 Use framework name and icon for system UID.
+
+   * packages/services/Telecomm/
+ad91e86 Merge "Allow system apps to query the voicemail number." into cm-12.1
+
+   * packages/services/Telephony/
+4993c78 Style non-interactive dialog in the same way as interactive one.
+
+   * vendor/motorola/
+9a491dd Merge pull request #166 from razrqcom-dev-team/cm-12.1-quark
+6d213c0 quark: Update to LXG22.33-12.16
+
+   * vendor/ownrom/
+7eac5f5 Fix for backuptool.sh
+64a4915 Merge local changes
+9012e03 vendor/cm: Create CM_PLATFORM_SDK_VERSION.
+de2e1e1 apn: Add China Telecomm 4G APN support
+a99375d Move LatinIME to phone/tablet configs
+ff9b16d Merge CM
+
+====================
+     06-10-2015
+====================
+
+
+   * android/
+b7ee6a1 Update Changelog.txt
+5a94a4a Update Changelog.txt
+b4e3a29 Track our own AV
+11d9da0 get floating action Button from Bliss
+3cf4307 Add Kernel Adiutor [2/2]
+
+   * device/lge/hammerhead/
+ff7ef62 Update ownrom.dependencies
+
+   * device/samsung/klte-common/
+7512e92 klte-common: add kltekdi to build barrier of setup-makefiles.sh
+
+   * device/samsung/qcom-common/
+32b574f Automatic translation import
+
+   * external/whispersystems/WhisperPush/
+b210b15 Automatic translation import
+
+   * frameworks/av/
+122e9db Forward Port: Add Camera sound toggle [3/3]
+
+   * frameworks/base/
+8e037a5 Automatic translation import
+83617eb Don't set mHomeConsumed to true for KEY_ACTION_SLEEP
+72f83b3 Fixes for todays commits
+cc96c38 Custom System Animations [2/2]
+c25511e Forward Port: Add Camera sound toggle [1/3]
+da7998f [Base]: recents panel clear all button tweaks
+7a52556 Merging Wakelock
+1ca811a Wakelock Blocker [1/2] Thanks to @maxwen for original commit https://github.com/ResurrectionRemix/android_frameworks_base/commit/d4e8a6078b094fb6d8013033ce08cc7de7943356
+52665eb fb: add back all keyboard IME features back (1/2)
+c86ae59 [base] long press back to kill configurable timeout (1/2)
+a70bb2d frameworks: display: shorten automatic brightness debounce
+
+   * hardware/qcom/audio-caf/msm8916/
+c727b4f hal: Correctly set backend to best available parameters
 
    * packages/apps/AudioFX/
 abd4582 Automatic translation import
@@ -216,12 +231,9 @@ a32d3fb Automatic translation import
 8adcbe9 Automatic translation import
 
    * packages/apps/DeskClock/
-d31b700 DeskClock: Correctly reschedule alarms on system time change
 cb9b6b7 Automatic translation import
 
    * packages/apps/Dialer/
-a3a0c77 Fix up call log search UX.
-b9bbfc4 Improve performance of call log.
 f66a0fb Automatic translation import
 
    * packages/apps/Eleven/
@@ -234,6 +246,7 @@ ff4fe40 Assign debug tags to IMAP communication output.
 74e72ce Fix argument order.
 1a52879 Simplify code.
 664eb34 Automatic translation import
+32419c5 email: catch the correct exception while closing the buffers
 
    * packages/apps/Gallery2/
 7674775 Automatic translation import
@@ -245,22 +258,29 @@ ff4fe40 Assign debug tags to IMAP communication output.
 6fc33ab Automatic translation import
 
    * packages/apps/Mms/
-dbea1dc Don't filter share intent
 eaf701c Automatic translation import
 
    * packages/apps/OwnWallpapers/
-6058e99 Merge CM
 803bbb1 Automatic translation import
 
    * packages/apps/Settings/
-1dc8e21 Revert Slims IME AUTO Rotate option For Now
-e5c088e Finally fix the listview shortcuts images
-dcde70a Fixes
-fca83fe Add TRDS Tile
-c4c1018 Merge CM
-f471850 Use framework name and icon for system UID.
 1524dc3 Automatic translation import
 877bfe2 This is OwnROM!
+85257d6 Revert "Move Notification Settings to OwnSettings"
+f94368e Fixes for today's commits
+22d32fa Custom System Animations [1/2]
+a790688 Move Live Volume Steps to OwnSoundSettings
+6009ae8 Add an entry for KernelAdiutor
+e8d40a4 Forward Port: Add Camera sound toggle [2-3]
+2594b97 [Settings]: recents panel clear all button tweaks
+1454534 Mergin WakeLock
+bea716d Update Dutch (NL) Strings for WakelockBlocker
+d524c57 WakeLock: Layout Improvements (See image below)
+45e37ae Wakelock Blocker [2/2]
+c600e25 Settings: add development animation transition mode 0.75 and 0.25
+0e0e2e5 Move Notification Settings to OwnSettings
+127036b settings: add back all keyboard IME features back (2/2) this commit adds:
+a68bd45 [settings] long press back to kill configurable timeout (2/2)
 
    * packages/apps/SetupWizard/
 82bbed9 Automatic translation import
@@ -279,6 +299,8 @@ e45f639 Automatic translation import
 
    * packages/apps/Trebuchet/
 d321030 Automatic translation import
+12103ba Stop unnecessary exception posting to logcat.
+31d1211 RTL: fix app drawer layout
 
    * packages/apps/TvSettings/
 6dfe00f Automatic translation import
@@ -290,12 +312,9 @@ d321030 Automatic translation import
 30f698f Automatic translation import
 
    * packages/services/Telecomm/
-ad91e86 Merge "Allow system apps to query the voicemail number." into cm-12.1
 353f49f Automatic translation import
 
    * packages/services/Telephony/
-986ce14 Fix phone not initialized exception
-4993c78 Style non-interactive dialog in the same way as interactive one.
 216aad0 Automatic translation import
 
    * packages/wallpapers/PhaseBeam/
@@ -306,83 +325,6 @@ c616c93 Merge "Automatic translation import" into cm-12.1
 f58b595 cmsdk: do not crash system if CustomTileListenerService isn't present
 3f7e428 CMSDK: Update current and system api texts.
 853240e Automatic translation import
-
-   * vendor/ownrom/
-7eac5f5 Fix for backuptool.sh
-64a4915 Merge local changes
-9012e03 vendor/cm: Create CM_PLATFORM_SDK_VERSION.
-de2e1e1 apn: Add China Telecomm 4G APN support
-a99375d Move LatinIME to phone/tablet configs
-ff9b16d Merge CM
-
-====================
-     06-09-2015
-====================
-
-
-   * android/
-b7ee6a1 Update Changelog.txt
-5a94a4a Update Changelog.txt
-b4e3a29 Track our own AV
-11d9da0 get floating action Button from Bliss
-3cf4307 Add Kernel Adiutor [2/2]
-4e4728a Update changelog
-
-   * device/oneplus/bacon/
-e982da1 Update ownrom.dependencies
-37425d5 Revert ":D" Build with stock cm kernel, not OwnKernel till its fixed This reverts commit 9ed4fb3b4118a18560f1fe5815414e93ccaaecce.
-
-   * device/oppo/msm8974-common/
-483de75 msm8974-common: Add OWN optimizations Compile kernel with GCC 5.1
-
-   * frameworks/av/
-122e9db Forward Port: Add Camera sound toggle [3/3]
-
-   * frameworks/base/
-72f83b3 Fixes for todays commits
-cc96c38 Custom System Animations [2/2]
-c25511e Forward Port: Add Camera sound toggle [1/3]
-da7998f [Base]: recents panel clear all button tweaks
-7a52556 Merging Wakelock
-1ca811a Wakelock Blocker [1/2] Thanks to @maxwen for original commit https://github.com/ResurrectionRemix/android_frameworks_base/commit/d4e8a6078b094fb6d8013033ce08cc7de7943356
-52665eb fb: add back all keyboard IME features back (1/2)
-c86ae59 [base] long press back to kill configurable timeout (1/2)
-a70bb2d frameworks: display: shorten automatic brightness debounce
-786b496 SystemUI: Expose weather text colors
-eea8576 SystemUi: Support expanded styles for custom tiles.
-
-   * hardware/qcom/audio-caf/msm8916/
-c727b4f hal: Correctly set backend to best available parameters
-
-   * kernel/mediatek/sprout/
-359f0f2 sprout : back to enforcing
-8f87e2e mediatek : fix kernel panic on non-hotplug governors
-
-   * packages/apps/Email/
-32419c5 email: catch the correct exception while closing the buffers
-
-   * packages/apps/Settings/
-85257d6 Revert "Move Notification Settings to OwnSettings"
-f94368e Fixes for today's commits
-22d32fa Custom System Animations [1/2]
-a790688 Move Live Volume Steps to OwnSoundSettings
-6009ae8 Add an entry for KernelAdiutor
-e8d40a4 Forward Port: Add Camera sound toggle [2-3]
-2594b97 [Settings]: recents panel clear all button tweaks
-1454534 Mergin WakeLock
-bea716d Update Dutch (NL) Strings for WakelockBlocker
-d524c57 WakeLock: Layout Improvements (See image below)
-45e37ae Wakelock Blocker [2/2]
-c600e25 Settings: add development animation transition mode 0.75 and 0.25
-0e0e2e5 Move Notification Settings to OwnSettings
-127036b settings: add back all keyboard IME features back (2/2) this commit adds:
-a68bd45 [settings] long press back to kill configurable timeout (2/2)
-
-   * packages/apps/Trebuchet/
-12103ba Stop unnecessary exception posting to logcat.
-31d1211 RTL: fix app drawer layout
-
-   * vendor/cmsdk/
 5024f16 CMSDK: Utilize a SparseArray instead of Map, avoid autoboxing.
 757d564 CMSDK: Update for versioning tests.
 e08be73 CMSDK: Create versioning for platform SDK.
@@ -393,30 +335,30 @@ e027470 Track our own AV
 dd06d8c vendor: Squash fixes
 
 ====================
-     06-08-2015
+     06-09-2015
 ====================
 
 
    * android/
-e929db3 update
-f16364e Update default.xml
+4e4728a Update changelog
 
-   * device/oneplus/bacon/
-9ed4fb3 :D
+   * device/lge/hammerhead/
+a720894 Own-Ifying
+
+   * device/samsung/klte-common/
+0fd9142 klte-common: add kltekdi to build barrier
 
    * frameworks/base/
+786b496 SystemUI: Expose weather text colors
+eea8576 SystemUi: Support expanded styles for custom tiles.
 a2c5866 FW Base : add listview animations
 35103d1 Update Dutch (NL) Strings for SyncTle
-2397b12 QS: add Sync tile (1/2)
 
-   * hardware/broadcom/libbt/
-962fb7b libbt-vendor: add support for samsung bluetooth
+   * hardware/samsung/
+72edd42 libril: Fix element count
 
    * packages/apps/Email/
 681988f Fix ArrayIndexOutOfBoundsException.
-
-   * packages/apps/OwnWallpapers/
-221fc3f Some renaming....
 
    * packages/apps/Settings/
 e44a154 Move Clock Widget Settings to Extra Settings
@@ -427,48 +369,87 @@ fe216c7 Trying to fix icons not showing on listview in LockScreen Shortcuts
 15e0a6f Improve color picker:
 50f3cb1 fix Lockscreen Icons Not showing
 
-   * vendor/ownrom/
-d48a9ed Add wallpapers to the build.......
-
 ====================
-     06-07-2015
+     06-08-2015
 ====================
 
 
    * android/
+e929db3 update
+f16364e Update default.xml
 ff2d9e0 Update Changelog.txt
 76fc65c Update Changelog.txt
-
-   * device/qcom/sepolicy/
-e8034d4 sepolicy:Allow mm-qcamerad to access sensormanager service access.
 
    * external/chromium_org/third_party/boringssl/src/
 7ac4475 mitigate logjam (CVE-2015-4000)
 
    * frameworks/base/
+2397b12 QS: add Sync tile (1/2)
 721003c Squash: Task Manager [1/2]
 bf113ea Local Sync
 c70cfd7 PIE Fixes
 227e7b6 PowerManagerService: Fix updating of mUserActivitySummary
 
-   * frameworks/opt/cards/
-e17029f Remove TRDS resources to fix build
+   * hardware/broadcom/libbt/
+962fb7b libbt-vendor: add support for samsung bluetooth
 
    * hardware/qcom/audio-caf/msm8994/
 0833cbf audio: add amplifier stream start/standby operations
+
+   * kernel/samsung/klte/
+09f79d4 kltekdi: Add kltekdi defconfig
+
+   * packages/apps/OwnWallpapers/
+221fc3f Some renaming....
 
    * packages/apps/Settings/
 573c09e Task Manager [2/2]
 1c258a6 Update Dutch (NL) Strings
 2a65bd3 PIE Fixes
 
-   * vendor/oppo/
-9fa7246 Merge pull request #17 from maniac103/sensor-update
+   * vendor/ownrom/
+d48a9ed Add wallpapers to the build.......
+487cb34 Some fixes.......
+
+====================
+     06-07-2015
+====================
+
+
+   * device/qcom/sepolicy/
+e8034d4 sepolicy:Allow mm-qcamerad to access sensormanager service access.
+
+   * external/whispersystems/TextSecure/
+01e6af5 TextSecure: Deprecate old curve25519.
+
+   * frameworks/base/
+b06549f thin font for keyguard clock
+4d6bb01 add more style to keyguard
+58063ba Revert "Revert "SystemServer: Skip TorchService construction if no flash feature detected"" Stupid thing fixed SystemUI FCs for sprout, but broke camera AND torch for bacon This reverts commit 300cd46014189ca5013d24b6f903b7e2f1d37c8e.
+89a35b4 [Base] Sync PIE codes with SlimRoms team Thanks to @ezio84 -> SlimRoms commit: SlimRoms/frameworks_base@bbf6f17
+
+   * packages/apps/Dialer/
+02a8e10 Improve SmartDialer
+
+   * packages/apps/Settings/
+ae9041a [Settings] Sync PIE codes with SlimRoms team Thanks to @ezio84 -> SlimRoms commit: SlimRoms/packages_apps_Settings@1aa3d33
+156508a Update NL (Dutch) strings for SlimPIE
+
+   * packages/apps/Trebuchet/
+7e6fd7d Launcher: Check if componentName is null prior to getPackageName()
+
+   * packages/services/Telecomm/
+2d77a33 Allow system apps to query the voicemail number.
+
+   * vendor/motorola/
+925751d Merge pull request #165 from crpalmer/gps
+ce54f08 victara: Import CAF's GPS HAL and remove the corresponding blobs
 
    * vendor/ownrom/
-487cb34 Some fixes.......
 cd1a67b Wtf :O
 63ee66a Show device too, otherwise all zips have same name lol @ a logic place
+3e9f17f Show device too, otherwise all zips have same name lol
+6932256 Update common.mk
 
 ====================
      06-06-2015
@@ -477,30 +458,7 @@ cd1a67b Wtf :O
 
    * android/
 449f193 Update Changelog.txt
-
-   * device/google/sprout-common/
-cbc0ed8 sprout-common : update supplicant for LP
-36e17cc sprout-common : trim down dependencies
-8a2804e sprout-common : add FM radio dependencies
-fa930d2 sprout-common : bring in cm dependencies
-f5e5ebe sprout-common : fix camera permissions
-9de5cad sprout-common : disable memcpy optimizations
-d38dfb2 sprout-common : fix compilation of wifi lib for LP
-1f81970 sprout-common : bring back wifi supplicant lib
-27ec7e3 sprout-common : fix more denials..again
-dbe36b9 sprout-common : new set of sepolicy denial fixes
-f40bf06 sprout-common : don't overwrite files
-7210d44 sprout : address more denials
-e0d572b Revert "Revert "sprout-common : bring back custom audiopolicymanager""
-7de36f8 sprout-common : build charger and other misc packages
-a479b68 sprout-common : use context for oemfs
-30d3e36 sprout-common : more sepolicy rules
-2eed4db sprout-common: initial sepolicy
-26db815 sprout-common : bring back 3G switch mechanism
-58b78ff Revert "sprout-common : bring back custom audiopolicymanager"
-
-   * external/whispersystems/TextSecure/
-01e6af5 TextSecure: Deprecate old curve25519.
+d30c448 Update Changelog
 
    * external/whispersystems/curve25519/
 aea39b2 curve25519: Make sure we're building the libcurve JNI.
@@ -509,66 +467,21 @@ aea39b2 curve25519: Make sure we're building the libcurve JNI.
 9cc1c24 audiopolicy: Fix call recording for legacy qcom HAL (again)
 
    * frameworks/base/
-b06549f thin font for keyguard clock
-4d6bb01 add more style to keyguard
-58063ba Revert "Revert "SystemServer: Skip TorchService construction if no flash feature detected"" Stupid thing fixed SystemUI FCs for sprout, but broke camera AND torch for bacon This reverts commit 300cd46014189ca5013d24b6f903b7e2f1d37c8e.
-89a35b4 [Base] Sync PIE codes with SlimRoms team Thanks to @ezio84 -> SlimRoms commit: SlimRoms/frameworks_base@bbf6f17
 bb53f32 Density scaling: scale compatibility apps, wm command support
 449590b Revert "Revert "Allow custom density setting""
 669effa and yes, another fix... ("-_-)
 5e61062 SlimSeekBarPrefernce
 3c0fc7c PieItem.java Error Fix (For SlimPIE)
 899ff8b IStatusbarService.aidl Error Fix (For SlimPIE)
-
-   * hardware/qcom/audio-caf/msm8994/
-d6bcc4d hal: Support the audio amplifier hook
-
-   * packages/apps/Dialer/
-02a8e10 Improve SmartDialer
-
-   * packages/apps/Settings/
-ae9041a [Settings] Sync PIE codes with SlimRoms team Thanks to @ezio84 -> SlimRoms commit: SlimRoms/packages_apps_Settings@1aa3d33
-156508a Update NL (Dutch) strings for SlimPIE
-b02f828 Settings: fix potential NPE
-22a99d5 Add Missing String
-b059cfd Squash Slim Pie [1/2]
-
-   * packages/apps/Trebuchet/
-7e6fd7d Launcher: Check if componentName is null prior to getPackageName()
-
-   * packages/services/Telecomm/
-2d77a33 Allow system apps to query the voicemail number.
-
-   * vendor/ownrom/
-3e9f17f Show device too, otherwise all zips have same name lol
-6932256 Update common.mk
-
-====================
-     06-05-2015
-====================
-
-
-   * android/
-d30c448 Update Changelog
-
-   * device/oneplus/bacon/
-a90f86b Last one...
-b9cad4b Fix derp :v
-fab0c70 Ownified device tree
-
-   * frameworks/base/
 a9ef9a6 Squash Slim Pie [2/2]
 b91f0b1 Update my local enviorment
 cac564a Fix long click on notification tile
-d7493d3 Drop protection level of certain SMS-related system permissions
-1fe36a5 Code Cleanup: No longer required as AOSP commit supersedes this
-17ca5ac SystemUI: use smaller padding for battery
 
    * frameworks/opt/telephony/
 f1d2b82 Telephony: Actually abort flex mapping if subs are null.
 
-   * packages/apps/Contacts/
-2751aca Contacts:remove memory status from overflow in search mode
+   * hardware/qcom/audio-caf/msm8994/
+d6bcc4d hal: Support the audio amplifier hook
 
    * packages/apps/Mms/
 152607b Compose Message: Fix visual glitch.
@@ -578,18 +491,14 @@ f1d2b82 Telephony: Actually abort flex mapping if subs are null.
 a3f5c3a Ownify slightly more
 
    * packages/apps/Settings/
+b02f828 Settings: fix potential NPE
+22a99d5 Add Missing String
+b059cfd Squash Slim Pie [1/2]
 716f8a8 Settings: Fix there is no sounds and delays 1s when pressing "Touch sounds" sometimes
-0415a80 PrivacyGuard: restore ListView position on resume, for real
-
-   * packages/apps/ThemeChooser/
-ec1af86 Small UI refresh
 
    * packages/apps/Trebuchet/
 1b9d414 Update default workspace.
 e25ab7b Move icons to fit within Dynamic grid upon resize.
-
-   * system/core/
-346e202 liblog: add Amazon logging functions for prebuilt compatibility
 
    * vendor/cmsdk/
 16cd8dd CMSDK: Update tests for ExpandedStyles
@@ -599,64 +508,47 @@ eac6272 CMSDK: Create support for ExpandedStyles in CustomTiles.
 2c6734a CMSDK: Actually hide ThemeVersion.
 
 ====================
-     06-04-2015
+     06-05-2015
 ====================
 
 
    * android/
 2afd505 Update default.xml
 
-   * art/
-9514788 Allow skipping of dalvik cache pruning if boot marker is in place.
-
-   * external/dhcpcd/
-3ad41a3 dhcpcd: Send proper DUID
-
    * frameworks/base/
+d7493d3 Drop protection level of certain SMS-related system permissions
+1fe36a5 Code Cleanup: No longer required as AOSP commit supersedes this
+17ca5ac SystemUI: use smaller padding for battery
 1a71417 Make the icon visible
 fe342dc VolumePanel: volume bar disorderly jump when drag it.
-0b35c08 fixes
-9a8676d Fix
-6ee5dbd NavBar tile [1/2]
-847f98b Navbar Tweaks [2/2]
-4e90c4a Power menu into navring targets
-fdcb57b Power menu QS tile [2/2]
-afd3915 NotificationTile: Simple mode ring/vibrate/priority/silent
-9bed829 Add double tap option to lockscreen shortcuts
 
-   * kernel/oneplus/msm8974/
-5ae7605 synaptics: Fix find7 compilation
-
-   * packages/apps/Calculator/
-054a57b Calculator: Fix issue with overflowing text
+   * packages/apps/Contacts/
+2751aca Contacts:remove memory status from overflow in search mode
 
    * packages/apps/Dialer/
 2d42fc2 Dialer: Enable Call Recording for France
 d7e581a Enable Call Recording for the United Kingdom
 
-   * packages/apps/Email/
-b80c3bd email: fix NPE
-
    * packages/apps/OwnWallpapers/
 5a9fc30 Update strings.xml
 
    * packages/apps/Settings/
+0415a80 PrivacyGuard: restore ListView position on resume, for real
 9849f6f Fix up increasing ring tone volume preview behaviour.
 fcbf591 Fix this
 1d81754 Settings: remove mobile networks menu if ro.radio.noril is set
-51a9e54 We are OwnROM
-4c7d5e7 NavBar tile [2/2]
-154c66e Navbar Tweaks [1/2]
-dbc640a Power menu QS tile [1/2]
-80383a7 Notification Tile [1/2]
-95822ab Add double tap option to lockscreen shortcuts
+
+   * packages/apps/ThemeChooser/
+ec1af86 Small UI refresh
+
+   * system/core/
+346e202 liblog: add Amazon logging functions for prebuilt compatibility
 
    * vendor/ownrom/
 66d4a2f Update common.mk
-fb0c1eb Causes errors, don't build it now
 
 ====================
-     06-03-2015
+     06-04-2015
 ====================
 
 
@@ -666,15 +558,32 @@ fb0c1eb Causes errors, don't build it now
 0e17004 Update Changelog.txt
 40dfe3d Track our own Development
 08d5465 Track our own Native
-c090c43 Update Changelog.txt
+
+   * art/
+9514788 Allow skipping of dalvik cache pruning if boot marker is in place.
 
    * development/
 dcf1f15 development: TRDS 5.0 (3/4)
 
-   * device/oppo/common/
-41be370 KeyHandler: never dexopt it
+   * device/moto/shamu/
+809c11a Disable dexpreopt only on affected apk's
+436dfe4 Revert "Don't dexpreopt prebuilts as some of them don't play nice"
+
+   * device/samsung/klte/
+bf7bffb Update ownrom.dependencies
+
+   * external/dhcpcd/
+3ad41a3 dhcpcd: Send proper DUID
 
    * frameworks/base/
+0b35c08 fixes
+9a8676d Fix
+6ee5dbd NavBar tile [1/2]
+847f98b Navbar Tweaks [2/2]
+4e90c4a Power menu into navring targets
+fdcb57b Power menu QS tile [2/2]
+afd3915 NotificationTile: Simple mode ring/vibrate/priority/silent
+9bed829 Add double tap option to lockscreen shortcuts
 8559194 MultiSelectListPreference.java should deal with onRestoreInstanceState method
 8132a7e Update trds colors
 0d51482 fb: TRDS 5.0 (1/4)
@@ -685,27 +594,32 @@ b3253fa Base : Add more lockscreen shortcut custom icons Part2 Signed-off-by: we
 b90d213 Resize shortcut icons
 a2f8ae75 Fix
 4b625d2 Base: add more drawables to Slim LockScreen Shortcuts (2/2)
-5d93ed8 Observer DEV_FORCE_SHOW_NAVBAR in LockTaskNotify
-ebb780d Add Slims DSLV & Missing Shortcut Icons
 
    * frameworks/native/
 26097c0 native: TRDS 5.0 (2/4)
+
+   * packages/apps/Calculator/
+054a57b Calculator: Fix issue with overflowing text
 
    * packages/apps/Camera2/
 a1cdd29 Fix storage location NPE
 
    * packages/apps/Dialer/
 b675a6a Remove some dead code.
-22335cd [2/2] Dialer: SmartMute
-c9b91d0 Dialer: Ensure device ids not null
 
-   * packages/apps/InCallUI/
-faf5a34 [1/2] InCallUI: SmartMute
+   * packages/apps/Email/
+b80c3bd email: fix NPE
 
    * packages/apps/OwnWallpapers/
 90851d8 Partial Ownify Need to update app name in all languages
 
    * packages/apps/Settings/
+51a9e54 We are OwnROM
+4c7d5e7 NavBar tile [2/2]
+154c66e Navbar Tweaks [1/2]
+dbc640a Power menu QS tile [1/2]
+80383a7 Notification Tile [1/2]
+95822ab Add double tap option to lockscreen shortcuts
 57d0245 add clock widget settings
 3299edf Update OwnSettings overall
 8e9ec59 Add missing strings...
@@ -714,32 +628,21 @@ a903e9a Settings: TRDS 5.0 (4/4)
 649f6dc Fix shortcut icons tint colors and list view NPE
 be100a5 Settings :Add new 73 hd lockscreen shortcus icons - Rounded colorful 73 populer media and social application icons - Removed tint color from icon listview so makes icons visible
 b336a3e Settings: add more drawables to Slim LockScreen Shortcuts (1/2) Chrome Github Paypal Youtube Whatsapp Messenger Office Suite Tapatalk
-a37c9de the status of brightness not refresh in power control widget after manual adjustment of brightnes
-fd9ce1c Settings: Fix preferred install location dialog will dismiss after rotating screen
-9eb8055 Lockscreen Shortcuts Fixes
-75bc4ab Profiles: Get Default profile with its UUID instead of name
-
-   * packages/apps/Trebuchet/
-5643b7f Trebuchet: send metrics values as strings
-
-   * packages/services/Telephony/
-05600e6 TeleService: pass sub ID to APN setting
 
    * vendor/ownrom/
+fb0c1eb Causes errors, don't build it now
 fc0692e y u do this @OwnDroid
 b865e1f New wallpapers app
 9a612df Sync the new repos too
 
 ====================
-     06-02-2015
+     06-03-2015
 ====================
 
 
    * android/
+c090c43 Update Changelog.txt
 036249f Remove external/srec
-b10d24b fix
-38cef2b Time for users to abort if they just want dependencies lol
-a2b25d8 @OwnDroid
 
    * bionic/
 8b8e5d3 libc : memcpy : allow to disable opt for some targets
@@ -749,99 +652,59 @@ a2b25d8 @OwnDroid
 58ccf1f lunch: sort the choices
 7a557e1 build: avoid recovery patch if device setup can't do it correctly
 ffa2316 envsetup: add mk_timer
-d8f3f77 Like this better this way...
 
-   * device/qcom/sepolicy/
-2d2760e sepolicy: Update BCL sysfs nodes in file context
+   * device/samsung/klte/
+ff2fbf3 Update ownrom.dependencies
+89b3000 Update ownrom.dependencies
+5fdea65 Own-ifying
+
+   * device/samsung/msm8974-common/
+7bec395 Update ownrom.dependencies
+1500aa1 Update ownrom.dependencies
+de0c2a6 Update ownrom.dependencies
+3087d2e Own-ifying
 
    * external/bluetooth/bluedroid/
 f212f43 bluetooth: a2dp: Property account pcm.counter
 8523b6a bluetooth: a2dp: Allow 2 full tick's worth of data to be sent
 
    * frameworks/base/
+5d93ed8 Observer DEV_FORCE_SHOW_NAVBAR in LockTaskNotify
+ebb780d Add Slims DSLV & Missing Shortcut Icons
 963df3a Initial slim lockscreen shortcuts [2/2]
 5d071a5 Frameworks: Add several Slim helper classes and constants back
 c99e2a4 Some Updates
 5313fcb FW_Base - Live Volume Steps [1/2] -Volume steps changes are instant, no need to reboot!
 839562d Another Update
 b68785d Update Repo
-aab323e VolumePanel: better handling of updating sliders in expanded view
-faa430b VolumePanel: show hint for unlinked notification slider too
-5e7a8b2 Updating Sources
 
    * frameworks/native/
 9f76295 Add dalvik heap override for xxxhdpi phone
 404f4eb Add HWUI overrides for xxxhdpi phone
 
-   * kernel/oneplus/msm8974/
-3042c60 synaptics: Use per-panel firmware loading
-cb89007 Revert "synaptics: Update firmware to 14001227"
+   * packages/apps/Dialer/
+22335cd [2/2] Dialer: SmartMute
+c9b91d0 Dialer: Ensure device ids not null
 
-   * packages/apps/Gallery2/
-97739e1 Gallery2: Fix crash when Bluetooth service is disabled
+   * packages/apps/InCallUI/
+faf5a34 [1/2] InCallUI: SmartMute
 
    * packages/apps/Settings/
+a37c9de the status of brightness not refresh in power control widget after manual adjustment of brightnes
+fd9ce1c Settings: Fix preferred install location dialog will dismiss after rotating screen
+9eb8055 Lockscreen Shortcuts Fixes
+75bc4ab Profiles: Get Default profile with its UUID instead of name
 d473aa6 Settings : Initial slim lockscreen shortcuts [1/2]
 2ee2188 Settings - Live Volume Steps [2/2]
 8cbf398 Update Repo
-60a3f39 Settings: Fix setting app install location as "Removable SD card" without SD card inserted
-b96e5f5 Update Repo
 
-   * vendor/cmsdk/
-273f2db CMSDK: Add check-api generated texts.
-62c951e CMSDK: Setup initial check-api mechanism.
-25410f2 Introduce Theme Versioning [2/2]
+   * packages/apps/Trebuchet/
+5643b7f Trebuchet: send metrics values as strings
 
-   * vendor/google/
-0e59948 sprout : update blobs for 5.1.1
-
-   * vendor/oppo/
-975ee02 msm8974-common: Update rmt_storage
+   * packages/services/Telephony/
+05600e6 TeleService: pass sub ID to APN setting
 
    * vendor/ownrom/
 cff2e2a Update build-ownrom.sh
 dad108e Temp fix for Bouygues telecom issues
-b5b6e0b FOTA: Create /cache/recovery in init.rc for FOTA
-
-====================
-     06-01-2015
-====================
-
-
-   * device/oppo/msm8974-common/
-741385d msm8974: Update WiFi configuration
-
-   * external/bluetooth/bluedroid/
-92362be bluetooth: a2dp: Buffer sufficient data to keep devices happy
-
-   * frameworks/base/
-ecda406 Introduce Theme Versioning [1/2]
-1c16b02 frameworks/base: enable localization of Chinese operator's PLMN
-89e7035 Sync status bar signal cluster code with AOSP.
-a44d9bc fingerprint: register correct function for nativeEnrollCancel
-0e16053 fingerprint: detach java vm in HAL callback
-
-   * packages/apps/InCallUI/
-9cd8afb Fix: The EndCallButton overlaps the digital key 0 after switch system language during an active call
-
-   * packages/apps/Mms/
-5db195d Add UAProf URL to carrier-specific configs
-f8cb438 Create the contact photo manager as service.
-
-   * packages/apps/Settings/
-e8f736c Integrate mobile network settings into SIM settings for MSIM.
-9563800 Remove 'Show empty SIMs' option.
-b7fcb26 Settings: fix an issue where text is not showing up on first instance.
-6f96f2e Cleanup SMS limits
-
-   * packages/apps/Trebuchet/
-d482eb7 Fix power save mode broken ui/animations
-
-   * packages/services/Telecomm/
-fcaa59c Merge "Show multi-line notification if there's more than 1 missed call." into cm-12.1
-
-   * packages/services/Telephony/
-109a0bf Telephony: Bye bye Holo USSD dialog
-c84a7ba Restyle USSD AlertDialog.
-7c15f71 Update activity title if called in MSIM case.
 
