@@ -1,10 +1,57 @@
 ====================
-     06-16-2015
+     06-18-2015
+====================
+
+
+   * frameworks/base/
+3abe8e4 Fixes For Today's Commits
+25ab21a Force Expanded Notifications (1/2)
+819086c QS: Option to show four tiles per row (1/2)
+9ee426d Over scroll effects 1/2
+63de0ab Long press lock screen lock icon to sleep (1/2)
+694fb75 Double tap to sleep on navigation bar [1/2]
+6f66fa1 Double tap to sleep anywhere on the lock screen (1/2)
+796c5ee Add membar to recents options [1/2]
+5266831 Block QS on secure lockscreen [1/2]
+b40861a Return: Smart Pulldown [1/2]
+
+   * packages/apps/Settings/
+68a2ee2 Fixes For Today's Commits
+4862e4a Force Expanded Notifications (2/2)
+e16edc1 QS: Option to show four tiles per row (2/2)
+a880c56 Long press lock screen lock icon to sleep (2/2)
+4363a05 Double tap to sleep on navigation bar [2/2]
+96f78a7 Double tap to sleep anywhere on the lock screen (2/2)
+330eaf1 Add membar to recents options [2/2]
+2421146 Block QS on secure lockscreen [2/2]
+4075827 Return: Smart Pulldown [2/2]
+e05e75b Change to reference new OwnOTACenter
+dccf354 Launch Rom Stats from Settings
+
+   * vendor/ownrom/
+72c7018 OTA is OwnOTA
+dcdd200 Change some props...
+
+====================
+     06-17-2015
 ====================
 
 
    * frameworks/base/
 8c12121 QS Customizations [2/2]
+
+   * packages/apps/Settings/
+a6dc6c5 QS Customizations [1/2]
+
+   * vendor/ownrom/
+738f5a5 vendor: RomStats
+
+====================
+     06-16-2015
+====================
+
+
+   * frameworks/base/
 0d12f4c Navigation bar button color [1/2]
 32c8342 Base: replace recents clear all button with a fab button
 3d05694 Revert: SystemUI add HeadsUpp botton in status bar header (1/2)
@@ -14,11 +61,13 @@ bfab75e Squash: HeadsUp Customizations [2/2]
 ee07815 Lets finish this now...
 
    * packages/apps/Settings/
-a6dc6c5 QS Customizations [1/2]
 31c4c96 Navigation bar button color [2/2]
 7b2202c Settings: replace recents clear all button with a fab button - add bottom center option
 9e7ddb3 Revert: Settings: add HeadsUp button in status bar header (2/2)
 71f1fab Squash: HeadsUp Customizations [1/2]
+
+   * vendor/ownrom/
+b16d488 Abandon all local changes while syncing
 
 ====================
      06-15-2015
@@ -42,6 +91,14 @@ e128a5b OTACenter Thanks @Altaf-Mahdi for original https://github.com/Euphoria-O
 202067c Move a few Recent Apps Screen options to OwnRecentsSettings
 7c819ea Create Recents Settings
 e31b358 Fix typo
+
+   * vendor/ownrom/
+b5a7fbb Remove . from date in zip name Also no need of forcing the UTC date, let it be local to the builder's location
+c156238 Update common.mk
+7ccb3a2 vendor: sync deskclock
+35add0d vendor: stuff for ota
+e830b51 Track Cards
+b630985 Version 0.4
 
 ====================
      06-14-2015
@@ -546,165 +603,4 @@ ec1af86 Small UI refresh
 
    * vendor/ownrom/
 66d4a2f Update common.mk
-
-====================
-     06-04-2015
-====================
-
-
-   * android/
-0f04df7 Merge branch 'cm-12.1' of https://github.com/OwnROM/android into cm-12.1
-0257bd0 Track our wallpaper repo Remove TextSecure
-0e17004 Update Changelog.txt
-40dfe3d Track our own Development
-08d5465 Track our own Native
-
-   * art/
-9514788 Allow skipping of dalvik cache pruning if boot marker is in place.
-
-   * development/
-dcf1f15 development: TRDS 5.0 (3/4)
-
-   * device/moto/shamu/
-809c11a Disable dexpreopt only on affected apk's
-436dfe4 Revert "Don't dexpreopt prebuilts as some of them don't play nice"
-
-   * device/samsung/klte/
-bf7bffb Update ownrom.dependencies
-
-   * external/dhcpcd/
-3ad41a3 dhcpcd: Send proper DUID
-
-   * frameworks/base/
-0b35c08 fixes
-9a8676d Fix
-6ee5dbd NavBar tile [1/2]
-847f98b Navbar Tweaks [2/2]
-4e90c4a Power menu into navring targets
-fdcb57b Power menu QS tile [2/2]
-afd3915 NotificationTile: Simple mode ring/vibrate/priority/silent
-9bed829 Add double tap option to lockscreen shortcuts
-8559194 MultiSelectListPreference.java should deal with onRestoreInstanceState method
-8132a7e Update trds colors
-0d51482 fb: TRDS 5.0 (1/4)
-cb68c22 policy: don't allow app switch/recents key to be pressed on lockscreen
-227c2ed SystemUI: don't display protected lockscreen shortcuts
-b3253fa Base : Add more lockscreen shortcut custom icons Part2 Signed-off-by: westcrip <korukaltan@gmail.com>
-55a45db Base:Add new 73 hd lockscreen shortcus icons
-b90d213 Resize shortcut icons
-a2f8ae75 Fix
-4b625d2 Base: add more drawables to Slim LockScreen Shortcuts (2/2)
-
-   * frameworks/native/
-26097c0 native: TRDS 5.0 (2/4)
-
-   * packages/apps/Calculator/
-054a57b Calculator: Fix issue with overflowing text
-
-   * packages/apps/Camera2/
-a1cdd29 Fix storage location NPE
-
-   * packages/apps/Dialer/
-b675a6a Remove some dead code.
-
-   * packages/apps/Email/
-b80c3bd email: fix NPE
-
-   * packages/apps/OwnWallpapers/
-90851d8 Partial Ownify Need to update app name in all languages
-
-   * packages/apps/Settings/
-51a9e54 We are OwnROM
-4c7d5e7 NavBar tile [2/2]
-154c66e Navbar Tweaks [1/2]
-dbc640a Power menu QS tile [1/2]
-80383a7 Notification Tile [1/2]
-95822ab Add double tap option to lockscreen shortcuts
-57d0245 add clock widget settings
-3299edf Update OwnSettings overall
-8e9ec59 Add missing strings...
-a903e9a Settings: TRDS 5.0 (4/4)
-855b47b Settings : Add more lockscreen shortcut custom icons Part2
-649f6dc Fix shortcut icons tint colors and list view NPE
-be100a5 Settings :Add new 73 hd lockscreen shortcus icons - Rounded colorful 73 populer media and social application icons - Removed tint color from icon listview so makes icons visible
-b336a3e Settings: add more drawables to Slim LockScreen Shortcuts (1/2) Chrome Github Paypal Youtube Whatsapp Messenger Office Suite Tapatalk
-
-   * vendor/ownrom/
-fb0c1eb Causes errors, don't build it now
-fc0692e y u do this @OwnDroid
-b865e1f New wallpapers app
-9a612df Sync the new repos too
-
-====================
-     06-03-2015
-====================
-
-
-   * android/
-c090c43 Update Changelog.txt
-036249f Remove external/srec
-
-   * bionic/
-8b8e5d3 libc : memcpy : allow to disable opt for some targets
-
-   * build/
-0cb5893 envsetup: cleanup the full list
-58ccf1f lunch: sort the choices
-7a557e1 build: avoid recovery patch if device setup can't do it correctly
-ffa2316 envsetup: add mk_timer
-
-   * device/samsung/klte/
-ff2fbf3 Update ownrom.dependencies
-89b3000 Update ownrom.dependencies
-5fdea65 Own-ifying
-
-   * device/samsung/msm8974-common/
-7bec395 Update ownrom.dependencies
-1500aa1 Update ownrom.dependencies
-de0c2a6 Update ownrom.dependencies
-3087d2e Own-ifying
-
-   * external/bluetooth/bluedroid/
-f212f43 bluetooth: a2dp: Property account pcm.counter
-8523b6a bluetooth: a2dp: Allow 2 full tick's worth of data to be sent
-
-   * frameworks/base/
-5d93ed8 Observer DEV_FORCE_SHOW_NAVBAR in LockTaskNotify
-ebb780d Add Slims DSLV & Missing Shortcut Icons
-963df3a Initial slim lockscreen shortcuts [2/2]
-5d071a5 Frameworks: Add several Slim helper classes and constants back
-c99e2a4 Some Updates
-5313fcb FW_Base - Live Volume Steps [1/2] -Volume steps changes are instant, no need to reboot!
-839562d Another Update
-b68785d Update Repo
-
-   * frameworks/native/
-9f76295 Add dalvik heap override for xxxhdpi phone
-404f4eb Add HWUI overrides for xxxhdpi phone
-
-   * packages/apps/Dialer/
-22335cd [2/2] Dialer: SmartMute
-c9b91d0 Dialer: Ensure device ids not null
-
-   * packages/apps/InCallUI/
-faf5a34 [1/2] InCallUI: SmartMute
-
-   * packages/apps/Settings/
-a37c9de the status of brightness not refresh in power control widget after manual adjustment of brightnes
-fd9ce1c Settings: Fix preferred install location dialog will dismiss after rotating screen
-9eb8055 Lockscreen Shortcuts Fixes
-75bc4ab Profiles: Get Default profile with its UUID instead of name
-d473aa6 Settings : Initial slim lockscreen shortcuts [1/2]
-2ee2188 Settings - Live Volume Steps [2/2]
-8cbf398 Update Repo
-
-   * packages/apps/Trebuchet/
-5643b7f Trebuchet: send metrics values as strings
-
-   * packages/services/Telephony/
-05600e6 TeleService: pass sub ID to APN setting
-
-   * vendor/ownrom/
-cff2e2a Update build-ownrom.sh
-dad108e Temp fix for Bouygues telecom issues
 
