@@ -2,6 +2,13 @@
      06-18-2015
 ====================
 
+BUG FIX: Smart Pulldown
+(4 Tiles option will be fixed later)
+
+====================
+     06-18-2015
+====================
+
 
    * frameworks/base/
 3abe8e4 Fixes For Today's Commits
