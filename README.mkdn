@@ -15,4 +15,15 @@ To initialize your local repository using the OwnROM trees, use a command like t
 Then to sync up:
 
     repo sync
+    
+To setup the build environment:
 
+    . build/ownrom.sh
+    
+Configure the build environment for specific device:
+
+    lunch
+    
+Start the build:
+
+    mka ownrom
