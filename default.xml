@@ -457,7 +457,7 @@
   <project path="packages/apps/OwnWallpapers" name="OwnROM/android_packages_apps_OwnWallpapers" remote="github" revision="cm-12.1" />
   <project path="packages/apps/Contacts" name="CyanogenMod/android_packages_apps_Contacts" />
   <project path="packages/apps/ContactsCommon" name="CyanogenMod/android_packages_apps_ContactsCommon" />
-  <project path="packages/apps/DeskClock" name="OwnROM/android_packages_apps_DeskClock" remote="github" />
+  <project path="packages/apps/DeskClock" name="CyanogenMod/android_packages_apps_DeskClock" />
   <project path="packages/apps/Dialer" name="CyanogenMod/android_packages_apps_Dialer" />
   <project path="packages/apps/Eleven" name="CyanogenMod/android_packages_apps_Eleven" />
   <project path="packages/apps/Email" name="CyanogenMod/android_packages_apps_Email" />
