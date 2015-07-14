@@ -1,4 +1,372 @@
 ====================
+     07-14-2015
+====================
+
+
+   * android/
+32e6ea0 :D
+
+   * build/
+1ad6f8b Add PRODUCT_PACKAGES for Google's prebuilt WebView
+0694ca8 Merge branch 'cm-12.1' of github.com:OwnROM/android_build into cm-12.1
+d2a6f66 Revert "Disable -mcpu=cortex-a15 flag for krait"
+e9aae41 tools:releasetools:Use timestamp from build.prop while building system.img
+113f468 build: Fix device detection for a few of the envsetup commands
+926442b build: Fix image creation for F2FS-only configuration
+d748fac releasetools: Add support for LZMA in blockimgdiff
+
+   * device/oppo/common/
+0fbc8b9 Automatic translation import
+
+   * external/whispersystems/WhisperPush/
+69f768b Automatic translation import
+
+   * frameworks/av/
+50f0b9e Merge branch 'cm-12.1' of github.com:OwnROM/android_frameworks_av into HEAD
+353fd57 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_frameworks_av into HEAD
+
+   * frameworks/base/
+b78a24e Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_frameworks_base into HEAD
+bc85f5e CaptivePortal: Assert dataUri to prevent possible NPE
+346ac31 Revert "Bluetooth: Check for mPanservice before changing tethering state"
+6d9989c NavigationBarView: Set buttonWithTagVisibility for Search
+773e1f8 Automatic translation import
+
+   * frameworks/native/
+6de2844 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_frameworks_native into HEAD
+
+   * kernel/oneplus/msm8974/
+1c2df49 cm: Update bacon/find7 defconfigs
+e9c20eb Revert "msm: vidc: Fix timestamp for EOS buffer"
+a927ebf msm: use of swp{b} is deprecated for ARMv6+
+284e46c nick kvfree() from apparmor
+e3e55ad POWER: Add an API call to log wake wakeup reason
+bc4872e PM: wakeup_reasons: disable wakeup-reason deduction by default
+401f932 Power: Report total suspend times from boot in suspend_since_boot
+7f2aecd PM: Replace WARN_ON on timeout with one line print
+54eb9cc wakeup: Add last wake up source logging for suspend abort reason.
+b4f651e PM: wakeup_reasons: fix race condition
+04dccef PM: wakeup_reason: correctly deduce wakeup interrupts
+d068da0 PM: wakeup_reason: add check_wakeup_reason() to verify wakeup source irq
+5f23a09 power: log the last suspend abort reason.
+551441b PM: wakeup_reason: add functionality to log the last suspend-abort reason.
+cd75601 PM: wakeup_reason: add functions to query and clear wakeup reasons
+f523f1d Revert "gpio-msm: remove logging of wakeup reason"
+3a25225 gpio-msm: remove logging of wakeup reason
+3b7a794 gpio: msm-common: Add wakeup reason logging
+15e1a80 irq_flow_handler_t now returns bool
+e36cbca ARM: gic: ignore non-wakeup interrupts when reporting wakeup sources
+c179127 Power: Report suspend times from last_suspend_time
+f8e47cd lowmemorykiller: use for_each_thread instead of buggy while_each_thread
+18420b2 msm: rpm_smd: Use spin_lock_irqsave in work function
+db0bc03 cgroup: remove synchronize_rcu() from cgroup_attach_{task|proc}()
+
+   * packages/apps/BluetoothExt/
+85af06e Automatic translation import
+
+   * packages/apps/CMAccount/
+dff2d23 Automatic translation import
+
+   * packages/apps/CMFileManager/
+7310a29 Automatic translation import
+
+   * packages/apps/Calendar/
+a2a65e2 Automatic translation import
+
+   * packages/apps/Camera2/
+53d6854 Automatic translation import
+
+   * packages/apps/Contacts/
+e2cc11b Automatic translation import
+
+   * packages/apps/ContactsCommon/
+9109519 Automatic translation import
+
+   * packages/apps/Dialer/
+473c0e1 Automatic translation import
+
+   * packages/apps/Eleven/
+0481caf Automatic translation import
+
+   * packages/apps/Email/
+b294161 Automatic translation import
+
+   * packages/apps/Gallery2/
+fe5101b Automatic translation import
+
+   * packages/apps/InCallUI/
+2106d69 Automatic translation import
+
+   * packages/apps/LockClock/
+ad1d777 Automatic translation import
+
+   * packages/apps/Mms/
+86408dd Automatic translation import
+
+   * packages/apps/Nfc/
+9feec31 Automatic translation import
+
+   * packages/apps/PackageInstaller/
+50161ae Automatic translation import
+
+   * packages/apps/PhoneCommon/
+813e946 Automatic translation import
+
+   * packages/apps/Settings/
+fe92461 Merge branch 'cm-12.1' of github.com:OwnROM/android_packages_apps_Settings into cm-12.1
+6dda018 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Settings into HEAD
+8b5f667 Remove unused xml
+a8c4e44 Automatic translation import
+e0e7a64 Set untranslatable
+
+   * packages/apps/SetupWizard/
+79f63d2 Automatic translation import
+
+   * packages/apps/Stk/
+f7df6b5 Automatic translation import
+
+   * packages/apps/ThemeChooser/
+4c096d3 Automatic translation import
+
+   * packages/apps/Trebuchet/
+926df56 Automatic translation import
+
+   * packages/apps/TvSettings/
+5121874 Automatic translation import
+
+   * packages/apps/UnifiedEmail/
+e8e14aa Automatic translation import
+
+   * packages/inputmethods/LatinIME/
+27f8abb Automatic translation import
+
+   * packages/providers/DownloadProvider/
+4bf2413 Automatic translation import
+
+   * packages/providers/TelephonyProvider/
+fbf5822 Automatic translation import
+
+   * packages/services/Mms/
+bcfd519 Automatic translation import
+
+   * packages/services/Telecomm/
+bcea2b8 Automatic translation import
+
+   * packages/services/Telephony/
+d8be3e7 Automatic translation import
+
+   * packages/wallpapers/PhaseBeam/
+ae59914 Automatic translation import
+
+   * vendor/cmsdk/
+a7579da Automatic translation import
+
+   * vendor/ownrom/
+687ea1b KernelAdiutor as prebuilt
+14c4fd6 cm: Update properties and libs for stagefright-plugins
+fe7f328 Updated APN for Austrian Carrier Yesss.
+a8de57e Prevent Maven target from grabbing transitive dependencies
+
+====================
+     07-13-2015
+====================
+
+
+   * external/stagefright-plugins/
+b384c5f stagefright-plugins: Restructure the code
+
+   * external/wpa_supplicant_8/
+48e2a66 eap_peer: Make the QMI EAP proxy a standalone lib
+
+   * frameworks/av/
+ac27b63 stagefright: Move a bunch of FFMPEG stuff out of here
+
+   * frameworks/opt/net/wifi/
+1391ee9 Fix memory leak in WifiNative
+
+   * hardware/qcom/audio-caf/msm8994/
+b49aaff Merge branch 'LA.BF64.1.2.1_rb2.21' of git://codeaurora.org/platform/hardware/qcom/audio into cm-12.1
+
+   * hardware/qcom/display-caf/msm8994/
+9b2766a Merge branch 'LA.BF64.1.2.1_rb2.21' of git://codeaurora.org/platform/hardware/qcom/display into cm-12.1
+
+   * hardware/qcom/media-caf/msm8994/
+4e647f5 Merge branch 'LA.BF64.1.2.1_rb2.21' of git://codeaurora.org/platform/hardware/qcom/media into cm-12.1
+
+   * kernel/oneplus/msm8974/
+2cdea29 find7: Enable TASK_DELAY_ACCT
+629a22d bacon: Update defconfig
+476c96b msm: mdss: fix transitions from low power mode to off
+2eba494 msm: mdss: fix issues with transition from LP3 to LP2
+4c3bdd0 msm: mdss: swap flags for LP1 and LP2 modes
+3b045a1 msm: mdss: add support for LP2 low power state
+5c66300 msm8974: Update DT for new LiveDisplay driver
+b8ac8aa video: mdss: LiveDisplay driver
+7a319ad video: mdss: Revert all display tuning code
+
+   * packages/apps/Settings/
+3c2f3e5 Add fingerprint enrollment stats
+
+   * vendor/oppo/
+36faa1e msm8974: Update blobs
+
+====================
+     07-12-2015
+====================
+
+
+   * frameworks/base/
+7633157 Keyguard Fingerprint: Send Unlock Stats
+0e2fbb8 SettingsProvider: add overlay for SWAP_VOLUME_KEYS_ON_ROTATION
+16d4d50 Fix build break introduced in 83b589ec9c743174ac473622adb3f759e9d598af
+97327e4 systemui: restore space between clock & battery
+83b589e Update indonesia country code in PhoneNumberUtils
+c1019bf When calling indonesia using +62 prefix while already in indonesia, replace +62 prefix with 0 (CDMA only)
+01c3ea0 core: Continue stripping out Profiles related code.
+7c1ee7b Account for cmsdk resources when attaching theme assets
+116dedc androidfw: Declare and load cmsdk resource package w/ id.
+8fec3eb core: Factor out profiles related resources.
+
+   * frameworks/native/
+7c2c333 Revert "Add OMX_AUDIO_CodingAPE and OMX_AUDIO_CodingDTS"
+909ee77 Tuning compiler thread count for optimal application install times
+
+   * hardware/libhardware/
+62520f1 audio: Notify amplifier HAL of device enable/disable
+
+   * hardware/qcom/audio-caf/msm8994/
+dabc25c hal: Notify amplifier of device enable/disable
+
+   * packages/apps/CMFileManager/
+8cd911b configurationChanged: Don't handle the orientation change in our main Activity
+
+   * packages/apps/Mms/
+f5164b3 Quick Message: Fix dual sim picker
+
+   * packages/apps/Settings/
+b57b79d Add SetupManageFingerprints to setup wizard flow
+478ccf4 Cancel error timeout when enrollment finished
+b46aee4 Settings: hide light pulse settings if not available
+e134666 Settings: Point to classes within cmsdk.
+97494e0 Enroll fingerprint via SetupWizard [1/2]
+
+   * packages/apps/SetupWizard/
+1125b8d SetupWizard: Fix translatability
+
+   * vendor/cmsdk/
+cf0bfd3 CMSDK: Begin documentation and testing for profiles.
+
+====================
+     07-11-2015
+====================
+
+
+   * device/oppo/msm8974-common/
+89740a4 msm8974: Move QC MT call speedup config to Telecomm
+
+   * frameworks/base/
+1d1f5f0 systemui: fix battery text level visibility
+c9561a3 Fingerprint: Add getNumEnrollmentSteps [1/2]
+1f0667a qs: fix NPE in visualizer tile
+51d76f9 Keyguard Fingerprint: Lock immediately when fp is used [1/2]
+71fe5db SystemUI: more keyguard visualizer tweaks
+1ca33c1 Improve dock battery strings
+e8604c8 msim: Fix saving default sim from select SIM dialog (1/2)
+672fa1e WallpaperManagerService: use a single file observer
+ba6dd62 base: Fix RESET_BATTERY_STATS permission
+
+   * frameworks/native/
+6246d07 SF: Skip render-to-texture for color transforms
+
+   * packages/apps/CMFileManager/
+c283288 Secure Storage: Fix unlock button
+
+   * packages/apps/Mms/
+9fc3f93 Enable heads-up style notifications on Mms app
+
+   * packages/apps/PackageInstaller/
+5040ee6 PackageInstaller: add hook to manage packages via PRE_BOOT_COMPLETED event
+
+   * packages/apps/Settings/
+38a933b Show error state when fingerprint read times out
+8a8121a Only show fingerprint for primary user
+a03f2d2 Keyguard Fingerprint: Lock immediately when fp is used [2/2]
+5b1d69d Improve dock battery strings
+7003a4d Settings: update community metrics
+
+   * packages/apps/SetupWizard/
+b28f9c0 Enroll fingerprint via SetupWizard [2/2]
+
+   * packages/apps/Trebuchet/
+270da93 Transition Effects: stack transition effect
+
+   * packages/services/Telephony/
+5f87833 Rewrite network type summary handling
+
+   * vendor/cmsdk/
+125c899 CMSDK: Utilize CMSDK_PACKAGE_ID.
+6e46829 CMSDK: Introduce factored out resources from framework.
+
+====================
+     07-10-2015
+====================
+
+
+   * android/
+27aa586 Update
+
+   * bootable/recovery/
+0401aaa updater: Add LZMA support to blockimg
+
+   * device/qcom/sepolicy/
+fa2e85d Seandroid: Add policy for dts configurator and notifier nodes
+
+   * external/stagefright-plugins/
+68d9c45 stagefright-plugins: Remove Vorbis/MP3/H263/H264/HEVC
+
+   * frameworks/av/
+d562715 stagefright: Add support for loading a custom OMXPlugin
+
+   * frameworks/base/
+910397f base: dock battery
+c2614be Fingerprint: Vibrate device.
+2a80ec9 SystemUI: fix keyguard unlock drawable not updating
+d2d714a Fingerprint: Get current user id via Process.myUserHandle()
+3643d91 Add fingerprint to DB before calling clients
+121fb1e [1/2] Camera button support
+
+   * hardware/qcom/display-caf/msm8974/
+8751e83 hwc: Handle DOZE_SUSPEND properly
+
+   * kernel/oneplus/msm8974/
+26130e5 bacon/find7: Enable CONFIG_USB_NET_DM9601
+
+   * packages/apps/CMFileManager/
+b4d6b6e Easy Mode: Fix exit on easy mode screen
+
+   * packages/apps/Calculator/
+142a29b Floating Calculator: Fix Hidden row of buttons
+
+   * packages/apps/Gallery2/
+9abe709 Photo Gallery widget: fix NPE in getViewAt
+
+   * packages/apps/Settings/
+2709976 settings: dock battery
+e6e6b62 Fingerprint: Fingerprint enrollment
+ef0c34f Fingerprint: Add summary text to 'manage fingerprints'
+b733f0a [2/2] Camera button support
+
+   * packages/apps/Trebuchet/
+1ac777c FocusHelper: handle NPE with when getting workspace child
+aa2cb4a Trebuchet: display search widget search box if available
+
+   * packages/services/Telecomm/
+d5e706b msim: Fix saving default sim from select SIM dialog (2/2)
+
+   * system/core/
+fe93cfb healthd: dock battery
+
+====================
      07-09-2015
 ====================
 
@@ -14,13 +382,38 @@ c1558f5 "LMY48E"
 06a2cd3 "LMY48D"
 2491025 "LMY48C"
 
+   * external/stagefright-plugins/
+ce6fc45 stagefright-plugins: Fix adaptive buffer and crop handling
+
    * frameworks/av/
 35adb33 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_frameworks_av into HEAD
 
    * frameworks/base/
 b672efb think we need these
 d6b0011 fix derps
+1b34a5a Fix keyguard wallpaper issues
+afd5ad9 Keyguard Fingerprint: Don't cancel if device doesn't have the feature
+bae5505 SystemUI: Add uses-permission for fingerprint
+ba9c981 Fingerprint: Secure the dump
 8a09f95 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_frameworks_base into HEAD
+213331f Remove memory leak in PersistentDataBlockService jni
+5303b54 DO NOT MERGE Fix JNI global references leak in AudioEffect
+af6d9b9 Avoid AsyncTask ThreadPool leak in RecentTaskLoaser
+eff323b backup: Fix a system server crash
+e5cddac Buttons: Launch camera activity instead of BroadcastReceiver
+8cba8af Even more duplicates
+
+   * hardware/libhardware/
+1d03c03 Fingerprint: Add getNumEnrollmentSteps [2/2]
+
+   * hardware/qcom/audio-caf/msm8974/
+f7bddec hal: Notify amplifier of device enable/disable
+
+   * hardware/qcom/audio-caf/msm8994/
+b5ab239 hal: pass samplerate as is to tiny compress
+
+   * packages/apps/Calculator/
+c6121ca Cursor: Keep visible for long numbers
 
    * packages/apps/Settings/
 8de645c Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Settings into HEAD
@@ -39,19 +432,33 @@ a47ce89 Additional European MVNOs
 ====================
 
 
-   * external/stagefright-plugins/
-ce6fc45 stagefright-plugins: Fix adaptive buffer and crop handling
-
    * frameworks/base/
-213331f Remove memory leak in PersistentDataBlockService jni
-5303b54 DO NOT MERGE Fix JNI global references leak in AudioEffect
-af6d9b9 Avoid AsyncTask ThreadPool leak in RecentTaskLoaser
-eff323b backup: Fix a system server crash
-e5cddac Buttons: Launch camera activity instead of BroadcastReceiver
-8cba8af Even more duplicates
+1d4e84e Rewrite Keyguard Visualizer
+0686de9 Add fingerprint permission [1/2]
 
-   * packages/apps/Calculator/
-c6121ca Cursor: Keep visible for long numbers
+   * hardware/qcom/media-caf/msm8916/
+26f4ba7 mm-video-v4l2: Remove useless build warning
+
+   * kernel/oneplus/msm8974/
+fd812ba udp: fix behavior of wrong checksums
+
+   * packages/apps/CMFileManager/
+c6207b6 Android.mk don't build source components in tests/
+
+   * packages/apps/Eleven/
+7441c5d Dynamically generate visualizer color
+
+   * packages/apps/Mms/
+c67b355 Contact vCard: Dont crash if contact that is sent no longer exits.
+
+   * packages/apps/Settings/
+5e3695e Add fingerprint permission [2/2]
+
+   * packages/apps/Trebuchet/
+db86a7f Badge: Check count on bind
+
+   * system/core/
+a213c36 Charger: Add font to show real battery capacity in charger mode.
 
 ====================
      07-07-2015
@@ -62,9 +469,13 @@ c6121ca Cursor: Keep visible for long numbers
 a82d5bd stagefright-plugins: Add special handling of DivX files
 529ea8c stagefright-plugins: Improve seeking further
 
+   * frameworks/av/
+7533421 audio: Reduce logging verbosity
+b2eb385 Acodec: Add interlaced video support
+1a4c727 audio: fallback to SW decoder for video clips
+38a308c libmedia: restrict nuplayer from using track offload
+
    * frameworks/base/
-1d4e84e Rewrite Keyguard Visualizer
-0686de9 Add fingerprint permission [1/2]
 bd62a43 Add a few more default QS tiles
 4b1337e livedisplay: Fix outdoor mode detection
 b1d1b1a Barrier only messages shouldn't prevent the idle handlers from running
@@ -76,16 +487,15 @@ f3fbf88 Fingerprint: Reset state when client cancels
 9b3d0c9 Keyguard: Increase time to show hint texts
 699de3b Keyguard: Add fingerprint icon to the bottom view
 
-   * kernel/oneplus/msm8974/
-fd812ba udp: fix behavior of wrong checksums
-
-   * packages/apps/CMFileManager/
-c6207b6 Android.mk don't build source components in tests/
+   * packages/apps/Dialer/
+3575201 Dialer: Enable Call Recording for Romania
 
    * packages/apps/Settings/
-5e3695e Add fingerprint permission [2/2]
 0cbb3cf Settings: Add config for not allowing calls/sms being set to > slot 1
 198a64f Make preferred install location option configurable.
+
+   * packages/providers/TelephonyProvider/
+aa98e82 MmsProvider : Add ability to get thread information in search
 
    * packages/services/Telephony/
 fe084f7 Telephony : Add support for config_hardcodeDefaultMobileNetworks
@@ -94,12 +504,6 @@ fe084f7 Telephony : Add support for config_hardcodeDefaultMobileNetworks
      07-06-2015
 ====================
 
-
-   * frameworks/av/
-7533421 audio: Reduce logging verbosity
-b2eb385 Acodec: Add interlaced video support
-1a4c727 audio: fallback to SW decoder for video clips
-38a308c libmedia: restrict nuplayer from using track offload
 
 ====================
      07-05-2015
@@ -110,6 +514,12 @@ b2eb385 Acodec: Add interlaced video support
 1fed6c5 Update Changelog.txt
 43c2343 track slims DeskClock
 3e15f68 Track cm Deskclock again
+879acc6 Update default.xml
+
+   * build/
+e1da971 Revert "build: use common factory script and input more parameters"
+95f14be definitions.mk: look for definitions.mk in device/*/build also
+cd750d9 build: use common factory script and input more parameters
 
    * external/flac/
 78683d1 Merge tag 'android-5.1.1_r5' into cm-12.1
@@ -119,6 +529,9 @@ b2eb385 Acodec: Add interlaced video support
 
    * external/libvpx/
 bd6949a Merge tag 'android-5.1.1_r5' into cm-12.1
+
+   * frameworks/av/
+58d8a41 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_frameworks_av into HEAD
 
    * frameworks/base/
 c109747 SystemUI: Fix FC when mHandler is null
@@ -131,9 +544,14 @@ b9bad64 Mark persistent apps as such when the ProcessRecord is created
 ec1cd41 Screen pinning improvements
 9ce3f09 Battery saver enhancements
 053edb2 Forward Port:Squahed Floating Window with Multitasking. Forward Port and Fixups done by BlackDragon && rogersb11
+23dad88 Merge remote-tracking branch 'cm/cm-12.1' into HEAD
+912c1a7 Revert "Wait until the Keyguard is drawn to dismiss the boot dialog."
 
    * frameworks/compile/slang/
 79ee331 Merge tag 'android-5.1.1_r5' into cm-12.1
+
+   * frameworks/native/
+648d9a0 Merge remote-tracking branch 'cm/cm-12.1' into HEAD
 
    * frameworks/opt/colorpicker/
 2a8218e Merge tag 'android-5.1.1_r5' into cm-12.1
@@ -144,50 +562,9 @@ ec1cd41 Screen pinning improvements
    * frameworks/support/
 fc5b106 Merge tag 'android-5.1.1_r5' into cm-12.1
 
-   * packages/apps/Settings/
-63c015c SlimActions: Floating window mode switch ant tile (2/2)
-e871e2f SElinux Switch [1/1]
-
-   * vendor/ownrom/
-ce72824 Update ownrom-repos
-86d85a5 Bump Up to 0.7 BETA
-
-====================
-     07-04-2015
-====================
-
-
-   * android/
-879acc6 Update default.xml
-
-   * build/
-e1da971 Revert "build: use common factory script and input more parameters"
-95f14be definitions.mk: look for definitions.mk in device/*/build also
-cd750d9 build: use common factory script and input more parameters
-
-   * device/oppo/msm8974-common/
-ce89ad3 msm8974: Disable QCOM HEVC decoders
-
-   * external/libnfc-nci/
-4b08a00 Merge branch 'cm-12.1-nxp' into HEAD
-48ea540 pn547: Don't attempt to downgrade firmware
-
-   * frameworks/av/
-58d8a41 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_frameworks_av into HEAD
-33a8884 libmedia: restrict nuplayer from using track offload
-
-   * frameworks/base/
-23dad88 Merge remote-tracking branch 'cm/cm-12.1' into HEAD
-912c1a7 Revert "Wait until the Keyguard is drawn to dismiss the boot dialog."
-
-   * frameworks/native/
-648d9a0 Merge remote-tracking branch 'cm/cm-12.1' into HEAD
-
    * hardware/qcom/audio-caf/msm8960/
+39d5260 audio: Notify amplifier of device enable/disable
 298039c audio: Refactor amplifier_set_device logic
-
-   * kernel/moto/shamu/
-436c547 video: mdss: Fix kcal_enable sysfs
 
    * kernel/oneplus/msm8974/
 320ac0d crypto: msm: remove wakeup lock in qcrypto driver
@@ -201,12 +578,21 @@ f538b51 writeback: Fix occasional slow sync(1)
 8a7faff Fix Dialer FC on guest user with phone calls allowed
 
    * packages/apps/Settings/
+63c015c SlimActions: Floating window mode switch ant tile (2/2)
+e871e2f SElinux Switch [1/1]
 e21d44e Merge remote-tracking branch 'cm/cm-12.1' into HEAD
 
+   * vendor/ownrom/
+ce72824 Update ownrom-repos
+86d85a5 Bump Up to 0.7 BETA
+
 ====================
-     07-03-2015
+     07-04-2015
 ====================
 
+
+   * device/oppo/msm8974-common/
+ce89ad3 msm8974: Disable QCOM HEVC decoders
 
    * device/qcom/sepolicy/
 238dd07 sepolicy: add permissions to set system property
@@ -217,6 +603,10 @@ af2c6fd sepolicy: allow dpmd to connect to system_server
 6599f2c cnd: Allow nims to be removed
 324ba9f Sepolicy: add rule to support ATP feature
 
+   * external/libnfc-nci/
+4b08a00 Merge branch 'cm-12.1-nxp' into HEAD
+48ea540 pn547: Don't attempt to downgrade firmware
+
    * external/stagefright-plugins/
 e9eddbf stagefright-plugins: Disable lowres
 
@@ -224,46 +614,52 @@ e9eddbf stagefright-plugins: Disable lowres
 f22222a WhisperPush: accept registration SMS from any number
 
    * frameworks/av/
+33a8884 libmedia: restrict nuplayer from using track offload
 0c2d0c6 CameraService: Bump up the maximum number of cameras
 
    * frameworks/base/
 3f2a0e7 Store manifest hash code in PackageParser.Package
 59a42f4 Keyguard: Show retry text on unidentified fingerprint
-6831615 SystemUI: fix clock jumping when expanding QS from lockscreen
-7052bad Keyguard: Show fallback after 2 failed auth attempts
-a6fe97c Keyguard: Authenticate with fingerprint
-332f903 Automatic translation import
 
    * hardware/qcom/keymaster/
 8e39456 keymaster: fix build for msm8994
 f33d1ad keystore: Enable building on msm8992 and msm8994
-
-   * hardware/ti/wlan/
-1cdbebc ti: Add interface_mtu request
 
    * packages/apps/InCallUI/
 e99ddf8 InCallUI: Unbreak heads-up disabled incoming call.
 
    * packages/apps/Settings/
 51b8cad Settings: Remove Performance Settings
-2610125 Fix patch derpage for fingerprint settings
 
 ====================
-     07-02-2015
+     07-03-2015
 ====================
 
 
    * device/oppo/common/
 5b303ab Automatic translation import
 
-   * device/oppo/msm8974-common/
-dae420b msm8974-common: Update firmware symlinks
-
    * external/whispersystems/WhisperPush/
 d4bae94 Automatic translation import
 
    * frameworks/base/
+6831615 SystemUI: fix clock jumping when expanding QS from lockscreen
+7052bad Keyguard: Show fallback after 2 failed auth attempts
+a6fe97c Keyguard: Authenticate with fingerprint
+332f903 Automatic translation import
 1d11593 Fingerprint: disallow API calls when fingerprint is not available
+
+   * hardware/qcom/audio-caf/msm8994/
+406edba Merge AU_LINUX_ANDROID_LA.BF64.1.2.1_RB2.05.01.01.081.048 on remote branch
+
+   * hardware/qcom/display-caf/msm8994/
+59fed77 Merge AU_LINUX_ANDROID_LA.BF64.1.2.1_RB2.05.01.01.081.048 on remote branch
+
+   * hardware/qcom/media-caf/msm8994/
+28697a8 Merge AU_LINUX_ANDROID_LA.BF64.1.2.1_RB2.05.01.01.081.048 on remote branch
+
+   * hardware/ti/wlan/
+1cdbebc ti: Add interface_mtu request
 
    * packages/apps/BluetoothExt/
 9b7bdf8 Automatic translation import
@@ -317,6 +713,7 @@ da1502d Automatic translation import
 95d5378 AnimUtils : clear listeners when animation completes or is terminated
 
    * packages/apps/Settings/
+2610125 Fix patch derpage for fingerprint settings
 17942d9 Automatic translation import
 
    * packages/apps/SetupWizard/
@@ -367,17 +764,16 @@ b016009 Automatic translation import
    * packages/wallpapers/PhotoPhase/
 553bd98 Automatic translation import
 
-   * system/core/
-e05665a Add Wileyfox VID part 2
-429e98c Add Wileyfox VID
-
    * vendor/cmsdk/
 1ba6ee2 Automatic translation import
 
 ====================
-     07-01-2015
+     07-02-2015
 ====================
 
+
+   * device/oppo/msm8974-common/
+dae420b msm8974-common: Update firmware symlinks
 
    * external/whispersystems/WhisperPush/
 9edd25a WhisperPush: add weekly active users metric
@@ -386,41 +782,28 @@ ba78f1e WhisperPush: service for WPv2 update to interrogate/disable v1
    * frameworks/base/
 1718ee0 Wait until the Keyguard is drawn to dismiss the boot dialog.
 e52c239 WhisperPush: allowing whitelisting of needed framework permissions
-8889f49 Add default for Settings.System.DOUBLE_TAP_SLEEP_GESTURE.
-4f965c5 SystemUI: recalculate clock position on removing empty shade views
-b1e3b8c Enable fingerprint option in Settings [1/3]
-a6e670d Fingerprint [1/2]: Numerous Fingerprint Improvements
-a5c551d density: do not apply to virtual displays
-46da937 Battery saver enhancements
-673fc49 SystemUI: hide navigation bar faster in SetupWizard
-8522300 gPowered by OwnROM!
-c62b80d Powered by OwnROM!
 
    * frameworks/native/
-916232e Enable fingerprint option in Settings [2/3]
+19e236c native: dock battery
 
    * packages/apps/Contacts/
 b267d4b Contacts: Fixed "%s" appearing in contact options in some languages
 
    * packages/apps/Settings/
 95bf6ff Settings: use WhisperPush v2 if it is installed in place of v1
-45d1789 Show dialog if max number of fingerprints has been reached
-c82cafa Rename/Delete UI in fingerprint list
-aa16f13 Enable fingerprint option in Settings [3/3]
-a80d3c4 Settings: add wifi ap dialog 'show password' default overlay
-9e37bb6 settings: Fix developer options crash when mBackupManager is null
-
-   * packages/apps/SetupWizard/
-ee89d29 Clarify touch event consumption logic
 
    * packages/apps/Trebuchet/
 769cdc7 Update default workspace configuration.
+
+   * system/core/
+e05665a Add Wileyfox VID part 2
+429e98c Add Wileyfox VID
 
    * vendor/cmsdk/
 cc97903 CMSDK: Make sure to initialize ProfileTriggerHelper.
 
 ====================
-     06-30-2015
+     07-01-2015
 ====================
 
 
@@ -447,9 +830,17 @@ c631944 Code inspection fixes
 
    * frameworks/av/
 5dd0f80 libstagefright: back off exynos4_enhancements HWC_HWOVERLAY usage
-143ed19 Revert "libstagefright: free mMoovBoxBuffer"
 
    * frameworks/base/
+8889f49 Add default for Settings.System.DOUBLE_TAP_SLEEP_GESTURE.
+4f965c5 SystemUI: recalculate clock position on removing empty shade views
+b1e3b8c Enable fingerprint option in Settings [1/3]
+a6e670d Fingerprint [1/2]: Numerous Fingerprint Improvements
+a5c551d density: do not apply to virtual displays
+46da937 Battery saver enhancements
+673fc49 SystemUI: hide navigation bar faster in SetupWizard
+8522300 gPowered by OwnROM!
+c62b80d Powered by OwnROM!
 dc4e37b Don't inflate new phone states on callbacks.
 aa8ad23 Clear callback handler queue when unregistering a phone state listener.
 28258a1 Stop checking for resources.arsc in shouldCreateIdmap
@@ -457,244 +848,22 @@ c1fad89 frameworks: Factor out Profiles API to CMSDK
 8d9044c SystemUI: fix recents task view height calculation
 548ee80 SystemUI: don't launch visualizer before we are attached
 
+   * frameworks/native/
+916232e Enable fingerprint option in Settings [2/3]
+
    * frameworks/opt/telephony/
 af066e1 msim: fix parse error when roaming with slot 2 only
 
    * hardware/qcom/audio-caf/msm8994/
 0fe80ca audio: Extend platform parser to allow device name aliasing
 
-   * packages/apps/CMFileManager/
-dad28ad ActionBar TextSelection: Prevent overlay of textfield
-
-   * packages/apps/InCallUI/
-062ec69 Revert "[2/2] InCallUI: let InCallUI handle proximity sensor for incoming calls"
-
    * packages/apps/Settings/
-f6131d1 Settings: Refactor to point at Profiles in CMSDK.
+45d1789 Show dialog if max number of fingerprints has been reached
+c82cafa Rename/Delete UI in fingerprint list
+aa16f13 Enable fingerprint option in Settings [3/3]
+a80d3c4 Settings: add wifi ap dialog 'show password' default overlay
+9e37bb6 settings: Fix developer options crash when mBackupManager is null
 
-   * packages/apps/Trebuchet/
-31559ae Hide workspace shortcuts during binding when AllApps is shown.
-
-====================
-     06-29-2015
-====================
-
-
-   * external/libnfc-nci/
-37d62d7 Merge "Add NFC-DEP routing"
-
-   * frameworks/av/
-4c6d30b audiopolicy: Add msm8994
-
-   * frameworks/base/
-49d68f9 return default density only for primary display
-8a649c1 alarmmanager: Add sanity checking for elapsed_realtime alarms
-829a047 Rotation related corrections
-
-   * hardware/qcom/audio-caf/msm8994/
-2eabacc msm8994: Remove bogus metadata
-
-====================
-     06-28-2015
-====================
-
-
-   * android/
-770adb2 Update default.xml
-1fb1437 Fix typo
-2d35fad Let's track cm AudioFX again
-7605b4c Update default.xml
-3869f49 Update default.xml
-7c10700 Update default.xml
-eb8cd11 Update default.xml
-d1d0ead add Viper4Android resource
-3a8ea67 Track our own AudioFX
-49394dd replace Camere2 for OpenCamera
-
-   * bootable/recovery/
-8110781 improve Rainbow Mode
-a0d5ef2 RAINBOW MODE MOTHERFUCKERS
-
-   * frameworks/base/
-7f8456a Revert "Base: Implement App circle sidebar[1/2]"
-977edf8 Merge branch 'cm-12.1' of github.com:OwnROM/android_frameworks_base into cm-12.1
-
-   * packages/apps/Settings/
-6f14f42 Revert "[2/2] Settings: Implement App circle sidebar"
-530e2cd Merge branch 'cm-12.1' of github.com:OwnROM/android_packages_apps_Settings into cm-12.1
-3f971e4 Fix
-40bbb47 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_packages_apps_Settings into cm-12.1
-f464689 Delete Viper4Android entry and clean up
-ef63746 Update own_sound_settings.xml
-ccaace0 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_packages_apps_Settings into cm-12.1
-285aff7 Add activities to AndroidManifest.xml
-8b5cae7 Fix for OTA Update FC
-67b4926 Fix build
-0cc9256 Another Derp
-0e3d673 Derp
-a4988ba Add entry for AudioFX into Advanced Sound Settings
-
-   * system/extras/
-5524958 make_ext4fs: workaround for a glibc scandir bug
-60a6420 fix keystore_signer
-
-   * vendor/motorola/
-0326c9b Merge pull request #168 from razrqcom-dev-team/cm-12.1-quark
-e7629a5 quark: Remove unused libadropbox
-
-   * vendor/ownrom/
-822b8eb update devices
-ceb71ec Update ownrom-repos
-da42844 Trying to fix build
-a45b4eb Delete this repo's
-551616c Merge branch 'cm-12.1' of https://github.com/OwnROM/android_vendor_ownrom into HEAD
-1f7795d Prebuilts...
-d289c75 Update ownrom-repos
-6d30a75 And build Viper4Android to
-0eb7a1e Also mix up Viper4Android
-ea37641 Add AudioFX to the mix
-e8e827c replace Camere2 for OpenCamera
-
-====================
-     06-27-2015
-====================
-
-
-   * android/
-e2988fb Update default.xml
-94f9cc2 5.1.1_r3 will be 5.1.1_r5
-
-   * device/moto/shamu/
-1bd3596 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_device_moto_shamu into cm-12.1
-
-   * device/oneplus/bacon/
-6c28278 bacon: enable hw keys by default
-
-   * frameworks/base/
-cc74442 HW Keys tweaks [2/2]
-9d68948 Revert "Revert "Navbar Tweaks [2/2]""
-35b182b QSTileView: fix label recreate order
-1dd41ce Revert "FW_Base - Statusbar clock font style (1/2)"
-a4301d2 Revert "FWB: Notification ticker (1/2)"
-6c4e604 Revert "FWB: Add Volume Key Answer (1/2)"
-76ff8bc Revert "Fix build"
-92eec85 Revert "App Circle Sidebar: Support for Configurable Trigger Region[1/2]"
-4de351e SystemUI: be more event driven in keyguard visualizer
-1af449b Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_frameworks_base into cm-12.1
-2a967d6 Cleane up
-50f2f78 Merge branch 'cm-12.1' of https://github.com/OwnROM/android_frameworks_base into cm-12.1
-
-   * hardware/qcom/bt/
-39bd94b Bluetooth: Don't return in case external ldo is not present
-
-   * packages/apps/Email/
-84e293f Allow saving attachments even if there's no intent handling them.
-3afa9da Allow download of compressed attachments.
-
-   * packages/apps/OwnWallpapers/
-2cc454b Remove sw600dp OwnWorld
-f50f3bf OwnWorld Wallpaper
-
-   * packages/apps/Settings/
-fd4bc3d HW keys tweaks [1/2]
-bbeb864 Revert "Revert "Navbar Tweaks [1/2]""
-74d8211 Settings: Make the Wifi regions translatable
-394d137 Fixing stuff
-01f6fcc Revert "App Circle Sidebar: Support for Configurable Trigger Region[2/2]"
-7bc32dd App Circle Sidebar: Support for Configurable Trigger Region[2/2]
-5be1987 Revert "Settings - Statusbar clock font style (2/2)"
-a1042aa Revert "Settings: Add Volume Key Answer (2/2)"
-466b3d1 Merge branch 'cm-12.1' of github.com:OwnROM/android_packages_apps_Settings into cm-12.1
-a7229e2 [2/2] Settings: Implement App circle sidebar
-beb21a6 Revert "Settings: Notification ticker (2/2)"
-1e6e7b5 Revert "fix compilation"
-67b5525 Merge and move Viper entry to Advanced Sound Settings
-f8b5693 Settings: Wi-Fi WPS Materialized icon
-
-   * vendor/ownrom/
-a02e58a OwnROM: Version 6 Beta B)
-0ad1d20 Remove obsolete /cache/dalvik-cache stuff from init.local.rc
-7ab2bd9 Fix Sprint 3G
-004654f vendor/cm: Represent as CyanogenMod API's
-3a3ecf0 vendor/cm: Remove search widget from developer docs.
-d3394d6 vendor/cm: Point to proper prebuilts/cmsdk directories.
-45b1a41 Support downloading from Maven
-
-====================
-     06-26-2015
-====================
-
-
-   * android/
-78ce286 Update changelog
-2c99e7d manifest: remove final > extra
-a7cd68e Add cmsdk prebuilts repo.
-7cdb10e Add Android Support Library prebuilts
-
-   * bootable/recovery/
-8bf5e55 recovery: bu: Support verity, incremental OTAs, and encrypted data
-
-   * external/android-visualizer/
-38d5cf3 VisualizerView: add ability to disable drawing
-fc9b944 Revert "visualizer: don't draw fade out paint when there's no content"
-
-   * external/sepolicy/
-126d57e sepolicy: Remove profiles from context, moved to cm
-
-   * frameworks/av/
-ee96b68 Merge remote-tracking branch 'cm/cm-12.1' into HEAD
-
-   * frameworks/base/
-f1afd63 Speed-up Optimization
-22e1d51 BootMessage: Show each app name being optimized during boot
-1b0ece7 Delete media tests
-f2139d7 Status bar notification: Use Material icons for missed calls
-2364fac Remove usages of FloatMath
-72bd1f1 Unknown source apps: enable apk installation by default
-865d542 Frameworks: Option to enable/disable scrolling cache
-68edca2 App Circle Sidebar: Support for Configurable Trigger Region[1/2]
-873ab41 Base: Implement App circle sidebar[1/2]
-fea54b2 Speed up Statusbar
-794bc6d Speed Up Recents Menu
-5ee83e6 Speed up a few animations
-6013701 Enable Dessert Cake dream
-b4b0bce SystemUI: Speed up and clean tests (squash)
-abfab9c Enable some overlays by default
-7d528c4 Hide lift to wake, does not stay enabled
-dea44c1 Speed Up Long Press Timeout
-6f83ca4 Speed things up!!
-c4cb892 Remove unnecessary videos
-efd4be5 fix WRITE_SETTINGS to be "dangerous"
-d946b22 Fingerprint: Make the existing FingerprintService semi-useful.
-ff77667 SystemUI: workaround for visualizer flash on track change
-cb49415 fix merge derp
-d2f90f5 SystemUI: dynamically generate visualizer color
-925ca02 Merge remote-tracking branch 'cm/cm-12.1' into HEAD
-
-   * frameworks/native/
-ef81daa Merge remote-tracking branch 'cm/cm-12.1' into HEAD
-
-   * kernel/oneplus/msm8974/
-c7389ad qseecom: Change pr_info messages to pr_debug
-1190e93 msm: kgsl: check for NULL pointer access
-9dd3968 spi_qsd: Fix DMA errors
-9f0bacd spi: spi_qsd: Reduce latency for non-shared cores
-69e9722 spi: spi_qsd: Add multi-ee support
-2b6a3e7 msm: vidc: Error handling when core is in bad state
-0b25311 msm: vidc: replace resurrect_fw with unload_fw
-364774e qseecom: add mutex protection for unloading app in qseecom_release
-8e2f326 ARM: dts: msm: Update adsp heap memory size
-
-   * packages/apps/Profiles/
-f854275 Profiles: Refactor to point at Profiles in CMSDK.
-
-   * packages/apps/Settings/
-62d2155 Small fix
-2499dac Merge remote-tracking branch 'cm/cm-12.1' into HEAD
-
-   * system/core/
-b6ebd65 healthd: allow custom charger
-
-   * vendor/cmsdk/
-4334b3d CMSDK: Introduce Profiles API from frameworks.
+   * packages/apps/SetupWizard/
+ee89d29 Clarify touch event consumption logic
 
