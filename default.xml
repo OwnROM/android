@@ -12,11 +12,11 @@
 
   <remote  name="ownrom"
 	   fetch="https://github.com/OwnROM"
-	   revision="cm-13.0" />
+	   revision="own-mm" />
 
   <remote  name="devices"
            fetch="https://github.com/OwnROM-Devices"
-           revision="cm-13.0" />
+           revision="ownrom" />
 
   <remote  name="private"
            fetch="ssh://git@github.com" />
