@@ -1,0 +1,260 @@
+====================
+     05-08-2016
+====================
+
+   * build/
+448b3eb  Update Makefile  [OwnDroid]
+d37486c  fix  [OwnDroid]
+   * frameworks/base/
+4202629  Navigation bar button color [1/2]  [OwnDroid]
+ca0c679  Navigation bar options + HW keys tweaks [SQUASH] [1/2]  [OwnDroid]
+   * packages/apps/Settings/
+16fed67  Navigation bar button color [2/2]  [OwnDroid]
+b0d6b57  Nav bar tweaks + HW keys tweaks [2/2]  [OwnDroid]
+   * vendor/ownrom/
+545c389  change permisions  [OwnDroid]
+
+====================
+     05-07-2016
+====================
+
+   * android/
+4819663  Merge branch 'own-mm' of https://github.com/OwnROM/android into own-mm  [OwnDroid]
+6e9fca5  Delete no longer needed repo's  [OwnDroid]
+   * build/
+3ebcbab  Make the bloody changelog...  [OwnDroid]
+   * frameworks/base/
+3629819  Add some imports  [OwnDroid]
+d941b87  Double tap to sleep on navigation bar [1/2]  [OwnDroid]
+4723b22  Materialize Tab Selected to Fix Power Menu Theming  [OwnDroid]
+7165c95  Update Alarm Files from N5 Factory Image  [OwnDroid]
+fecb79a  Update Effects from N5 Nexus Image  [OwnDroid]
+ec04247  Update Dock/Undock Sounds from M Factory Image  [OwnDroid]
+092fcb0  Update Notification Sounds from N5 Factory Image  [OwnDroid]
+2eb166f  Update Material Ringtones to M from N5 Factory Image  [OwnDroid]
+a721061  Update VideoRecord & Wireless Charging Sounds to M  [OwnDroid]
+9a55df2  Use M Sound for LowBattery  [OwnDroid]
+20cf708  Ensure M Camera Sounds  [OwnDroid]
+1c5639b  Change dividers from Holo Blue to Material Teal  [OwnDroid]
+fd07582  Update frameworks-res.apk icon to a more appropriate icon  [OwnDroid]
+94db832  Battery saver enhancements  [OwnDroid]
+adc5ae0  Screen pinning improvements  [OwnDroid]
+8c9fa2c  ActivityThread, shut the density up!  [OwnDroid]
+f587856  Allow faster app switching  [OwnDroid]
+d77bad4  Fix Def App Icon for ldpi  [OwnDroid]
+3dd495f  Update GPS Icons to be more Material  [OwnDroid]
+6d31b5c  Materialize toast frames  [OwnDroid]
+4e697a9      Improve scrolling cache  [OwnDroid]
+0470c2c  [Squashed] Remove drawables and videos we don't need  [OwnDroid]
+8df23f8  Change SQL to improve performance.  [OwnDroid]
+   * packages/apps/Settings/
+270c9cc  Derp!!!  [OwnDroid]
+9131865  Full screen recents [2/2]  [OwnDroid]
+8a860d4  Double tap to sleep on navigation bar [2/2]  [OwnDroid]
+a5eab71  Changelog generator [2/2]  [OwnDroid]
+9db8556  Make batterybar entries translatable  [OwnDroid]
+   * vendor/ownrom/
+2c31c13  Add these lines to be sure  [OwnDroid]
+dcd1ec4  Vendor: Changelog generator [1/2]  [OwnDroid]
+aabc3b0  Add new prebuilts  [OwnDroid]
+
+====================
+     05-06-2016
+====================
+
+   * packages/apps/Settings/
+b428556  A little clearafying...  [OwnDroid]
+07c2e27  BatteryBAR: Add missing Dutch translations  [OwnDroid]
+f88928f  Derps  [OwnDroid]
+
+====================
+     05-05-2016
+====================
+
+   * frameworks/base/
+d91a32d  BatteryBar [1/2]  [OwnDroid]
+a4ccd38  Revert "Keyguard: switch to cm-specific device provisioned flag"  [OwnDroid]
+b88c087  trying to fix RAMbar  [OwnDroid]
+   * packages/apps/Settings/
+2b45e07  Battery Bar [2/2]  [OwnDroid]
+
+====================
+     05-04-2016
+====================
+
+   * android/
+86dbba8  manifest: update path for ubertc  [Akhil Narang]
+152bd06  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android into own-mm  [OwnDroid]
+   * build/
+6682de2  Revert "arm64: use the toolchain in -kernel dir" to fix build  [OwnDroid]
+87dba17  Merge branch 'own-mm' of https://github.com/OwnROM/android_build into own-mm  [OwnDroid]
+bdf9055  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_build into own-mm  [OwnDroid]
+   * device/huawei/angler/
+9202ea6  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_device_huawei_angler into own-mm  [OwnDroid]
+   * frameworks/base/
+4b077d8  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_frameworks_base into own-mm  [OwnDroid]
+79d2a62  Update RAM bar a bit...  [OwnDroid]
+   * packages/apps/Settings/
+7e2eb78  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_packages_apps_Settings into own-mm  [OwnDroid]
+   * system/core/
+bd6ce89  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_system_core into own-mm  [OwnDroid]
+   * vendor/cmsdk/
+da96c52  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/cm_platform_sdk into own-mm  [OwnDroid]
+   * vendor/ownrom/
+0cfb27e  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_vendor_cm into own-mm  [OwnDroid]
+
+====================
+     05-03-2016
+====================
+
+   * build/
+457da7b  build: Fix manual invocation of aar targets.  [Adnan Begovic]
+b5332f9  build: Make sure to check for variable definition during execution.  [Adnan Begovic]
+   * external/zlib/
+55411b1  zlib: Remove usage of cpu directive in inline asm  [Steve Kondik]
+   * frameworks/base/
+adbe561  Settings: defer DEV_FORCE_SHOW_NAVBAR query to CMSettings  [Gerrit Code Review]
+31f3026  Revert "Selectively show zen footer."  [Gerrit Code Review]
+f5b69f3  Lockscreen shortcuts: don't allow specific activities  [Roman Birg]
+9f7fc27  keyguard: Allow disabling fingerprint wake-and-unlock  [Gerrit Code Review]
+d6236bd  nms: Only generate LED colors if the device has a multicolored LED  [Steve Kondik]
+   * hardware/cyanogen/
+ff81fca  cmhw: Correct TAG for Color Enhancement  [Ethan Chen]
+01801a2  aw2013: Add header for malloc/free  [Ethan Chen]
+   * packages/apps/FMRadio/
+b51931e  FmService: Make usage of audiopatch a build-time option  [Ricardo Cerqueira]
+   * packages/apps/PhoneCommon/
+b5448ef  AmbientConnection: Permissions checking  [Richard MacGregor]
+   * packages/apps/Screencast/
+f88548a  ScreenRecorder: new icon  [jrizzoli]
+   * packages/services/Telecomm/
+6c7dd77  CallsManager: Fix racey disconnect-on-waiting  [Ricardo Cerqueira]
+   * prebuilts/cmsdk/
+f2c8d86  prebuilts/cmsdk: Overwrite release artifact.  [Adnan Begovic]
+   * vendor/cmsdk/
+60f2acf  cmsdk: @hide protected variable  [Roman Birg]
+fd4b383  CMSettings: intercept Settings calls to DEV_FORCE_SHOW_NAVBAR  [Gerrit Code Review]
+94dd91a  cmsdk: Fix PerformanceManagerTest expectations.  [Adnan Begovic]
+c6550fd  cmsdk: include our own consumer proguard rules  [Gerrit Code Review]
+de43b8c  cmsdk: set minsdk to api level 4  [Gerrit Code Review]
+
+====================
+     05-02-2016
+====================
+
+   * frameworks/base/
+374bff1  Revert "SettingsLib: Add back accidentally removed translations"  [Michael Bestas]
+   * hardware/qcom/audio-caf/msm8994/
+866d090  Fix incall music enabled error  [Sean hoyt]
+49054ba  policy_hal: Fix setOutputDevice call when starting source  [Steve Kondik]
+   * hardware/ti/omap4/
+10f354f  domx: connection robustness improvements  [Michael Gernoth]
+   * packages/apps/BasicSmsReceiver/
+3e06852  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/BasicSmsReceiver into cm-13.0"  [Michael Bestas]
+   * packages/apps/Bluetooth/
+f4546b1  Partially revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Bluetooth into cm-13.0"  [Michael Bestas]
+   * packages/apps/Calendar/
+288ecbb  Calendar: Fix translatability of buttons list  [Michael Bestas]
+   * packages/apps/Camera2/
+4770312  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Camera2 into cm-13.0"  [Michael Bestas]
+   * packages/apps/CellBroadcastReceiver/
+78dd173  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver into cm-13.0"  [Michael Bestas]
+   * packages/apps/CertInstaller/
+43e8a16  Partially revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/CertInstaller into cm-13.0"  [Michael Bestas]
+   * packages/apps/Contacts/
+829ce77  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Contacts into cm-13.0"  [Michael Bestas]
+   * packages/apps/DeskClock/
+af121c5  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/DeskClock into cm-13.0"  [Michael Bestas]
+ddbc283  Revert "Revert "Import translations. DO NOT MERGE""  [Michael Bestas]
+   * packages/apps/Dialer/
+bde990e  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Dialer into cm-13.0"  [Michael Bestas]
+11ed4a8  Revert "Workaround for AOSP strings missing translations"  [Michael Bestas]
+   * packages/apps/Email/
+89e216d  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Email into cm-13.0"  [Michael Bestas]
+   * packages/apps/ExactCalculator/
+7e0d09a  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/ExactCalculator into cm-13.0"  [Michael Bestas]
+   * packages/apps/FMRadio/
+20b31d7  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/FMRadio into cm-13.0"  [Michael Bestas]
+   * packages/apps/Gallery2/
+55b2afc  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Gallery2 into cm-13.0"  [Michael Bestas]
+   * packages/apps/Gello/
+4ec3df1  Gello: Improve some strings  [Michael Bestas]
+   * packages/apps/InCallUI/
+2425096  Partially revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/InCallUI into cm-13.0"  [Michael Bestas]
+   * packages/apps/KeyChain/
+1d01cb0  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/KeyChain into cm-13.0"  [Michael Bestas]
+   * packages/apps/ManagedProvisioning/
+e1c1f4a  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/ManagedProvisioning into cm-13.0"  [Michael Bestas]
+   * packages/apps/Nfc/
+80f5226  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Nfc into cm-13.0"  [Michael Bestas]
+   * packages/apps/PhoneCommon/
+158e6b3  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/PhoneCommon into cm-13.0"  [Michael Bestas]
+   * packages/apps/Snap/
+a788cdd  Snap: Only set preferred preview sizes if they are valid  [Gerrit Code Review]
+35cf43e  Snap: Support override maker and model exif tag  [Ketut Putu Kumajaya]
+   * packages/apps/SoundRecorder/
+92f1897  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/SoundRecorder into cm-13.0"  [Michael Bestas]
+   * packages/apps/Stk/
+fabbc12  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Stk into cm-13.0"  [Michael Bestas]
+   * packages/apps/Tag/
+f26dd77  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Tag into cm-13.0"  [Michael Bestas]
+   * packages/apps/TvSettings/
+3327e7b  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/TvSettings into cm-13.0"  [Michael Bestas]
+   * packages/apps/UnifiedEmail/
+6d39c78  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/UnifiedEmail into cm-13.0"  [Michael Bestas]
+   * packages/providers/ContactsProvider/
+d849765  Partially revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/providers/ContactsProvider into cm-13.0"  [Michael Bestas]
+   * packages/providers/DownloadProvider/
+d94d7f8  Partially revert "Import translations. DO NOT MERGE"  [Michael Bestas]
+7b3ecae  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/providers/DownloadProvider into cm-13.0"  [Michael Bestas]
+   * packages/providers/MediaProvider/
+d4592ab  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/providers/MediaProvider into cm-13.0"  [Michael Bestas]
+   * packages/providers/TelephonyProvider/
+662c50e  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/providers/TelephonyProvider into cm-13.0"  [Michael Bestas]
+   * packages/providers/UserDictionaryProvider/
+796f619  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/providers/UserDictionaryProvider into cm-13.0"  [Michael Bestas]
+   * packages/screensavers/Basic/
+c1813e3  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/screensavers/Basic into cm-13.0"  [Michael Bestas]
+   * packages/screensavers/PhotoTable/
+dd4a862  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/screensavers/PhotoTable into cm-13.0"  [Michael Bestas]
+   * packages/services/Telephony/
+50e6e40  Apply correct theme color to USSD progress dialog.  [Arvin Quilao]
+a374161  Partially revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/services/Telephony into cm-13.0"  [Michael Bestas]
+   * packages/wallpapers/Basic/
+6983fd7  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/wallpapers/Basic into cm-13.0"  [Michael Bestas]
+   * packages/wallpapers/HoloSpiral/
+3d59c10  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/wallpapers/HoloSpiral into cm-13.0"  [Michael Bestas]
+   * packages/wallpapers/LivePicker/
+fb8dcdb  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/wallpapers/LivePicker into cm-13.0"  [Michael Bestas]
+   * packages/wallpapers/MagicSmoke/
+15cab6a  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/wallpapers/MagicSmoke into cm-13.0"  [Michael Bestas]
+   * packages/wallpapers/NoiseField/
+38435b4  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/wallpapers/NoiseField into cm-13.0"  [Michael Bestas]
+   * packages/wallpapers/PhaseBeam/
+1105ac7  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/wallpapers/PhaseBeam into cm-13.0"  [Michael Bestas]
+
+====================
+     05-01-2016
+====================
+
+   * bionic/
+e87a5b3  bionic: Use a more simple strrchr for arm64  [Steve Kondik]
+   * external/zlib/
+41a0457  zlib: Disable Clang for now  [Steve Kondik]
+   * frameworks/av/
+7592f6c  avextensions: Fix warnings on 64-bit clang  [Steve Kondik]
+   * hardware/qcom/audio-caf/msm8994/
+f17c099  hal: Fix build break when incall music isn't set  [Steve Kondik]
+2a7df58  hal: Fix warnings when building with clang  [Steve Kondik]
+4f1d6d3  policy_hal: fix improper voice-playback concurrency handling  [Steve Kondik]
+   * hardware/qcom/display-caf/msm8994/
+cedd62a  display: Fix warnings on 64-bit clang  [Steve Kondik]
+   * hardware/qcom/media-caf/msm8994/
+8f10396  media: Fix issues when building with Clang  [Steve Kondik]
+   * system/core/
+bbc34f8  rootdir: Remove cpufreq mode settings  [Steve Kondik]
+   * vendor/cmsdk/
+a4ab6bd  cmsdk: Fix warning from 64-bit clang  [Steve Kondik]
+   * vendor/ownrom/
+de1ad36  cm: Allow LiveDisplay to write to color_enhance  [Steve Kondik]
+
