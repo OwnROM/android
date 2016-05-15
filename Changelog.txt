@@ -1,8 +1,249 @@
 ====================
+     05-15-2016
+====================
+
+   * frameworks/base/
+ab5e7bf  Changed contextual notification panel headers See images - http://i.imgur.com/PupEJ5p.jpg  [OwnDroid]
+e529011  Move "modern" custom header images to nodpi for ALL densities usage  [OwnDroid]
+ed9bbd2  Move poly hd custom header images to nodpi for ALL densities usage  [OwnDroid]
+7924809  SystemUI: Add option for "modern" custom headers [1/2]  [OwnDroid]
+2c879a2  SystemUI: Add option for new poly hd custom headers [1/2]  [OwnDroid]
+a23c4cb  SystemUI: Add PAC's revamped contextual notification header images  [OwnDroid]
+996d124  SystemUI: Add new HD poly effect contextual header images  [OwnDroid]
+d4cb4ae  [1/2] SystemUI: Add time-context headers to the notification header  [OwnDroid]
+c68e7e3  Revert "[2/2] frameworks_base: Add option to show seconds in time"  [OwnDroid]
+   * packages/apps/Settings/
+e470da5  Settings: Add option for "polyhd and modern" custom headers [2/2]  [OwnDroid]
+06e9787  [2/2] Settings: Add time-context headers to the notification  [OwnDroid]
+4bfc1be  Settings: SlimDim - pref to listen on entire screen for touches  [OwnDroid]
+c5ebc07  Revert "[1/2] Settings: Add option to show seconds in time"  [OwnDroid]
+
+====================
+     05-14-2016
+====================
+
+   * build/
+c7edec1  Be sure to delete every build.prop  [OwnDroid]
+   * frameworks/base/
+2a6f571f  Fix off SlimDIM  [OwnDroid]
+0338617  Bunch-o-fixes  [OwnDroid]
+   * packages/apps/Settings/
+061264c  UberTC: gcc and gcc flags into OwnROM [1/2]  [OwnDroid]
+6214091  Bunch-o-fixes  [OwnDroid]
+   * vendor/ownrom/
+5e381c8  UberTC: gcc and gcc flags into OwnROM [2/2]  [OwnDroid]
+
+====================
+     05-13-2016
+====================
+
+
+====================
+     05-12-2016
+====================
+
+   * frameworks/base/
+ebc9d73e  Add several Slim helper classes and constants back  [OwnDroid]
+94f8d42  Frameworks: inital bringup of slim actions and helper classes  [OwnDroid]
+51ef0be  Add several Slim helper classes and constants back  [OwnDroid]
+1f09813  OwnROM Statusbar Logo + Color [1/2]  [OwnDroid]
+b016505  SlimDim: don't dim navbar on lockscreen  [OwnDroid]
+4285e9a  SystemUI: SlimDim - pref to listen on entire screen for touches [1/2]  [OwnDroid]
+f5c5c9d  SlimDim: listen for touches in navbar empty areas also  [OwnDroid]
+71dc82f  SystemUI: SlimDim [1/2]  [OwnDroid]
+56f56b7  SlimSeekbar: Update api so no dupes  [OwnDroid]
+2ea372c  slimseekbarpreference: set monitorbox text as string  [OwnDroid]
+8e73a06  SlimSeekBarPreference: clean up a wee bit  [OwnDroid]
+48ae333  Frameworks: port SlimSeekBarPreference to OwnROM  [OwnDroid]
+   * packages/apps/Settings/
+58084b8  OwnROM Statusbar Logo + Color [2/2]  [OwnDroid]
+0f7e0c8  SlimDIM [2/2]  [OwnDroid]
+
+====================
+     05-11-2016
+====================
+
+   * cts/
+8b408d4  merge in marshmallow-cts-release history after reset to marshmallow-cts-dev  [The Android Automerger]
+   * frameworks/av/
+5c76693  FFMPEGSoftCodec: Initialize the OMX param struct before using it  [Ricardo Cerqueira]
+   * frameworks/base/
+9dfd0b9  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_frameworks_base into own-mm  [OwnDroid]
+2d7b916  Automatic translation import  [Abhisek Devkota]
+   * hardware/qcom/audio-caf/msm8916/
+0611e66  hal: Garbage output in logcat  [Keith Mok]
+   * hardware/qcom/audio-caf/msm8952/
+52af337  hal: Garbage output in logcat  [Scott Mertz]
+   * hardware/qcom/audio-caf/msm8974/
+17067a9  hal: Garbage output in logcat  [Keith Mok]
+   * hardware/qcom/audio-caf/msm8994/
+71954c5  hal: Garbage output in logcat  [Scott Mertz]
+   * hardware/qcom/audio-caf/msm8996/
+fc6fe5b  hal: Garbage output in logcat  [Scott Mertz]
+   * packages/apps/AudioFX/
+1f493c4  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/CMBugReport/
+8191bc8  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Contacts/
+a721e70  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/ContactsCommon/
+c0b01a3  Add additional synchronization around caller-info Provider state  [Rohit Yengisetty]
+   * packages/apps/Dialer/
+87fa91e  NPE: make sure that the brand icon isnt null  [Stephen Bird]
+8c5b299  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Gello/
+7c7766b  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/InCallUI/
+747e2e1  Fix NPE on a null response from caller-info-lookup  [Gerrit Code Review]
+9d93c75  Fix glitches in the rendering of contact-info Provider's logo  [Gerrit Code Review]
+fc285dd  Automatic translation import  [Abhisek Devkota]
+d57f9f9  Revert "Fix for issue where the ModButtonUI was not properly updating after taking a note."  [Nathaniel Waggoner]
+686bc7d  Fix for issue where the ModButtonUI was not properly updating after taking a note.  [NathanielWaggoner]
+   * packages/apps/LockClock/
+38c62bb  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/PhoneCommon/
+b1dd2fb  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Settings/
+7fdf81e  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_packages_apps_Settings into own-mm  [OwnDroid]
+5ec7c34  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Snap/
+90d46ce  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/SoundRecorder/
+cafca7c  Automatic translation import  [Abhisek Devkota]
+   * packages/providers/DataUsageProvider/
+a7610f2  Fix strings  [Michael Bestas]
+   * packages/providers/WeatherProvider/
+9a2bbea  Automatic translation import  [Abhisek Devkota]
+   * packages/services/Telecomm/
+50e008d  Automatic translation import  [Abhisek Devkota]
+   * packages/services/Telephony/
+9782a2c  Automatic translation import  [Abhisek Devkota]
+   * vendor/cmsdk/
+e72aadd  Automatic translation import  [OwnDroid]
+
+====================
+     05-10-2016
+====================
+
+   * android/
+f5b4ff2  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android into own-mm  [OwnDroid]
+1d963bf  Added DataUsageProvider to the build  [Gerrit Code Review]
+   * build/
+033e8d8  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_build into own-mm  [OwnDroid]
+692ca94  Revert "Added DataUsageProvider to the build"  [Luca Stefani]
+   * cts/
+6e4edf4  Merge "EDI: Check if packageInfo.applicationInfo is null" into marshmallow-cts-dev  [Gerrit Code Review]
+59b823f  Merge "DO NOT MERGE: cts/tests/tests/security: increase timeout in ClonedSecureRandomTest" into marshmallow-cts-dev  [Gerrit Code Review]
+76b5841  DO NOT MERGE: cts/tests/tests/security: increase timeout in ClonedSecureRandomTest  [Daniel Xie]
+50f2ad5  EDI: Check if packageInfo.applicationInfo is null  [Agatha Man]
+   * frameworks/base/
+ec270e6  Automatic translation import  [Gerrit Code Review]
+fe5fb7b  CmRes: Attach themed cmsdk resources to assets  [Clark Scheff]
+73ca66e  RF cutback feature for SAR  [Gerrit Code Review]
+648593d  batteryservice: Use Alpha channel for segmented LED power level  [Steve Kondik]
+   * frameworks/opt/telephony/
+d1cf007  RF cutback feature for SAR  [Deepak Kundra]
+   * hardware/qcom/audio-caf/msm8916/
+ca2b951  audio: Add sound trigger header  [Gerrit Code Review]
+   * hardware/qcom/audio-caf/msm8994/
+68f3ab1  hal: update combo device handling  [Steve Kondik]
+   * hardware/ril-caf/
+2ee6820  RF cutback feature for SAR  [Deepak Kundra]
+   * packages/apps/AudioFX/
+a628309  Automatic translation import  [Michael Bestas]
+   * packages/apps/Bluetooth/
+38516fd  Automatic translation import  [Michael Bestas]
+   * packages/apps/CMBugReport/
+cb238aa  Automatic translation import  [Michael Bestas]
+   * packages/apps/CMUpdater/
+2963c5e  Automatic translation import  [Michael Bestas]
+   * packages/apps/Calendar/
+302992a  Automatic translation import  [Michael Bestas]
+   * packages/apps/Contacts/
+9f6a237  Automatic translation import  [Michael Bestas]
+83ca75f  Track changes to AmbientDataSubscription.  [Danny Baumann]
+cf179d0  Update BlockContactHelper usage to new spec  [Gerrit Code Review]
+46163fc  [1/2] Only get directory intent on button press  [Stephen Bird]
+4242645  Contacts : only refresh ENABLED plugins onResume  [Gerrit Code Review]
+   * packages/apps/ContactsCommon/
+b2d69a0  Automatic translation import  [Michael Bestas]
+13c6c99  Update LookupProvider to new CallerInfoAPI spec  [Rohit Yengisetty]
+   * packages/apps/Dialer/
+511af0c  Automatic translation import  [Michael Bestas]
+214a3fa  Add Caller-info provider nudges and adapt new CallerInfoApi  [Rohit Yengisetty]
+50c3a51  Fixes an issue where Note settings weren't launching when clicked.  [Gerrit Code Review]
+   * packages/apps/FMRadio/
+83c79c0  tracks: Check track states before transitioning states  [Diogo Ferreira]
+   * packages/apps/Gello/
+c9b3e00  Automatic translation import  [Gerrit Code Review]
+17e7045  Gello: fix ripple effect on menu items  [Joey Rizzoli]
+a6afb10  Gello: no need to press things twice  [Joey Rizzoli]
+9acef23  Gello: webrefiner: disable tracker block  [Joey Rizzoli]
+7324f6e  Gello: swipe on navbar  [Gerrit Code Review]
+   * packages/apps/InCallUI/
+280e302  Automatic translation import  [Michael Bestas]
+e52692c  Add Unknown call nudge and update to new LookupProvider APIs  [Rohit Yengisetty]
+7acb15a  Add attribution for vector drawable  [Richard MacGregor]
+   * packages/apps/LockClock/
+0ca9798  Automatic translation import  [Michael Bestas]
+   * packages/apps/Messaging/
+1f769b0  Automatic translation import  [Michael Bestas]
+1a2c47b  Update LookupProvider API calls  [Rohit Yengisetty]
+4bd35b2  Check additional extra for sms text from share Intent  [Artem Shvadskiy]
+   * packages/apps/PhoneCommon/
+ced2a74  Automatic translation import  [Michael Bestas]
+e86a40e  Make internal variables non-static.  [Danny Baumann]
+3112fb8  Cleanup.  [Gerrit Code Review]
+f6f8b3a  [2/2] Don't get directory intent on refresh  [Stephen Bird]
+9047ee9  DynamicRefresh should only refresh ENABLED plugins  [Gerrit Code Review]
+   * packages/apps/Profiles/
+07e49a2  Automatic translation import  [Michael Bestas]
+   * packages/apps/Screencast/
+7e56391  Automatic translation import  [Michael Bestas]
+   * packages/apps/Settings/
+08638e5  Automatic translation import  [Michael Bestas]
+1dc89a6  Disable battery pulsing if segmented battery LED is enabled  [Steve Kondik]
+a20ad54  Fix string  [OwnDroid]
+   * packages/apps/Snap/
+006ef8d  Automatic translation import  [Michael Bestas]
+1fdf46f  Snap: force enable zsl for lge hdr  [codeworkx]
+   * packages/apps/SoundRecorder/
+58ef5f1  Automatic translation import  [Michael Bestas]
+   * packages/apps/ThemeChooser/
+7e75f9b  Automatic translation import  [Michael Bestas]
+   * packages/apps/TvSettings/
+f5a9271  Automatic translation import  [Michael Bestas]
+   * packages/providers/DownloadProvider/
+5b7119c  Automatic translation import  [Michael Bestas]
+   * packages/providers/WeatherProvider/
+78576d8  Automatic translation import  [Michael Bestas]
+   * packages/screensavers/PhotoTable/
+70acd0c  Automatic translation import  [Michael Bestas]
+   * packages/services/LiveLockScreenService/
+2837c49  Automatic translation import  [Michael Bestas]
+   * packages/services/Telecomm/
+ba7b2d0  Automatic translation import  [Michael Bestas]
+   * packages/services/Telephony/
+fdcc777  Automatic translation import  [Michael Bestas]
+d563d91  Wifi HOTSPOT receiver to handle RF cutback  [Deepak Kundra]
+   * packages/wallpapers/PhotoPhase/
+dbadfbc  Automatic translation import  [Michael Bestas]
+   * system/vold/
+b72e114  vold: Fix tool paths for minivold  [Gerrit Code Review]
+   * vendor/cmsdk/
+cc5616e  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/cm_platform_sdk into own-mm  [OwnDroid]
+69c9ab0  Automatic translation import  [Michael Bestas]
+   * vendor/ownrom/
+aeed465  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_vendor_cm into own-mm  [OwnDroid]
+f9dccd7  cm: Build DataUsageProvider  [luca020400]
+244e2cd  Prep for C-Apps support  [Abhisek Devkota]
+
+====================
      05-09-2016
 ====================
 
    * android/
+62663a0  Update Changelog.txt  [OwnDroid]
 8535441  Merge branch 'own-mm' of https://github.com/OwnROM/android into own-mm  [OwnDroid]
 13672cb  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android into own-mm  [OwnDroid]
    * art/
@@ -10,18 +251,34 @@
    * build/
 ca8757c  Merge branch 'own-mm' of https://github.com/OwnROM/android_build into own-mm  [OwnDroid]
 66cd422  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_build into own-mm  [OwnDroid]
+   * cts/
+2225625  Merge "MediaRecorderTest: fix supported video size logic" into marshmallow-cts-dev  [Gerrit Code Review]
    * device/huawei/angler/
 2972e4f  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_device_huawei_angler into own-mm  [OwnDroid]
    * frameworks/base/
 4d49626  Why the hell does git do this...  [OwnDroid]
 e281cbc  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_frameworks_base into own-mm  [OwnDroid]
 002900b  am: Remove extraneous boostage  [Steve Kondik]
+   * frameworks/opt/net/wifi/
+901aac2  Fix EAP-SIM fallback identity generation outside of North America  [Ricardo Cerqueira]
    * kernel/huawei/angler/
 64bf104  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_kernel_huawei_angler into own-mm  [OwnDroid]
+   * packages/apps/Contacts/
+990a3c2  Add permission for binding to Ambient's Caller Information service  [Rohit Yengisetty]
    * packages/apps/ContactsCommon/
 b29eca5  Avoid drawable resources from being scaled.  [Gerrit Code Review]
    * packages/apps/Dialer/
+ecf9464  Don't show coachmark when digits filled by intent  [Richard MacGregor]
+0e49561  Add permission for binding to Ambient's Caller Information service  [Rohit Yengisetty]
 9b80a50  Modify Settings activity for the revised CallerInfoApi within AmbientSDK  [Rohit Yengisetty]
+   * packages/apps/FMRadio/
+8534069  improve audio startup performace  [Diogo Ferreira]
+   * packages/apps/InCallUI/
+7422ffb  Fixes a crash when trying to take a note in a Conference Call  [NathanielWaggoner]
+9109b53  Revert all the changes plugins have made to the CallButton files.  [Rajesh Yengisetty]
+1513c75  Move Mod plugins out of CallButtonFragment to ModButtonFragment  [Richard MacGregor]
+   * packages/apps/Messaging/
+dd899f1  Add permission for binding to Ambient's Caller Information service  [Rohit Yengisetty]
    * packages/apps/Settings/
 c1155f2  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_packages_apps_Settings into own-mm  [OwnDroid]
 7eed503  Merge branch 'save' into own-mm  [OwnDroid]
@@ -47,11 +304,11 @@ d7cbcb3  Update Ambient SDK to 1.5.8  [Rohit Yengisetty]
    * build/
 448b3eb  Update Makefile  [OwnDroid]
 d37486c  fix  [OwnDroid]
+   * cts/
+d3b47cc  MediaRecorderTest: fix supported video size logic  [Chengliang Zheng]
    * frameworks/base/
 4202629  Navigation bar button color [1/2]  [OwnDroid]
 ca0c679  Navigation bar options + HW keys tweaks [SQUASH] [1/2]  [OwnDroid]
-   * hardware/qcom/fm/
-49630ff  Convert regional band arrays to string references  [Michael Bestas]
    * packages/apps/Settings/
 16fed67  Navigation bar button color [2/2]  [OwnDroid]
 b0d6b57  Nav bar tweaks + HW keys tweaks [2/2]  [OwnDroid]
@@ -59,419 +316,4 @@ b0d6b57  Nav bar tweaks + HW keys tweaks [2/2]  [OwnDroid]
 4a0ad7c  CMSettings: Fix upgrade from cm-12.1 after weather changes  [Michael Bestas]
    * vendor/ownrom/
 545c389  change permisions  [OwnDroid]
-
-====================
-     05-07-2016
-====================
-
-   * android/
-a122c31  Sync YahooWeatherProvider  [Michael Bestas]
-4819663  Merge branch 'own-mm' of https://github.com/OwnROM/android into own-mm  [OwnDroid]
-6e9fca5  Delete no longer needed repo's  [OwnDroid]
-   * build/
-3ebcbab  Make the bloody changelog...  [OwnDroid]
-0407535  envsetup: Fix aosp & caf remote  [Gerrit Code Review]
-0c03d1e  Added DataUsageProvider to the build  [Gerrit Code Review]
-   * frameworks/av/
-eb6bd31  Revert "cameraservice: Run HAL3 in Non ZSL mode".  [Steve Kondik]
-   * frameworks/base/
-c241b7e  SystemUI: Update cached weather data when temperature unit changes  [LuK1337]
-9d04814  perf: Send the process name and pid for launch boosts  [Steve Kondik]
-3629819  Add some imports  [OwnDroid]
-d941b87  Double tap to sleep on navigation bar [1/2]  [OwnDroid]
-4723b22  Materialize Tab Selected to Fix Power Menu Theming  [OwnDroid]
-7165c95  Update Alarm Files from N5 Factory Image  [OwnDroid]
-fecb79a  Update Effects from N5 Nexus Image  [OwnDroid]
-ec04247  Update Dock/Undock Sounds from M Factory Image  [OwnDroid]
-092fcb0  Update Notification Sounds from N5 Factory Image  [OwnDroid]
-2eb166f  Update Material Ringtones to M from N5 Factory Image  [OwnDroid]
-a721061  Update VideoRecord & Wireless Charging Sounds to M  [OwnDroid]
-a3cdad2  SysUI: Make sure LLS focus is false when unlocking  [d34d]
-9a55df2  Use M Sound for LowBattery  [OwnDroid]
-20cf708  Ensure M Camera Sounds  [OwnDroid]
-1c5639b  Change dividers from Holo Blue to Material Teal  [OwnDroid]
-fd07582  Update frameworks-res.apk icon to a more appropriate icon  [OwnDroid]
-94db832  Battery saver enhancements  [OwnDroid]
-adc5ae0  Screen pinning improvements  [OwnDroid]
-8c9fa2c  ActivityThread, shut the density up!  [OwnDroid]
-f587856  Allow faster app switching  [OwnDroid]
-d77bad4  Fix Def App Icon for ldpi  [OwnDroid]
-3dd495f  Update GPS Icons to be more Material  [OwnDroid]
-6d31b5c  Materialize toast frames  [OwnDroid]
-4e697a9      Improve scrolling cache  [OwnDroid]
-0470c2c  [Squashed] Remove drawables and videos we don't need  [OwnDroid]
-28393c9  Add new options for call waiting response in InCallUI  [Gerrit Code Review]
-8df23f8  Change SQL to improve performance.  [OwnDroid]
-   * hardware/qcom/audio-caf/msm8916/
-2a07491  Merge remote-tracking branch 'caf/LA.BR.1.2.6_rb1.13' into cm-13.0-caf-8916  [Ethan Chen]
-   * hardware/qcom/display-caf/msm8916/
-5f67482  Merge remote-tracking branch 'caf/LA.BR.1.2.6_rb1.13' into cm-13.0-caf-8916  [Ethan Chen]
-   * hardware/qcom/media-caf/msm8916/
-ae2bd20  Merge remote-tracking branch 'caf/LA.BR.1.2.6_rb1.13' into cm-13.0-caf-8916  [Ethan Chen]
-   * hardware/qcom/media-caf/msm8974/
-efda1e0  mm-video-v4l2: vdec: deprecate unused config OMX_IndexVendorVideoExtraData  [Ethan Chen]
-026da62  mm-video-v4l2: venc: add safety checks for freeing buffers  [Ethan Chen]
-366ded5  mm-video-v4l2: vidc: validate omx param/config data  [Ethan Chen]
-88256fe  mm-video-v4l2: vdec: add safety checks for freeing buffers  [Ethan Chen]
-   * hardware/qcom/media-caf/msm8994/
-007b032  mm-video-v4l2: vdec: deprecate unused config OMX_IndexVendorVideoExtraData  [Ethan Chen]
-38176db  mm-video-v4l2: venc: add safety checks for freeing buffers  [Ethan Chen]
-18e9ca6  mm-video-v4l2: vidc: validate omx param/config data  [Ethan Chen]
-5c7de01  mm-video-v4l2: vdec: add safety checks for freeing buffers  [Ethan Chen]
-   * hardware/qcom/media-caf/msm8996/
-4925114  mm-video-v4l2: vdec: deprecate unused config OMX_IndexVendorVideoExtraData  [Ethan Chen]
-d4f4cdf  mm-video-v4l2: venc: add safety checks for freeing buffers  [Ethan Chen]
-a797942  mm-video-v4l2: vidc: validate omx param/config data  [Ethan Chen]
-8c6b30e  mm-video-v4l2: vdec: add safety checks for freeing buffers  [Ethan Chen]
-   * packages/apps/PhoneCommon/
-7b1fe01  Reduce InCallUI name text field size to prevent text truncation  [Gerrit Code Review]
-   * packages/apps/Settings/
-215d440  Add option to select temperature unit  [Luis Vidal]
-5aa8a7d  Delete a dependencie  [OwnDroid]
-270c9cc  Derp!!!  [OwnDroid]
-9131865  Full screen recents [2/2]  [OwnDroid]
-8a860d4  Double tap to sleep on navigation bar [2/2]  [OwnDroid]
-a5eab71  Changelog generator [2/2]  [OwnDroid]
-9db8556  Make batterybar entries translatable  [OwnDroid]
-23b30aa  Update power control widget preview image.  [Gerrit Code Review]
-   * packages/apps/SoundRecorder/
-2b9afca  Screen configuration changes did not initialize menu button  [Gerrit Code Review]
-   * packages/providers/ContactsProvider/
-0584da8  ContactsProvider: don't crash on locale change  [Gerrit Code Review]
-   * system/vold/
-ece26f2  cryptfs: Only consider patterns for upgrade conversion  [Tom Marshall]
-   * vendor/cmsdk/
-b77b8b5  cmsdk: Pass the process name and pid for launch boosts  [Steve Kondik]
-186ae83  Set a default temperature unit  [Luis Vidal]
-   * vendor/ownrom/
-2c31c13  Add these lines to be sure  [OwnDroid]
-e49dd26  cm: Add SE policy for iop service  [Steve Kondik]
-dcd1ec4  Vendor: Changelog generator [1/2]  [OwnDroid]
-aabc3b0  Add new prebuilts  [OwnDroid]
-
-====================
-     05-06-2016
-====================
-
-   * external/powertop/
-e675054  powertop: Build for arm64 too  [Steve Kondik]
-   * frameworks/base/
-35c5005  fw: Provide system context to EnableAccessibilityController.  [Adnan Begovic]
-91c526f  Themes: Expose manifest styles for framework activities  [d34d]
-a7014af  Revert "Themes: Expose manifest styles for themes"  [Clark Scheff]
-62e6a40  Themes: Expose manifest styles for themes  [Gerrit Code Review]
-aec68c4  SystemUI: LiveDisplay is not translatable  [Michael Bestas]
-40e8e4c  Lockscreen : Bunch-o-fixes  [Gerrit Code Review]
-a77b5bc  server: modify network stat plugin framework  [Marcos Marado]
-a429e47  SystemUI: bail out of recents-to-home animation when losing focus  [Ricardo Cerqueira]
-   * frameworks/opt/telephony/
-f13c387  SubscriptionController: properly detect when MSIM has 1 SIM  [Roman Birg]
-889e470  Revert "SubscriptionController: don't lock sms prompt state"  [Roman Birg]
-   * hardware/libhardware/
-397277c  hardware: Add definition for launch boost info  [Steve Kondik]
-   * packages/apps/Contacts/
-3df3d6f  Revert "Contacts : added PUBLISH_DISCOVERY_NUDGE permission"  [Erica Chang]
-58dc89a  Contacts : added PUBLISH_DISCOVERY_NUDGE permission  [Erica Chang]
-7f45649  Fix number label in quick contacts recent calls list  [Richard MacGregor]
-18a9dd7  Fix double ripple in quick contact card entry  [Richard MacGregor]
-1c327b3  Contacts Metrics: added directory search and bug fix  [Gerrit Code Review]
-   * packages/apps/ContactsCommon/
-b4f8bc2  Export only selected contact, not all contacts  [Gerrit Code Review]
-   * packages/apps/Dialer/
-e962bf5  Themes: Separate background color from text color  [Gerrit Code Review]
-72f827a  Feijao: empty string is not a valid locale  [Gerrit Code Review]
-8a1a13a  Fix call log and contact lookup  [Richard MacGregor]
-   * packages/apps/Eleven/
-3b61f11  Merge "Themes: Expose and separate values for themes" into cm-13.0  [Gerrit Code Review]
-   * packages/apps/InCallUI/
-f023f97  Add new options for call waiting response in InCallUI  [Kamaljeet Maini]
-   * packages/apps/Messaging/
-acb352d  Phone did not receives Mms delivery report message  [allu.haribabu]
-   * packages/apps/PhoneCommon/
-3f60397  Removed PUBLISH_DISCOVERY_NUDGE permission checking for NudgeServices  [Erica Chang]
-   * packages/apps/Settings/
-0ccd34c  WifiSettings : Fix forgetting saved networks crash after rotation  [Gerrit Code Review]
-f252c25  Settings: sync qs invert color with color inversion in Settings  [Gerrit Code Review]
-b428556  A little clearafying...  [OwnDroid]
-07c2e27  BatteryBAR: Add missing Dutch translations  [OwnDroid]
-f88928f  Derps  [OwnDroid]
-9984dc1  Partial revert "Settings : Add per app internet/data control"  [Gerrit Code Review]
-   * packages/services/Telecomm/
-1179ffd  Add new options for call waiting response in InCallUI  [Kamaljeet Maini]
-   * packages/services/Telephony/
-f49ebcf  Support for showing remaining retries for PERSO lock  [Deepak Kundra]
-   * system/core/
-784c22c  Use fsck.f2fs -a instead of -f for faster boot  [Steve Kondik]
-0d6557e  Revert "Revert "fs_mgr: let fsck.f2fs actually attempt a fix""  [Steve Kondik]
-   * vendor/cmsdk/
-e4886a6  QS: Make themes a first class citizen again  [Gerrit Code Review]
-9ff5ea9  cmsdk: Fix CTS Failure due to testDumpProtected  [Pat Erley]
-   * vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
-a8980db  YahooCM: Hardcode forecast day count.  [Adnan Begovic]
-636b71a  YahooCM: Meet branding guidelines and add preference screen.  [Adnan Begovic]
-127854f  YahooCM: Actually use the low for the low.  [Adnan Begovic]
-8f91a81  YahooCM: Add proper offsets for duplicate weather codes by yahoo.  [Adnan Begovic]
-1883831  YahooCM: Fix location response and add new iconography.  [Adnan Begovic]
-
-====================
-     05-05-2016
-====================
-
-   * device/huawei/angler/
-c205a7f  Add HotwordEnrollment and enable BOARD_SUPPORTS_SOUND_TRIGGER  [Gerrit Code Review]
-   * external/uicommon/
-9ba0e80  Add StopMotionVectorDrawable to uicommon  [d34d]
-   * frameworks/av/
-e67a2ba  soundtrigger: fill in default extras from dsp  [Gerrit Code Review]
-   * frameworks/base/
-d91a32d  BatteryBar [1/2]  [OwnDroid]
-26c932e  SystemUI: implement properly saving tile locations  [Roman Birg]
-8aefa31  Fix revert build breakage  [Stephen Bird]
-db0e699  systemui: Fix the TrustDrawable animation state  [Steve Kondik]
-82a138e  pms: Skip reinstall of prebundles correctly per user.  [Gerrit Code Review]
-5d52a18  Partially revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/frameworks/base into cm-13.0"  [Gerrit Code Review]
-305fc23  SysUI: Show keyguard when LLS dies and had focus  [d34d]
-a4ccd38  Revert "Keyguard: switch to cm-specific device provisioned flag"  [OwnDroid]
-b88c087  trying to fix RAMbar  [OwnDroid]
-   * frameworks/opt/telephony/
-e638e47  SubscriptionController: don't lock sms prompt state  [Gerrit Code Review]
-   * hardware/qcom/audio-caf/msm8916/
-4bbcbac  hal: Shush some debug logging  [luca020400]
-   * hardware/qcom/audio-caf/msm8994/
-c2a5562  extn: dolby: fix unused variable warnings  [Dan Pasanen]
-   * packages/apps/Dialer/
-3c56010  Fix metrics event string  [Stephen Bird]
-92ffc1f  NPE: ensure that ContactInfo is not null  [Stephen Bird]
-   * packages/apps/PhoneCommon/
-5f1fb34  NPE: Make sure clients have a credit warning  [Stephen Bird]
-5564f99  NPE: no credit info available  [Stephen Bird]
-   * packages/apps/Screencast/
-9bec890  Screencast: Fix screencast video cannot playback  [Keith Mok]
-   * packages/apps/Settings/
-2b45e07  Battery Bar [2/2]  [OwnDroid]
-6f391f8  Protected apps: fix rotation states  [Roman Birg]
-bdc83b4  LockPatternView: persist state across rotates  [Roman Birg]
-   * packages/apps/SoundRecorder/
-99355c2  SoundRecorder: Fix SD card storage problem  [Keith Mok]
-   * packages/inputmethods/LatinIME/
-88df494  Partially revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/inputmethods/LatinIME into cm-13.0"  [Michael Bestas]
-   * packages/services/Telecomm/
-41b96a9  Fix sporadic crashes with MSIM devices and inactive SIMs  [Ricardo Cerqueira]
-   * vendor/cmsdk/
-10f165d  cmsdk: add persisted key value for status bar tiles  [Gerrit Code Review]
-8770189  cmsdk: Add allowViaWhitelist to LLS_MANAGER_ACCESS_PRIVATE  [Gerrit Code Review]
-   * vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
-067b133  YahooCM: Disable debugging, remove debug code.  [Adnan Begovic]
-8194502  YahooCM: Initial checkin.  [Adnan Begovic]
-
-====================
-     05-04-2016
-====================
-
-   * android/
-86dbba8  manifest: update path for ubertc  [Akhil Narang]
-1b70eb6  default.xml: cm: Update to 6.0.1_r43  [Jessica Wagantall]
-152bd06  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android into own-mm  [OwnDroid]
-   * build/
-dc86851  Merge tag 'android-6.0.1_r43' into HEAD  [Jessica Wagantall]
-6682de2  Revert "arm64: use the toolchain in -kernel dir" to fix build  [OwnDroid]
-87dba17  Merge branch 'own-mm' of https://github.com/OwnROM/android_build into own-mm  [OwnDroid]
-bdf9055  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_build into own-mm  [OwnDroid]
-   * device/huawei/angler/
-9202ea6  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_device_huawei_angler into own-mm  [OwnDroid]
-   * external/boringssl/
-95d9351  Merge tag 'android-6.0.1_r43' into HEAD  [Jessica Wagantall]
-   * external/flac/
-8882a5a  Merge tag 'android-6.0.1_r43' into HEAD  [Jessica Wagantall]
-   * external/wpa_supplicant_8/
-5c128ae  Merge tag 'android-6.0.1_r43' into HEAD  [Jessica Wagantall]
-   * frameworks/av/
-bcd1d7c  Merge tag 'android-6.0.1_r43' into HEAD  [Jessica Wagantall]
-   * frameworks/base/
-ef03777  batteryservice: Add support for segmented power LEDs  [Steve Kondik]
-d8a30fc  SystemUI: avoid lock screen shortcut picker crash  [Gerrit Code Review]
-61ed457  SystemUI: remember deleted custom tiles  [Gerrit Code Review]
-4d5f0cf  Merge tag 'android-6.0.1_r43' into HEAD  [Jessica Wagantall]
-4b077d8  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_frameworks_base into own-mm  [OwnDroid]
-79d2a62  Update RAM bar a bit...  [OwnDroid]
-   * frameworks/native/
-134fddb  Merge tag 'android-6.0.1_r43' into HEAD  [Jessica Wagantall]
-   * frameworks/opt/telephony/
-2308fc2  Add new networktypes in sim status  [Marcos Marado]
-02834f0  Single digit MMI codes cause CTS to fail  [Gerrit Code Review]
-   * hardware/broadcom/wlan/
-4103993  Merge tag 'android-6.0.1_r43' into HEAD  [Jessica Wagantall]
-   * kernel/huawei/angler/
-d45225f  Merge remote-tracking branch 'aosp/android-msm-angler-3.10-marshmallow-dr1.6' into HEAD  [Roman Birg]
-   * libcore/
-7e191c4  Merge tag 'android-6.0.1_r43' into HEAD  [Jessica Wagantall]
-   * packages/apps/DeskClock/
-5d34694  DeskClock: Fix view animator race condition  [cretin45]
-   * packages/apps/Email/
-81609f7  Merge tag 'android-6.0.1_r43' into HEAD  [Jessica Wagantall]
-   * packages/apps/FMRadio/
-5b02aca  fmradio: Add an optional static library target  [Ricardo Cerqueira]
-   * packages/apps/HTMLViewer/
-0cac957  HTMLViewer: Add storage permission check  [cretin45]
-   * packages/apps/Settings/
-eb59535  LLS: Load title and summary from ext. package if avail.  [Gerrit Code Review]
-2794f4f  Settings: Make sure to rebuild on app entries loaded.  [Gerrit Code Review]
-deed3e8  Settings: fix backlight illumination wrong summary  [Roman Birg]
-7e2eb78  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_packages_apps_Settings into own-mm  [OwnDroid]
-   * packages/apps/UnifiedEmail/
-d717c31  Merge tag 'android-6.0.1_r43' into HEAD  [Jessica Wagantall]
-   * packages/services/Telephony/
-e71e3c9  Revert "Single digit MMI codes invalid." Feijao: Single digit MMI codes are valid when in-call  [Gerrit Code Review]
-   * system/bt/
-e191407  Merge tag 'android-6.0.1_r43' into HEAD  [Jessica Wagantall]
-   * system/core/
-82cef17  Merge tag 'android-6.0.1_r43' into HEAD  [Jessica Wagantall]
-bd6ce89  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_system_core into own-mm  [OwnDroid]
-   * vendor/cmsdk/
-462be9b  cmsdk: Add support for segmented LEDs  [Steve Kondik]
-da96c52  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/cm_platform_sdk into own-mm  [OwnDroid]
-   * vendor/huawei/
-d866791  Merge pull request #24 from sam3000/cm-13.0  [Tom Powell]
-4ca15b3  angler: add HotwordEnrollment.apk  [Sam Mortimer]
-   * vendor/ownrom/
-0cfb27e  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_vendor_cm into own-mm  [OwnDroid]
-
-====================
-     05-03-2016
-====================
-
-   * build/
-457da7b  build: Fix manual invocation of aar targets.  [Adnan Begovic]
-b5332f9  build: Make sure to check for variable definition during execution.  [Adnan Begovic]
-   * device/huawei/angler/
-dbe81b6  Update fingerprint to MTC19T  [nuclearmistake]
-   * external/stagefright-plugins/
-e79e6f1  stagefright-plugins: Fix crash if nal size is not 3/4  [Keith Mok]
-   * external/zlib/
-55411b1  zlib: Remove usage of cpu directive in inline asm  [Steve Kondik]
-   * frameworks/base/
-adbe561  Settings: defer DEV_FORCE_SHOW_NAVBAR query to CMSettings  [Gerrit Code Review]
-31f3026  Revert "Selectively show zen footer."  [Gerrit Code Review]
-f5b69f3  Lockscreen shortcuts: don't allow specific activities  [Roman Birg]
-9f7fc27  keyguard: Allow disabling fingerprint wake-and-unlock  [Gerrit Code Review]
-d6236bd  nms: Only generate LED colors if the device has a multicolored LED  [Steve Kondik]
-   * hardware/cyanogen/
-ff81fca  cmhw: Correct TAG for Color Enhancement  [Ethan Chen]
-01801a2  aw2013: Add header for malloc/free  [Ethan Chen]
-   * hardware/qcom/audio-caf/msm8916/
-6cff044  Merge AU_LINUX_ANDROID_LA.BR.1.2.6_RB1.06.00.01.179.017 on remote branch  [Linux Build Service Account]
-   * packages/apps/Eleven/
-09ec37d  Eleven: new icon  [jrizzoli]
-   * packages/apps/PhoneCommon/
-b5448ef  AmbientConnection: Permissions checking  [Richard MacGregor]
-   * packages/apps/Screencast/
-f88548a  ScreenRecorder: new icon  [jrizzoli]
-   * packages/providers/ContactsProvider/
-609aa13  Modify "(1/2) Call Lookup: Update call log handler to query usernames"  [Richard MacGregor]
-   * packages/services/Telecomm/
-cbf3ace  Telecomm: Bandaid possible NPE on call waiting scenarios.  [Adnan Begovic]
-6c7dd77  CallsManager: Fix racey disconnect-on-waiting  [Ricardo Cerqueira]
-   * vendor/cmsdk/
-60f2acf  cmsdk: @hide protected variable  [Roman Birg]
-fd4b383  CMSettings: intercept Settings calls to DEV_FORCE_SHOW_NAVBAR  [Gerrit Code Review]
-94dd91a  cmsdk: Fix PerformanceManagerTest expectations.  [Adnan Begovic]
-c6550fd  cmsdk: include our own consumer proguard rules  [Gerrit Code Review]
-de43b8c  cmsdk: set minsdk to api level 4  [Gerrit Code Review]
-   * vendor/huawei/
-627edb3  angler: update blobs to MTC19T  [Sam Mortimer]
-
-====================
-     05-02-2016
-====================
-
-   * frameworks/base/
-374bff1  Revert "SettingsLib: Add back accidentally removed translations"  [Michael Bestas]
-   * hardware/qcom/audio-caf/msm8994/
-866d090  Fix incall music enabled error  [Sean hoyt]
-   * packages/apps/BasicSmsReceiver/
-3e06852  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/BasicSmsReceiver into cm-13.0"  [Michael Bestas]
-   * packages/apps/Bluetooth/
-f4546b1  Partially revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Bluetooth into cm-13.0"  [Michael Bestas]
-   * packages/apps/Calendar/
-288ecbb  Calendar: Fix translatability of buttons list  [Michael Bestas]
-   * packages/apps/Camera2/
-4770312  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Camera2 into cm-13.0"  [Michael Bestas]
-   * packages/apps/CellBroadcastReceiver/
-78dd173  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver into cm-13.0"  [Michael Bestas]
-   * packages/apps/CertInstaller/
-43e8a16  Partially revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/CertInstaller into cm-13.0"  [Michael Bestas]
-   * packages/apps/Contacts/
-829ce77  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Contacts into cm-13.0"  [Michael Bestas]
-   * packages/apps/DeskClock/
-af121c5  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/DeskClock into cm-13.0"  [Michael Bestas]
-ddbc283  Revert "Revert "Import translations. DO NOT MERGE""  [Michael Bestas]
-   * packages/apps/Dialer/
-bde990e  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Dialer into cm-13.0"  [Michael Bestas]
-11ed4a8  Revert "Workaround for AOSP strings missing translations"  [Michael Bestas]
-   * packages/apps/Eleven/
-0031ed8  Themes: Expose and separate values for themes  [Bryan Owens]
-   * packages/apps/Email/
-89e216d  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Email into cm-13.0"  [Michael Bestas]
-   * packages/apps/ExactCalculator/
-7e0d09a  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/ExactCalculator into cm-13.0"  [Michael Bestas]
-   * packages/apps/FMRadio/
-b51931e  FmService: Make usage of audiopatch a build-time option  [Ricardo Cerqueira]
-20b31d7  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/FMRadio into cm-13.0"  [Michael Bestas]
-   * packages/apps/Gallery2/
-55b2afc  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Gallery2 into cm-13.0"  [Michael Bestas]
-   * packages/apps/Gello/
-4ec3df1  Gello: Improve some strings  [Michael Bestas]
-   * packages/apps/InCallUI/
-2425096  Partially revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/InCallUI into cm-13.0"  [Michael Bestas]
-   * packages/apps/KeyChain/
-1d01cb0  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/KeyChain into cm-13.0"  [Michael Bestas]
-   * packages/apps/ManagedProvisioning/
-e1c1f4a  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/ManagedProvisioning into cm-13.0"  [Michael Bestas]
-   * packages/apps/Nfc/
-80f5226  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Nfc into cm-13.0"  [Michael Bestas]
-   * packages/apps/PhoneCommon/
-158e6b3  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/PhoneCommon into cm-13.0"  [Michael Bestas]
-   * packages/apps/Snap/
-a788cdd  Snap: Only set preferred preview sizes if they are valid  [Gerrit Code Review]
-35cf43e  Snap: Support override maker and model exif tag  [Ketut Putu Kumajaya]
-   * packages/apps/SoundRecorder/
-92f1897  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/SoundRecorder into cm-13.0"  [Michael Bestas]
-   * packages/apps/Stk/
-fabbc12  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Stk into cm-13.0"  [Michael Bestas]
-   * packages/apps/Tag/
-f26dd77  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Tag into cm-13.0"  [Michael Bestas]
-   * packages/apps/TvSettings/
-3327e7b  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/TvSettings into cm-13.0"  [Michael Bestas]
-   * packages/apps/UnifiedEmail/
-6d39c78  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/UnifiedEmail into cm-13.0"  [Michael Bestas]
-   * packages/providers/ContactsProvider/
-d849765  Partially revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/providers/ContactsProvider into cm-13.0"  [Michael Bestas]
-   * packages/providers/DownloadProvider/
-d94d7f8  Partially revert "Import translations. DO NOT MERGE"  [Michael Bestas]
-7b3ecae  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/providers/DownloadProvider into cm-13.0"  [Michael Bestas]
-   * packages/providers/MediaProvider/
-d4592ab  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/providers/MediaProvider into cm-13.0"  [Michael Bestas]
-   * packages/providers/TelephonyProvider/
-662c50e  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/providers/TelephonyProvider into cm-13.0"  [Michael Bestas]
-   * packages/providers/UserDictionaryProvider/
-796f619  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/providers/UserDictionaryProvider into cm-13.0"  [Michael Bestas]
-   * packages/screensavers/Basic/
-c1813e3  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/screensavers/Basic into cm-13.0"  [Michael Bestas]
-   * packages/screensavers/PhotoTable/
-dd4a862  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/screensavers/PhotoTable into cm-13.0"  [Michael Bestas]
-   * packages/services/Telephony/
-50e6e40  Apply correct theme color to USSD progress dialog.  [Arvin Quilao]
-a374161  Partially revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/services/Telephony into cm-13.0"  [Michael Bestas]
-   * packages/wallpapers/Basic/
-6983fd7  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/wallpapers/Basic into cm-13.0"  [Michael Bestas]
-   * packages/wallpapers/HoloSpiral/
-3d59c10  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/wallpapers/HoloSpiral into cm-13.0"  [Michael Bestas]
-   * packages/wallpapers/LivePicker/
-fb8dcdb  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/wallpapers/LivePicker into cm-13.0"  [Michael Bestas]
-   * packages/wallpapers/MagicSmoke/
-15cab6a  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/wallpapers/MagicSmoke into cm-13.0"  [Michael Bestas]
-   * packages/wallpapers/NoiseField/
-38435b4  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/wallpapers/NoiseField into cm-13.0"  [Michael Bestas]
-   * packages/wallpapers/PhaseBeam/
-1105ac7  Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/wallpapers/PhaseBeam into cm-13.0"  [Michael Bestas]
 
