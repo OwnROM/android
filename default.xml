@@ -23,7 +23,7 @@
 
   <remote  name="devices"
            fetch="https://github.com/OwnROM-Devices"
-           revision="ownrom" />
+           revision="own-mm" />
 
   <remote  name="private"
            fetch="ssh://git@github.com" />
