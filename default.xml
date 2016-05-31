@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+	<!-- AOSP -->
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
            revision="refs/tags/android-6.0.1_r43" />
 
+	<!-- General -->
   <remote  name="github"
            fetch="https://github.com" />
 
+  <remote  name="private"
+           fetch="ssh://git@github.com" />
+
+  <remote  name="bb"
+           fetch="https://bitbucket.org/" />
+           
+	<!-- OwnROM -->
+  <remote  name="ownrom"
+	       fetch="https://github.com/OwnROM"
+	       revision="own-mm" />
+	       
+  <remote  name="devices"
+           fetch="https://github.com/OwnROM-Devices"
+           revision="own-mm" />
+
+	<!-- Others -->
   <remote  name="cm"
 	       fetch="git://github.com/CyanogenMod"
 	       revision="cm-13.0" />
@@ -17,34 +35,35 @@
 	       fetch="git://github.com/omnirom"
 	       revision="android-6.0" />
 	       
+  <remote  name="slim"
+	       fetch="git://github.com/SlimRoms"
+	       revision="mm6.0" />
+	       
+	<!-- Vendors -->
   <remote  name="tm"
 	       fetch="git://github.com/TheMuppets"
 	       revision="cm-13.0" />
 
-  <remote  name="ownrom"
-	       fetch="https://github.com/OwnROM"
-	       revision="own-mm" />
-
-  <remote  name="devices"
-           fetch="https://github.com/OwnROM-Devices"
-           revision="own-mm" />
-
-  <remote  name="private"
-           fetch="ssh://git@github.com" />
-
-  <remote  name="bb"
-           fetch="https://bitbucket.org/" />
-    
+	<!-- Defaults -->
   <default revision="refs/heads/cm-13.0"
            remote="github"
            sync-c="true"
            sync-j="4" />
 
-<!-- BEGIN CYANOGENMOD -->
+<!-- OwnROM -->
   <project path="build" name="android_build" groups="pdk" remote="ownrom" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="android" name="android" remote="ownrom" />
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="ownrom" />
+  <project path="external/sepolicy" name="android_external_sepolicy" groups="pdk" remote="ownrom" />
+  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="ownrom" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="ownrom" />
+  <project path="system/core" name="android_system_core" groups="pdk" remote="ownrom" />
+  <project path="vendor/ownrom" name="android_vendor_ownrom" remote="ownrom"/>
+  <project path="vendor/cmsdk" name="cm_platform_sdk" remote="ownrom" />
+
+<!-- CM -->
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" />
   <project path="art" name="CyanogenMod/android_art" groups="pdk" />
   <project path="bionic" name="CyanogenMod/android_bionic" groups="pdk" />
@@ -59,7 +78,6 @@
   <project path="device/generic/goldfish" name="CyanogenMod/android_device_generic_goldfish" groups="pdk" />
   <project path="device/generic/mips" name="CyanogenMod/android_device_generic_mips" groups="pdk" />
   <project path="device/google/atv" name="CyanogenMod/android_device_google_atv" groups="device,fugu,broadcom_pdk,generic_fs" />
-  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="ownrom" />
   <project path="external/android-mock" name="CyanogenMod/android_external_android-mock" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/android-visualizer" name="CyanogenMod/android_external_android-visualizer" />
   <project path="external/android/support-prebuilt" name="CyanogenMod/external_android_support-prebuilt" revision="master" />
@@ -131,7 +149,6 @@
   <project path="external/powertop" name="CyanogenMod/android_external_powertop" />
   <project path="external/protobuf-c" name="CyanogenMod/android_external_protobuf-c" />
   <project path="external/rsync" name="CyanogenMod/android_external_rsync" />
-  <project path="external/sepolicy" name="android_external_sepolicy" groups="pdk" remote="ownrom" />
   <project path="external/skia" name="CyanogenMod/android_external_skia" groups="pdk,qcom_msm8x26" />
   <project path="external/sonivox" name="CyanogenMod/android_external_sonivox" groups="pdk" />
   <project path="external/speex" name="CyanogenMod/android_external_speex" groups="pdk" />
@@ -152,7 +169,6 @@
   <project path="external/zip" name="CyanogenMod/android_external_zip" />
   <project path="external/zlib" name="CyanogenMod/android_external_zlib" groups="pdk" />
   <project path="frameworks/av" name="CyanogenMod/android_frameworks_av" groups="pdk" />
-  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="ownrom" />
   <project path="frameworks/compile/libbcc" name="CyanogenMod/android_frameworks_compile_libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="CyanogenMod/android_frameworks_compile_mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="CyanogenMod/android_frameworks_compile_slang" groups="pdk" />
@@ -234,13 +250,11 @@
   <project path="packages/apps/ManagedProvisioning" name="CyanogenMod/android_packages_apps_ManagedProvisioning" groups="pdk-fs" />
   <project path="packages/apps/Messaging" name="CyanogenMod/android_packages_apps_Messaging" groups="pdk-fs" />
   <project path="packages/apps/Nfc" name="CyanogenMod/android_packages_apps_Nfc" groups="apps_nfc,pdk-fs" />
-  <project path="packages/apps/OmniSwitch" name="android_packages_apps_OmniSwitch" remote="omni" />
   <project path="packages/apps/PackageInstaller" name="CyanogenMod/android_packages_apps_PackageInstaller" groups="pdk-fs" />
   <project path="packages/apps/PhoneCommon" name="CyanogenMod/android_packages_apps_PhoneCommon" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/apps/Profiles" name="CyanogenMod/android_packages_apps_Profiles" />
   <project path="packages/apps/Provision" name="CyanogenMod/android_packages_apps_Provision" groups="pdk-fs" />
   <project path="packages/apps/Screencast" name="CyanogenMod/android_packages_apps_Screencast" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="ownrom" />
   <project path="packages/apps/SmartCardService" name="CyanogenMod/android_packages_apps_SmartCardService" groups="pdk-fs" />
   <project path="packages/apps/Snap" name="CyanogenMod/android_packages_apps_Snap" />
   <project path="packages/apps/SoundRecorder" name="CyanogenMod/android_packages_apps_SoundRecorder" groups="pdk-fs" />
@@ -283,7 +297,6 @@
   <project path="packages/wallpapers/PhotoPhase" name="CyanogenMod/android_packages_wallpapers_PhotoPhase" />
   <project path="prebuilts/cmsdk" name="CyanogenMod/android_prebuilts_cmsdk" clone-depth="1" revision="master" />
   <project path="system/bt" name="CyanogenMod/android_system_bt" groups="pdk" />
-  <project path="system/core" name="android_system_core" groups="pdk" remote="ownrom" />
   <project path="system/extras" name="CyanogenMod/android_system_extras" groups="pdk" />
   <project path="system/extras/su" name="CyanogenMod/android_system_extras_su" />
   <project path="system/keymaster" name="CyanogenMod/android_system_keymaster" groups="pdk" />
@@ -292,17 +305,19 @@
   <project path="system/qcom" name="CyanogenMod/android_system_qcom" groups="qcom" />
   <project path="system/security" name="CyanogenMod/android_system_security" groups="pdk" />
   <project path="system/vold" name="CyanogenMod/android_system_vold" groups="pdk" />
-  <project path="vendor/ownrom" name="android_vendor_ownrom" remote="ownrom"/>
-  <project path="vendor/cmsdk" name="cm_platform_sdk" remote="ownrom" />
-<!-- CMSDK SAMPLES -->
+  <!-- CMSDK SAMPLES -->
   <project path="vendor/cmsdk/samples/weatherproviderservice/OpenWeatherMapProvider" name="CyanogenMod/android_packages_apps_OpenWeatherMapProvider" />
   <project path="vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider" name="CyanogenMod/android_packages_apps_WundergroundWeatherProvider" />
   <project path="vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider" name="CyanogenMod/android_packages_apps_YahooWeatherProvider" />
-<!-- END CMSDK SAMPLES -->
 
-<!-- END CYANOGENMOD -->
 
-<!-- BEGIN AOSP -->
+<!-- OmniROM -->
+  <project path="packages/apps/OmniSwitch" name="android_packages_apps_OmniSwitch" remote="omni" />
+  
+<!-- SlimROMs -->
+  <project path="frameworks/opt/cards" name="CyanogenMod/android_frameworks_opt_cards" remote="slim" />
+  
+<!-- AOSP -->
   <project path="developers/build" name="platform/developers/build" remote="aosp" />
   <project path="developers/samples/android" name="platform/developers/samples/android" remote="aosp" />
   <project path="device/generic/mini-emulator-arm64" name="device/generic/mini-emulator-arm64" groups="pdk" remote="aosp" />
@@ -537,6 +552,5 @@
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" clone-depth="1" remote="aosp" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" remote="aosp" />
-<!-- END AOSP -->
 
 </manifest>
