@@ -1,321 +1,71 @@
 ====================
-     06-09-2016
+     06-20-2016
 ====================
 
    * frameworks/base/
-5e516d8  WallpaperCropper: use same action bar style as Launcher3  [OwnDroid]
-1537888  base: add keyguard support in WallpaperCropActivity  [OwnDroid]
+b04202c  Add three-fingers-swipe to screenshot [2/2]  [OwnDroid]
+4dc0eb8  Powermenu screenshot delay [1/2]  [OwnDroid]
+87651a4  Wakelock Blocker [1/2]  [OwnDroid]
    * packages/apps/Settings/
-d9cece2  LockscreenWallpaper: Use FB's WallpaperCropper  [OwnDroid]
-c19fa33  don't need this here  [OwnDroid]
-
-====================
-     06-08-2016
-====================
-
-   * android/
-4b40b69  Merge branch 'own-mm' of https://github.com/OwnROM/android into own-mm  [OwnDroid]
-22999db  Derp  [OwnDroid]
-14f37a8  Merge branch 'own-mm' of https://github.com/OwnROM/android into own-mm  [OwnDroid]
-77df133  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android into own-mm  [OwnDroid]
-   * build/
-b84580d  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_build into own-mm  [OwnDroid]
-   * frameworks/av/
-5257bfb  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_frameworks_av into own-mm  [OwnDroid]
-fdc7d1f  Fixing ALOGE message in commit ad40e57890f81a3cf436c5f06da66396010bd9e5  [Jessica Wagantall]
-   * frameworks/base/
-a6274b7  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_frameworks_base into own-mm  [OwnDroid]
-d76326b  Fix build  [OwnDroid]
-   * hardware/qcom/audio-caf/msm8916/
-277f5f4  Merge remote-tracking branch 'caf/LA.BR.1.2.6_rb1.14' into cm-13.0-caf-8916  [Ethan Chen]
-   * hardware/qcom/media-caf/msm8916/
-69616e0  Merge remote-tracking branch 'caf/LA.BR.1.2.6_rb1.14' into cm-13.0-caf-8916  [Ethan Chen]
-   * hardware/qcom/media-caf/msm8952/
-1071714  DO NOT MERGE mm-video-v4l2: vdec: deprecate unused config OMX_IndexVendorVideoExtraData  [Jessica Wagantall]
-3dd7332  DO NOT MERGE mm-video-v4l2: venc: add safety checks for freeing buffers  [Jessica Wagantall]
-cbc1231  DO NOT MERGE mm-video-v4l2: vidc: validate omx param/config data  [Jessica Wagantall]
-bb2d97a  DO NOT MERGE mm-video-v4l2: vdec: add safety checks for freeing buffers  [Jessica Wagantall]
-   * packages/apps/Messaging/
-b3585c8  PhoneUtils: Doublecheck that the system default is actually usable  [Ricardo Cerqueira]
-ca8ed52  Messaging: fix multi participant "always-ask" MSIM flow  [Ricardo Cerqueira]
-   * packages/apps/OwnOTA/
-a07d974  Add dutch translations  [OwnDroid]
-8899c1c  Update README.md  [OwnDroid]
-8c158e2  Update README.md  [OwnDroid]
-f157372  Update README.md  [OwnDroid]
-18e620f  Update README.md  [OwnDroid]
-c9f9f60  Own-ify  [OwnDroid]
-934e478  Own-ify  [OwnDroid]
-   * packages/apps/Settings/
-8ac8fc4  ;Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_packages_apps_Settings into own-mm  [OwnDroid]
-6aa0e8d  Add OwnOTA  [OwnDroid]
-6716780  Settings: use subid & imsi for MSIM apn lookups  [Gerrit Code Review]
-   * packages/providers/TelephonyProvider/
-32c8322  TelephonyProvider: add apn lookup for imsi  [Roman Birg]
-   * packages/services/Telephony/
-e8439a8  Telephony: pass subscriber id to apn settings  [Gerrit Code Review]
-   * system/core/
-b2eee55  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_system_core into own-mm  [OwnDroid]
-   * vendor/cmsdk/
-abb934e  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/cm_platform_sdk into own-mm  [OwnDroid]
-
-====================
-     06-07-2016
-====================
-
-   * android/
-3b7052a  default.xml: cm: Update to 6.0.1_r46  [Jessica Wagantall]
-   * build/
-9b017f9  Merge tag 'android-6.0.1_r46' into HEAD  [Jessica Wagantall]
-   * external/libvpx/
-2246e67  Merge tag 'android-6.0.1_r46' into HEAD  [Jessica Wagantall]
-   * frameworks/av/
-b3fbce1  MtpServer: Fix concurrent access to mStorages  [Tom Marshall]
-9bdc0f6  MTP: Fix crash when no storages are available  [Gerrit Code Review]
-80c362f  Merge tag 'android-6.0.1_r46' into HEAD  [Jessica Wagantall]
-   * frameworks/base/
-03ea311  Merge tag 'android-6.0.1_r46' into HEAD  [Jessica Wagantall]
-423a82e  systemui: Fix compilation failure  [Diogo Ferreira]
-1b2a150  isRoaming: fix possible NPE  [Gerrit Code Review]
-   * frameworks/native/
-508eb77  Merge tag 'android-6.0.1_r46' into HEAD  [Jessica Wagantall]
-   * hardware/qcom/audio-caf/msm8952/
-51dff91  Merge remote-tracking branch 'caf/LA.BR.1.3.3_rb1.18' into cm-13.0-caf-8952  [Ethan Chen]
-   * hardware/qcom/media-caf/msm8952/
-3325cfe  Merge remote-tracking branch 'caf/LA.BR.1.3.3_rb1.18' into cm-13.0-caf-8952  [Ethan Chen]
-   * hardware/qcom/media/default/
-e824046  Merge tag 'android-6.0.1_r46' into HEAD  [Jessica Wagantall]
-   * kernel/samsung/klte/
-04582d2  msm: camera: ispif: Validate VFE num input during reset  [Kevin F. Haggerty]
-9f52c9a  ASoC: msm: disable unwanted module  [Kevin F. Haggerty]
-519c59d  ASoC: msm: audio-effects: fix stack overread and heap overwrite  [Kevin F. Haggerty]
-d7b7531  net: wireless: bcmdhd: check privilege on priv cmd  [Kevin F. Haggerty]
-c7b1acd  msm: kgsl: Add missing checks for alloc size and sglen  [Kevin F. Haggerty]
-91ea61f  msm: mdss: fix possible out-of-bounds and overflow issue in mdp debugfs  [Kevin F. Haggerty]
-ca79e85  enable last_kmsg  [Oskar Kratochvil]
-   * packages/apps/Bluetooth/
-ef133b1  Merge tag 'android-6.0.1_r46' into HEAD  [Jessica Wagantall]
-   * packages/apps/BluetoothExt/
-559f783  Automatic translation import  [inky@build01]
-   * packages/apps/CMBugReport/
-1ed8ff0  Automatic translation import  [inky@build01]
-   * packages/apps/Calendar/
-bcc87f9  Automatic translation import  [inky@build01]
-   * packages/apps/CellBroadcastReceiver/
-f54de60  fix Dutch translation - On vs Off  [Gerrit Code Review]
-6134363  Automatic translation import  [inky@build01]
-   * packages/apps/ContactsCommon/
-26fe569  Automatic translation import  [inky@build01]
-   * packages/apps/Dialer/
-fd13175  Automatic translation import  [inky@build01]
-   * packages/apps/InCallUI/
-7ce8323  Automatic translation import  [Gerrit Code Review]
-919274a  InCallUI: Fix possible OOBs  [Gerrit Code Review]
-8ce4db2  Fix appearance of auxiliary circles in GlowPadView.  [Gerrit Code Review]
-   * packages/apps/LockClock/
-e28037a  Handle >5 forecast items in cLock Forecast view  [Danny Baumann]
-   * packages/apps/Messaging/
-4a0efca  Automatic translation import  [inky@build01]
-   * packages/apps/PackageInstaller/
-b277701  Merge tag 'android-6.0.1_r46' into HEAD  [Jessica Wagantall]
-   * packages/apps/PhoneCommon/
-8e21a14  Automatic translation import  [inky@build01]
-   * packages/apps/Screencast/
-f934b05  Automatic translation import  [inky@build01]
-   * packages/apps/Settings/
-54dc1d4  Automatic translation import  [inky@build01]
-   * packages/apps/SoundRecorder/
-700fcdb  Stop audio playback/recording in LOSS_TRANSIENT mode  [Keith Mok]
-ee23f8e  Set notification to auto clean.  [Gerrit Code Review]
-f128234  Automatic translation import  [inky@build01]
-   * packages/apps/ThemeChooser/
-b95194d  Automatic translation import  [inky@build01]
-   * packages/providers/DataUsageProvider/
-a27755d  Automatic translation import  [inky@build01]
-   * packages/providers/WeatherProvider/
-09b9135  Automatic translation import  [inky@build01]
-   * packages/services/Telephony/
-d24e2c9  Merge "Merge tag 'android-6.0.1_r46' into HEAD" into cm-13.0  [Gerrit Code Review]
-2dc2985  Merge tag 'android-6.0.1_r46' into HEAD  [Jessica Wagantall]
-e0196cc  Automatic translation import  [inky@build01]
-   * system/bt/
-600e1a9  Merge tag 'android-6.0.1_r46' into HEAD  [Jessica Wagantall]
-   * system/core/
-64caba3  Merge tag 'android-6.0.1_r46' into HEAD  [Jessica Wagantall]
-   * vendor/cmsdk/
-19de84c  cmsdk: LiveDisplay: Enforce dump permission  [Gerrit Code Review]
-7058902  CMSettingsProvider: Add coverage for CMSettings' interfaces.  [Adnan Begovic]
-8cbdd2a  CMSettingsProvider: Fix defaults test for DEV_FORCE_SHOW_NAVBAR.  [Adnan Begovic]
-cf8f5ce  CMSettingsProvider: Register as CMTS package.  [Adnan Begovic]
-7a48ce3  cmsdk: Add test package to CMTS targets.  [Adnan Begovic]
-fb0c037  cmsdk: Fix redundant case in themes contract's componentToImageColName.  [Adnan Begovic]
-39f0012  cmsdk: Provide themescontract tests.  [Gerrit Code Review]
-c45e01b  Automatic translation import  [inky@build01]
-
-====================
-     06-06-2016
-====================
-
-   * android/
-b707314  Add OwnOTA back  [OwnDroid]
-   * build/
-a778042  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_build into own-mm  [OwnDroid]
-   * frameworks/base/
-eda4060  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_frameworks_base into own-mm  [OwnDroid]
-fecebd8  Add missing resource lines  [OwnDroid]
-4073773  Revert "Revert "App sidebar: notify if app is not installed""  [OwnDroid]
-3d98dae  SystemUI: Add support for persistent usb drive notification.  [Gerrit Code Review]
-   * frameworks/opt/telephony/
-a94ae66  DcTracker: use IMSI with APN lookup  [Roman Birg]
-   * kernel/samsung/klte/
-880d6f2  vfs: make AIO use the proper rw_verify_area() area helpers  [Kevin F. Haggerty]
-   * packages/apps/Dialer/
-054c1bb  Wire up share visible contacts  [Stephen Bird]
-   * packages/apps/Settings/
-b2bff19  Implement OwnOTA into Device Info Settings  [OwnDroid]
-2832dda  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_packages_apps_Settings into own-mm  [OwnDroid]
-   * vendor/cmsdk/
-621e25a  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/cm_platform_sdk into own-mm  [OwnDroid]
-   * vendor/huawei/
-5f01697  mt2: Update adreno drivers  [Jurica Vukadin]
-   * vendor/motorola/
-5ebc37a  clark: update adreno from adreno_nexus_may2016.zip  [Dan Pasanen]
+17ba0a7  Add thre-fingers-swipe to screenshot [2/2]  [OwnDroid]
+871910e  Powermenu screenshot delay [2/2]  [OwnDroid]
+b0891d0  Fix wakeloklbkr layout  [OwnDroid]
+b26487e  Improve app remover layout & tint icon colors better for themers  [OwnDroid]
+3c80156  System App Remover  [OwnDroid]
+58dfd24  WakelockBlocker:Layout Improvements (See image below)  [OwnDroid]
+6b53d6d  Add Adaway into Settings  [OwnDroid]
+a1bc6c7  Wakelock Blocker [2/2]  [OwnDroid]
    * vendor/ownrom/
-4186089  Build OwnOTA  [OwnDroid]
-4a014c5  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_vendor_cm into own-mm  [OwnDroid]
+7320733  Some Adaway in the mix  [OwnDroid]
 
 ====================
-     06-05-2016
+     06-19-2016
 ====================
 
-   * art/
-6aa5ad4  art: Only force-disable Clang use on ARM32+QCPERF  [Steve Kondik]
-1c392f0  ART: set the check_bail_out flag to false by default  [Steve Kondik]
-a85d319  setting RLIMIT to INFINITY.  [Steve Kondik]
-9179ac8  ART: make ART extension available only in 32bit  [Steve Kondik]
-   * build/
-8277466  Falling stars...  [OwnDroid]
-   * external/libnetfilter_conntrack/
-4d4cb7f  conntrack: Add kernel dependency  [Steve Kondik]
-   * external/wpa_supplicant_8/
-41d4451  Merge branch 'LA.BF64.1.2.2_rb4.40' of git://codeaurora.org/platform/external/wpa_supplicant_8 into cm-13.0  [Steve Kondik]
-   * vendor/huawei/
-930fc31  Add kiwi  [Abhisek Devkota]
-   * vendor/samsung/
-379d9a3  jf: update adreno from adreno_nexus_may2016.zip  [Dan Pasanen]
-0ba516e  Merge pull request #775 from OzzysCmAcc/cm-13.0  [Tom Powell]
 
 ====================
-     06-04-2016
+     06-18-2016
 ====================
 
-   * android/
-28a0f44  Own-ify OmniSwitch repo  [OwnDroid]
-20b0a3d  Track our own AV  [OwnDroid]
-   * device/qcom/common/
-674fb85  power-8952: Fix array initialization  [Ethan Chen]
+
+====================
+     06-17-2016
+====================
+
+
+====================
+     06-16-2016
+====================
+
+
+====================
+     06-15-2016
+====================
+
+
+====================
+     06-14-2016
+====================
+
    * frameworks/av/
-4d685b5  Forward Port: Add Camera sound toggle [3/3]  [OwnDroid]
+b48b6a3  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_frameworks_av into own-mm  [OwnDroid]
    * frameworks/base/
-28b56b6  Add option to disable scrolling cache [1/2]  [OwnDroid]
-3e5cf00  Forward Port: Add Camera sound toggle [1/3]  [OwnDroid]
-a563b30  powermanager: Extend scope of lock when updating blocked UIDs  [Gerrit Code Review]
-28e023d  Only show keyguard panel if on lockscreen + no activity on top  [Gerrit Code Review]
-   * packages/apps/CMUpdater/
-4f02a9c  CMUpdater: Prevent NPE  [Michael W]
-   * packages/apps/CellBroadcastReceiver/
-6bddeb7  Automatic translation import  [clyde@build01]
-   * packages/apps/Contacts/
-2453818  Automatic translation import  [clyde@build01]
-   * packages/apps/Dialer/
-4893c00  Automatic translation import  [clyde@build01]
-   * packages/apps/Gallery2/
-20be199  Gallery: Make sure no NPE happens  [Michael W]
-   * packages/apps/InCallUI/
-c6cce58  Automatic translation import  [clyde@build01]
-   * packages/apps/Messaging/
-d829188  Automatic translation import  [clyde@build01]
-   * packages/apps/OmniSwitch/
-b6c72b0  Add dutch(NL) translations  [OwnDroid]
-   * packages/apps/OwnOTA/
-81938a1  Automated nightly translation import  [Akhil Narang]
-   * packages/apps/Screencast/
-8af2ad3  Automatic translation import  [clyde@build01]
+2b48b83  fix crash on boot  [OwnDroid]
+8fb51c5  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_frameworks_base into own-mm  [OwnDroid]
+   * packages/apps/CarrierConfig/
+1477e70  Resolve NZ roaming entry  [Abhisek Devkota]
    * packages/apps/Settings/
-5da4a02  Reflect ownrom imports  [OwnDroid]
-ae0c6e8  Add option to disable scrolling cache [2/2]  [OwnDroid]
-a35d16f  Forward Port: Add Camera sound toggle [2/3]  [OwnDroid]
-f6744a9  Radio info to control QC dbg prop's  [Gerrit Code Review]
-d6715b9  Automatic translation import  [clyde@build01]
-   * packages/apps/SoundRecorder/
-368b858  Automatic translation import  [clyde@build01]
-   * packages/providers/DataUsageProvider/
-45cab1e  Automatic translation import  [clyde@build01]
-   * packages/services/Mms/
-c761197  MmsRequest: Reimplement automatic data sub switch  [Ricardo Cerqueira]
-   * packages/services/Telephony/
-af093b1  Automatic translation import  [clyde@build01]
+ad7eb46  Add a entry for LockscreenWeather in OwnLockscreen Settings  [OwnDroid]
+ff28121  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_packages_apps_Settings into own-mm  [OwnDroid]
    * vendor/cmsdk/
-70d3b76  cmsdk: Add binder transaction id tests for api 5 interfaces.  [Gerrit Code Review]
-174f042  Automatic translation import  [clyde@build01]
+55e9896  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/cm_platform_sdk into own-mm  [OwnDroid]
+8387d3c  cmsdk: Add CustomTileListenerService tests.  [Gerrit Code Review]
+0e0cb73  cmsdk: Provide test coverage to Profile's *Settings classes.  [Adnan Begovic]
+2add3de  cmsdk: Provide tests for Profile.ProfileTrigger interfaces.  [Adnan Begovic]
    * vendor/ownrom/
-7e74703  Repo Own-ifying  [OwnDroid]
-278fa60  persist.dbg/data for radio to control QC prop's  [Gerrit Code Review]
-   * vendor/samsung/
-9821e4b  klte-common: update camera and sensor blobs from mm package  [OzzysCmAcc]
+0a8027c  Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_vendor_cm into own-mm  [OwnDroid]
 
 ====================
-     06-03-2016
+     06-13-2016
 ====================
 
-   * build/
-0bf1403  build: add kernel header dependency if module uses kernel headers  [Scott Mertz]
-   * external/stagefright-plugins/
-9db7a9c  stagefright-plugins: flac does not playback  [Keith Mok]
-   * frameworks/base/
-981a59d  SystemUI: Do not enable KeyguardBlur by default  [Michael Bestas]
-e49ebe6  Visualizer: Let visualizer fill the entire available screen  [Gerrit Code Review]
-ce01d29  SystemUI: fix toggling lockscreen rotation [1/3]  [Gerrit Code Review]
-   * kernel/samsung/klte/
-67f19bf  misc: Merge SM-G900F kernel source code  [Kevin F. Haggerty]
-   * packages/apps/Dialer/
-18f2cb8  Fix outgoing call vibrate does not work  [Keith Mok]
-   * packages/apps/Settings/
-9af27ab  Settings: fix toggling lockscreen rotation toggle [2/3]  [Gerrit Code Review]
-   * vendor/cmsdk/
-c4becbb  CMSettings: fix lock screen rotation toggle [3/3]  [Gerrit Code Review]
-   * vendor/ownrom/
-b538b7c  cm: enable lockscreen rotation option  [Gerrit Code Review]
-
-====================
-     06-02-2016
-====================
-
-   * android/
-56baba3  Update Changelog.txt  [OwnDroid]
-   * device/qcom/common/
-a214e51  power: Fixup typo in 8939 cpu4 timer rate  [Pat Erley]
-   * frameworks/base/
-ce709c9  fw: Fix power key interception for PRIVATE_FLAG_PREVENT_POWER_KEY  [Adnan Begovic]
-cb4391b  SystemUI: Fix mCanDismissKeyguard state issue  [Gerrit Code Review]
-   * hardware/qcom/audio-caf/msm8996/
-27c02b0  msm8996: fix werror when AUDIO_FEATURE_ENABLED_DTS_EAGLE is enabled  [Chao Chen]
-   * hardware/qcom/media-caf/msm8996/
-219d27a  venc: use libOmxVenc as blob  [Scott Mertz]
-   * packages/apps/CellBroadcastReceiver/
-2015d27  Do not let system keys bypass alert  [Deepak Kundra]
-eb998df  Revert "Automatic translation import"  [Gerrit Code Review]
-   * packages/apps/Dialer/
-297bc8d  Fix NPE when checking default Dialer  [Gerrit Code Review]
-61d4f83  Fix call recording does not using AAC format on some devices  [Gerrit Code Review]
-   * packages/apps/OmniSwitch/
-6fcb3b3  OmniSwitch: rework thumb loading  [maxwen]
-   * packages/apps/Settings/
-1bd8d67  Lockscreen -> lock screen  [Michael Bestas]
-   * packages/services/Mms/
-50a85fe  Revert "MmsRequest: Turn on data for the MMS transaction if required"  [Ricardo Cerqueira]
-   * vendor/cmsdk/
-ee069f8  Themes: Use default audibles when pkgName is empty  [d34d]
-   * vendor/samsung/
-aca2fec  Merge pull request #777 from RGIB/cm-13.0  [Daniel Hillenbrand]
-ec36746  n5120 : kitkat blobs for ril and gps  [RGIB]
