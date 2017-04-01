@@ -17,8 +17,8 @@
 	<!-- OwnROM-->
 
   <remote  name="ownrom"
-		   fetch="https://github.com/OwnROM"
-		   revision="own-n" />
+	   fetch="https://github.com/OwnROM"
+	   revision="own-n" />
 
   <remote  name="devices"
            fetch="https://github.com/OwnROM-Devices"
@@ -26,13 +26,13 @@
 
 	<!-- LineageOS-->
   <remote  name="los"
-		   fetch="git://github.com/LineageOS"
-	       revision="cm-14.1" />
+	   fetch="git://github.com/LineageOS"
+	   revision="cm-14.1" />
 
 	<!-- The Muppets-->
   <remote  name="tm"
-		   fetch="git://github.com/TheMuppets"
-	       revision="cm-14.1" />
+	   fetch="git://github.com/TheMuppets"
+	   revision="cm-14.1" />
 	       
   <default revision="refs/heads/cm-14.1"
            remote="github"
