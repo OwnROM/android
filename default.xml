@@ -53,6 +53,7 @@
   <project path="packages/apps/OwnSettings" name="android_packages_apps_OwnSettings" groups="pdk-fs" remote="ownrom" />
   <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" groups="pdk-fs" remote="ownrom" />
   <project path="packages/apps/PhoneCommon" name="android_packages_apps_PhoneCommon" groups="pdk-cw-fs,pdk-fs" remote="ownrom"/>
+  <project path="packages/apps/OwnStats" name="packages_apps_OwnStats" groups="pdk-cw-fs,pdk-fs" remote="ownrom"/>
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="ownrom" />
   <project path="system/core" name="android_system_core" groups="pdk" remote="ownrom" />
   <project path="system/sepolicy" name="android_system_sepolicy" groups="pdk" remote="ownrom" />
