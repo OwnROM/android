@@ -3,7 +3,6 @@
 
   <!-- General -->
   <remote  name="github"
-           fetch=".."
            fetch="https://github.com" />
 
   <remote  name="private"
