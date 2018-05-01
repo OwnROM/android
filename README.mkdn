@@ -16,7 +16,7 @@ Open a terminal
     
 To initialize your local repository using the OwnROM trees, use a command like this:
 
-    repo init -u git://github.com/OwnROM/android -b own-0
+    repo init -u git://github.com/OwnROM/android -b own-o
 
 Then to sync up:
 
