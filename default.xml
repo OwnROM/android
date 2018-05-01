@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
@@ -20,29 +19,28 @@
            sync-c="true"
            sync-j="4" />
            
-+	<!-- OwnROM-->
-+
-+  <remote  name="ownrom"
-+		   fetch="https://github.com/OwnROM"
-+		   revision="own-o" />
-+
-+  <remote  name="devices"
-+           fetch="https://github.com/OwnROM-Devices"
-+           revision="own-o" />
-+
-+	<!-- LineageOS-->
-+  <remote  name="los"
-+		   fetch="git://github.com/LineageOS"
-+	       revision="cm-15.1" />
-+
-+	<!-- The Muppets-->
-+  <remote  name="tm"
-+		   fetch="git://github.com/TheMuppets"
-+	       revision="cm-15.1" />
-+	
+	<!-- OwnROM-->
+  <remote  name="ownrom"
+		   fetch="https://github.com/OwnROM"
+		   revision="own-o" />
 
-+	<!-- OwnROM -->
-+  <project path="build" name="android_build" groups="pdk" remote="ownrom" >
+  <remote  name="devices"
+           fetch="https://github.com/OwnROM-Devices"
+           revision="own-o" />
+
+	<!-- LineageOS-->
+  <remote  name="los"
+		   fetch="git://github.com/LineageOS"
+	       revision="cm-15.1" />
+
+	<!-- The Muppets-->
+  <remote  name="tm"
+		   fetch="git://github.com/TheMuppets"
+	       revision="cm-15.1" />
+	
+
+	<!-- OwnROM -->
+  <project path="build" name="android_build" groups="pdk" remote="ownrom" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
