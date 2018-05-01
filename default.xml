@@ -39,7 +39,7 @@
 	
 
 	<!-- OwnROM -->
-  <project path="build" name="android_build" groups="pdk" remote="ownrom" >
+  <project path="build/make" name="android_build" groups="pdk" remote="ownrom" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
