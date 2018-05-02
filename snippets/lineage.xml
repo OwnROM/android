@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
-  <!-- OwnROM -->
-  <project path="vendor/ownrom" name="android_vendor_ownrom" remote="ownrom" />
-  <project path="android" name="android" remote="ownrom" />
   
   <!-- LineageOS -->
   <project path="device/lineage/sepolicy" name="LineageOS/android_device_lineage_sepolicy" />
