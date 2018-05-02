@@ -32,5 +32,5 @@ Configure the build environment for specific device:
     
 Start the build:
 
-    mka ownrom
+    brunch <device>
 
