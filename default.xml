@@ -38,7 +38,7 @@
 	       revision="cm-15.1" />
 
   <!-- Lineage OS-->
-  <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" remote="aosp" >
+  <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" remote="aosp" />
   <project path="build/kati" name="LineageOS/android_build_kati" groups="pdk,tradefed" />
   <project path="art" name="platform/art" groups="pdk" remote="aosp" />
   <project path="bionic" name="LineageOS/android_bionic" groups="pdk" />
